@@ -1,14 +1,15 @@
-import React from 'react'
+import './shared/global/css/Global.css'
+
+import { Routes } from "./routes/Routes"
+
 import { Navbar } from "./components/navigation/Navbar"
-import { Footer } from "./components/footer/Footer"
 
 
 export const App = () => {
   return (
-    <div>
+    <Routes>
       <Navbar />
-      <Footer />
-    </div>
+    </Routes>
   )
 }
 

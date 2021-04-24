@@ -1,9 +1,16 @@
-import React from 'react'
+import { RadgivningViewDesktop } from "./radgivningVewDesktop/RadgivningViewDesktop"
+import { RadgivningViewMobile } from "./radgivningVewMobile/RadgivningViewMobile"
+
+import { useWindowDimensions } from '../../hooks/useWindowDimensions'
+import DesktopMobileBreakpoint from "../../shared/global/DesktopMobileBreakpoint"
+
 
 export const RadgivningView = () => {
-    return (
-        <div>
+    const { width } = useWindowDimensions()
 
-        </div>
-    )
+    const toggleDesktopOrMobileViewForNavbar = () => {
+        return width <= DesktopMobileBreakpoint.width ? <RadgivningViewMobile /> : <RadgivningViewDesktop />
+    }
+
+    return <div>{toggleDesktopOrMobileViewForNavbar()}</div>
 }

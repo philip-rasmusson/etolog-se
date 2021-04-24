@@ -1,0 +1,39 @@
+.header-desktop-body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
+}
+
+.header-desktop-img {
+  width: 100%;
+  box-shadow: #454545 0 1rem 2rem;
+}
+
+.header-desktop-slogan {
+  color: #fff;
+  position: absolute;
+  top: 37.5vw;
+  width: 100%;
+  background: none;
+}
+
+.header-desktop-slogan h3 {
+  text-align: center;
+  margin: auto;
+  font-size: 1.8vw;
+  font-weight: 500;
+  text-shadow: #000 0.5rem 0.5rem 0.5rem;
+}
+
+.header-desktop-social-media {
+  display: flex;
+  position: absolute;
+  top: 44vw;
+  right: 1vw;
+}
+
+.header-desktop-social-media div {
+  padding: 0.5vw;
+  font-size: 3vw;
+  color: rgb(218, 211, 127);
+}

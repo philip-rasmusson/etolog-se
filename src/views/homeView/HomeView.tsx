@@ -1,9 +1,17 @@
-import React from 'react'
+import { HomeViewDesktop } from "./homeViewDesktop/HomeViewDesktop"
+import { HomeViewMobile } from "./homeViewMobile/HomeViewMobile"
+
+import { useWindowDimensions } from '../../hooks/useWindowDimensions'
+import DesktopMobileBreakpoint from "../../shared/global/DesktopMobileBreakpoint"
+
 
 export const HomeView = () => {
-    return (
-        <div>
+    const { width } = useWindowDimensions()
 
-        </div>
-    )
+    const toggleDesktopOrMobileViewForNavbar = () => {
+        return width <= DesktopMobileBreakpoint.width ? <HomeViewMobile /> : <HomeViewDesktop />
+    }
+
+    return <div>{toggleDesktopOrMobileViewForNavbar()}</div>
 }
+
