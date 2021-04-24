@@ -1,0 +1,27 @@
+[
+  {
+    "key": 0,
+    "value": "Välj län..."
+  },
+  { "key": 1, "value": "Blekinge län" },
+  { "key": 2, "value": "Dalarnas län" },
+  { "key": 3, "value": "Gotlands län" },
+  { "key": 4, "value": "Gävleborgs län" },
+  { "key": 5, "value": "Hallands län" },
+  { "key": 6, "value": "Jämtlands län" },
+  { "key": 7, "value": "Jönköpings län" },
+  { "key": 8, "value": "Kalmars län" },
+  { "key": 9, "value": "Kronobergs län" },
+  { "key": 10, "value": "Norrbottens län" },
+  { "key": 11, "value": "Skåne län" },
+  { "key": 12, "value": "Stockholms län" },
+  { "key": 13, "value": "Södermanlands län" },
+  { "key": 14, "value": "Uppsala län" },
+  { "key": 15, "value": "Värmlands län" },
+  { "key": 16, "value": "Västerbottens län" },
+  { "key": 17, "value": "Västernorrlands län" },
+  { "key": 18, "value": "Västmanlands län" },
+  { "key": 19, "value": "Västra Götalands län" },
+  { "key": 20, "value": "Örebro län" },
+  { "key": 21, "value": "Östergötlands län" }
+]
