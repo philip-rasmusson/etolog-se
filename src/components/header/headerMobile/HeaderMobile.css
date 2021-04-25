@@ -1,28 +1,28 @@
 .header-mobile-body {
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
   background-color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
 
 .header-mobile-mobile-img {
+  box-shadow: #454545 0 0.5rem 1rem;
   display: flex;
   width: 100%;
-  box-shadow: #454545 0 0.5rem 1rem;
 }
 
 .header-mobile-slogan {
+  background: none;
   color: #fff;
   position: absolute;
   top: 145vw;
   width: 100%;
-  background: none;
 }
 
 .header-mobile-slogan h3 {
+  font-weight: 500;
+  margin: 0 12vw;
   text-align: center;
   font-size: 4vw;
-  margin: 0 12vw;
-  font-weight: 500;
   text-shadow: #000 0.5rem 0.5rem 0.5rem;
 }
 

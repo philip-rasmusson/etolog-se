@@ -1,3 +1,60 @@
-.mobile-nav {
-    color: blue;
+.navbar-mobile-wrapper {
+    background: none;
+    background-image: linear-gradient(#2c3741, #2c3741c9, rgba(0, 0, 0, 0));
+    box-shadow: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-mobile-logo {
+    cursor: pointer;
+    font-size: 11vw;
+    font-weight: 300;
+    margin: auto 0 auto 3vw;
+}
+
+.navbar-mobile-menu-icon {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    font-size: 10vw;
+    justify-content: center;
+    padding: 5vw;
+    z-index: 200;
+}
+
+.navbar-mobile-menu {
+    background-image: linear-gradient(#2c3741, #5183b300);
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 5rem 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.navbar-mobile-menu p {
+    font-size: 6vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 7vw 1rem;
+    text-shadow: #2c3741 2px 2px 1rem;
+    text-transform: uppercase;
+}
+
+.navbar-mobile-menu p:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
