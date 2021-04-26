@@ -1,0 +1,127 @@
+/*Home Body*/
+
+.homeview-desktop-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #707070;
+  background-color: #f1f1f1;
+}
+
+.homeview-desktop-body-img {
+  width: 100%;
+}
+
+/*Section One*/
+
+.homeview-desktop-section-one {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+  width: 100%;
+  /* background-color: hotpink; */
+}
+
+.homeview-desktop-section-one div {
+  /* background-color: rgb(51, 17, 34); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 15rem;
+  padding: 0 2vw;
+  margin: 0;
+}
+
+.homeview-desktop-section-one div img {
+  width: 10rem;
+  max-width: 20rem;
+  border-radius: 1rem;
+}
+
+.homeview-desktop-section-one div p {
+  max-width: 20rem;
+  width: 13vw;
+  text-align: justify;
+}
+
+.homeview-desktop-section-one-box {}
+
+.homeview-desktop-section-one-box h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.homeview-desktop-section-one-box img, .homeview-desktop-section-one-box p, .homeview-desktop-section-one-box h3 {
+  margin: 2rem 0;
+}
+
+.homeview-desktop-section-one-box img {
+  box-shadow: #777 0.4rem 0.4rem 0.4rem;
+}
+
+/*Section*/
+
+.homeview-desktop-section-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 5rem auto;
+}
+
+.homeview-desktop-section-left, .homeview-desktop-section-right {
+  margin: 0 4vw;
+}
+
+.homeview-desktop-section-left img {
+  width: 20vw;
+  max-width: 20rem;
+  border: 0.555 solid 1px;
+  border-radius: 3rem;
+  box-shadow: #777 0.4rem 0.4rem 0.4rem;
+}
+
+.homeview-desktop-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.homeview-desktop-section-right h3, .homeview-desktop-section-right p, .homeview-desktop-section-right button {
+  margin: 1rem 0;
+}
+
+.homeview-desktop-section-right h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.homeview-desktop-section-right p {
+  max-width: 25rem;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.homeview-desktop-section-right button {
+  margin: 1rem auto;
+}
+
+.homeview-desktop-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeview-desktop-img-desktop {
+  display: flex;
+}
+
+.homeview-desktop-img-mobile {
+  display: none;
+}

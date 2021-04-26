@@ -1,11 +1,12 @@
 .etolog-mobile-box {
   align-items: center;
+  border-top: rgb(167, 167, 167) solid 1px;
   color: #454545;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
   margin: 2rem auto;
+  padding: 3rem 0 0 0;
   width: 70%;
 }
 
