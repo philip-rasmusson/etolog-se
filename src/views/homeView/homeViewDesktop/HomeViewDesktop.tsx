@@ -1,5 +1,4 @@
-
-import React from 'react'
+import { EtologBoxDesktop } from '../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop'
 
 export const HomeViewDesktop = () => {
     return (

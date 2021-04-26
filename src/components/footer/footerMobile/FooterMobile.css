@@ -1,5 +1,5 @@
 .footer-mobile-body {
-    color: #fff;
+    color: #f1f1f1;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
 .footer-mobile-container-right-boka {
     font-size: 18vw;
     letter-spacing: 3vw;
-    background-color: #fff;
+    background-color: #f1f1f1;
     color: #2c3741;
     width: fit-content;
     margin: auto;

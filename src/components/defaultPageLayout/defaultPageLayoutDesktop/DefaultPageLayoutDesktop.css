@@ -1,0 +1,69 @@
+.default-page-desktop-wrapper {
+  background-color: #f1f1f1;
+  padding-bottom: 2rem;
+}
+
+.default-page-desktop-section-one {
+  color: rgb(71, 71, 71);
+  margin: 0 auto 0 auto;
+  padding-top: 3rem;
+  max-width: 1200px;
+  width: 60vw;
+}
+
+.default-page-desktop-section-one h1 {
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.default-page-desktop-section-one h4 {
+  font-weight: 600;
+  width: 100%;
+  max-width: 800px;
+}
+
+.default-page-desktop-section-one p {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 40rem;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 1.5rem 0 0 0;
+}
+
+.default-page-desktop-section-two {
+  width: 100%;
+  box-shadow: #777 0 0.4rem 0.4rem;
+  margin-top: 8vw;
+}
+
+.default-page-desktop-section-two-box {
+  display: flex;
+  justify-content: center;
+}
+
+.default-page-desktop-section-two-box-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.default-page-desktop-section-two-box-right {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30rem;
+}
+
+.default-page-desktop-section-two-box-left img {
+  width: 20vw;
+  max-width: 20rem;
+  border-radius: 50%;
+  border: #f1f1f1 solid 1px;
+}

@@ -1,0 +1,43 @@
+.etolog-desktop-box {
+  max-width: 16rem;
+  padding: 2rem 1rem;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.etolog-desktop-box-headline {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.etolog-desktop-box-img {
+  width: 30vw;
+  max-width: 12rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.etolog-desktop-box-paragraph {
+  padding: 2rem 0;
+  text-align: justify;
+  font-size: smaller;
+}
+
+.etolog-desktop-box-phone, .etolog-desktop-box-email, .etolog-desktop-box-city {
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.etolog-desktop-box-city-phone, .etolog-desktop-box-city-email, .etolog-desktop-box-city-icon {
+  padding-right: 2rem;
+}
+
+.etolog-desktop-box-email-link {
+  color: initial;
+  cursor: pointer;
+  text-decoration: none;
+}

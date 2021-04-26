@@ -1,4 +1,5 @@
 import './MobileNavbar.css'
+import NavbarData from '../data/NavbarData'
 import RoutingPath from '../../../routes/RoutingPath'
 
 import { useHistory } from 'react-router-dom'
@@ -9,14 +10,7 @@ import { faBars, faPaw } from '@fortawesome/free-solid-svg-icons'
 
 export const MobileNavbar = () => {
     const history = useHistory()
-    const logo = 'etolog.se'
-    const menuItems = [
-        'rådgivning',
-        'webkurser',
-        'föreläsningar',
-        'konsultuppdrag',
-        'våra etologer',
-    ]
+
     const [navbarIcon, setNavbarIcon] = useState(faBars)
 
     const ToggleNavbar = () => {
@@ -40,7 +34,7 @@ export const MobileNavbar = () => {
     return (
         <div className="navbar-mobile-wrapper">
             <h3 className="navbar-mobile-logo" onClick={() => history.push(RoutingPath.homeView)}>
-                {logo}
+                {NavbarData.logo}
             </h3>
             <div className="navbar-mobile-menu-icon" onClick={() => ToggleNavbar()}>
                 <FontAwesomeIcon icon={navbarIcon} />
@@ -50,44 +44,33 @@ export const MobileNavbar = () => {
                     className="navbar-mobile-menu-item"
                     onClick={() => LinkFunction(RoutingPath.radgivningView)}
                 >
-                    {menuItems[0]}
+                    {NavbarData.radgivning}
                 </p>
                 <p
                     className="navbar-mobile-menu-item"
                     onClick={() => LinkFunction(RoutingPath.homeView)}
                 >
-                    {menuItems[1]}
+                    {NavbarData.webkurser}
                 </p>
                 <p
                     className="navbar-mobile-menu-item"
                     onClick={() => LinkFunction(RoutingPath.forelasningView)}
                 >
-                    {menuItems[2]}
+                    {NavbarData.forelasningar}
                 </p>
                 <p
                     className="navbar-mobile-menu-item"
                     onClick={() => LinkFunction(RoutingPath.konsultuppdragView)}
                 >
-                    {menuItems[3]}
+                    {NavbarData.konsultuppdrag}
                 </p>
                 <p
                     className="navbar-mobile-menu-item"
                     onClick={() => LinkFunction(RoutingPath.varaEtologerView)}
                 >
-                    {menuItems[4]}
+                    {NavbarData.varaEtologer}
                 </p>
             </div>
         </div>
     )
 }
-
-{/* <div
-    className="burger-closed"
-    id="burger-icon"
-    onClick={ToggleNavbar}
->
-    <FontAwesomeIcon icon={faBars} />
-</div>
-<div className="burger-closed" id="times-icon" onClick={ToggleNavbar}>
-    <FontAwesomeIcon icon={faPaw} />
-</div> */}

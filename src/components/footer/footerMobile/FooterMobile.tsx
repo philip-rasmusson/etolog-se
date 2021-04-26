@@ -1,4 +1,5 @@
 import './FooterMobile.css'
+import FooterData from "../data/FooterData"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -11,26 +12,16 @@ export const FooterMobile = () => {
   return (
     <div className="footer-mobile-body">
       <div className="footer-mobile-container-left">
-        <h1>OM OSS</h1>
+        <h1>{FooterData.headline}</h1>
         <p>
-          Etolog.se lanserades den 1 oktober 2018 och drivs genom företaget
-          Yoma Consulting AB, ett konsultbolag verksamma inom
-          veterinärbranschen. Idén bakom konceptet var att samla etologer för
-          att djurägare och företag lättare skulle hitta rätt när man behöver
-          hjälp med sitt djur eller stöd i sin verksamhet. Vi vill att fler
-          ska förstå vad en etolog gör och när man kan ta hjälp av en etolog.
-          </p><br />
+          {FooterData.paragraph01}
+        </p><br />
         <p>
-          För både verksamheter och enskilda djurägare blir vår plattform en
-          rikstäckande mötesplats som underlättar kontakten med yrkesverksamma
-          etologer. Idag har vi etologer från Malmö i söder till Sundsvall i
-          norr! Vi erbjuder etologkonsulter för olika verksamheter inom
-          djursektorn, anordnar onlinekurser, konsulterar djurägare och
-          föreläser om djursbeteenden.
-          </p>
+          {FooterData.paragraph02}
+        </p>
       </div>
       <div className="footer-mobile-container-right">
-        <h2 className="footer-mobile-container-right-boka">BOKA</h2>
+        <h2 className="footer-mobile-container-right-boka">{FooterData.button}</h2>
         <div className="footer-mobile-container-right-social-media">
           <div>
             <FontAwesomeIcon icon={faFacebook} />
@@ -42,7 +33,7 @@ export const FooterMobile = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </div>
         </div>
-        <p className="footer-mobile-copyright">©2021 All Rights Reserved - Yoma Consulting</p>
+        <p className="footer-mobile-copyright">{FooterData.copyright}</p>
       </div>
     </div>
   )

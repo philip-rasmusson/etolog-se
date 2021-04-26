@@ -1,50 +1,44 @@
 import './DesktopNavbar.css'
+import NavbarData from '../data/NavbarData'
+import RoutingPath from '../../../routes/RoutingPath'
 
 import { useHistory } from "react-router-dom"
-import RoutingPath from '../../../routes/RoutingPath'
 
 export const DesktopNavbar = () => {
   const history = useHistory()
-  const logo = 'etolog.se'
-  const menuItems = [
-    'rådgivning',
-    'webkurser',
-    'föreläsningar',
-    'konsultuppdrag',
-    'våra etologer',
-  ]
+
 
   return (
     <div className="navbar-desktop">
       <h3 className="navbar-desktop-logo" onClick={() => history.push(RoutingPath.homeView)}>
-        {logo}
+        {NavbarData.logo}
       </h3>
 
       <div className="navbar-desktop-menu">
         <p
           onClick={() => history.push(RoutingPath.radgivningView)}
         >
-          {menuItems[0]}
+          {NavbarData.radgivning}
         </p>
         <p
           onClick={() => history.push(RoutingPath.webkurser)}
         >
-          {menuItems[1]}
+          {NavbarData.webkurser}
         </p>
         <p
           onClick={() => history.push(RoutingPath.forelasningView)}
         >
-          {menuItems[2]}
+          {NavbarData.forelasningar}
         </p>
         <p
           onClick={() => history.push(RoutingPath.konsultuppdragView)}
         >
-          {menuItems[3]}
+          {NavbarData.konsultuppdrag}
         </p>
         <p
           onClick={() => history.push(RoutingPath.varaEtologerView)}
         >
-          {menuItems[4]}
+          {NavbarData.varaEtologer}
         </p>
       </div>
     </div>

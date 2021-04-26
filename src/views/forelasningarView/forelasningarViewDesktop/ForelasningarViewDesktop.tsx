@@ -1,9 +1,22 @@
-import React from 'react'
+import './ForelasningarViewDesktop'
+import ForelasningarViewData from '../data/ForelasningarViewData'
+
+import forelasningar from '../img/forelasningar.jpg'
+import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
 export const ForelasningarViewDesktop = () => {
   return (
     <div>
-      <h1>This is Föreläsningar Desktop</h1>
+      <DefaulPageLayoutDesktop
+        backgroundColor={ForelasningarViewData.backgroundColor}
+        pageTitle={ForelasningarViewData.pageTitle}
+        pageSubheading={ForelasningarViewData.pageSubheading}
+        paragraph={ForelasningarViewData.paragraph}
+        imgPlacement={ForelasningarViewData.imgPlacement}
+        img={forelasningar}
+        paragraphOne={ForelasningarViewData.paragraphOne}
+        paragraphTwo={ForelasningarViewData.paragraphTwo}
+      />
     </div>
   )
 }
