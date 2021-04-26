@@ -1,7 +1,7 @@
 import './VaraEtologerViewDesktop.css'
 
 import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
-import varaEtologer from '../img/etologer.jpg'
+import varaEtologer from '../img/etologer.png'
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
 import etologer from '../../../data/data-etologer.json'

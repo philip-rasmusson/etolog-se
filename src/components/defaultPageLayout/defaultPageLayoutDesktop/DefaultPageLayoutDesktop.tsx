@@ -4,7 +4,7 @@ export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubhead
 
   const SectionOne = (props: { pageTitle?: string, pageSubheading?: string, paragraph?: string }) => {
     return (
-      <div className="default-page-desktop-section-one">
+      <div className="default-page-desktop-section-one-wrapper">
         <h1>{props.pageTitle}</h1>
         <h4>{props.pageSubheading}</h4>
         <div>

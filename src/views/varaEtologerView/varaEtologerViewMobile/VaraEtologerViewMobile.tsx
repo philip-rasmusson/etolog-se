@@ -1,5 +1,11 @@
 import './VaraEtologerViewMobile.css'
 import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
+import etologerMobile from '../img/etologerMobile.png'
+import VaraEtologerViewData from '../data/VaraEtologerViewData'
+
+
+import { DefaulPageLayoutMobile } from "../../../components/defaultPageLayout/defaultPageLayoutMobile/DefaultPageLayoutMobile"
+
 import etologer from '../../../data/data-etologer.json'
 import { EtologBoxMobile } from '../../../components/etologBox/etologBoxMobile/EtologBoxMobile'
 
@@ -29,8 +35,22 @@ export const VaraEtologerViewMobile = () => {
         }
     })
     return (
-        <div>
-            {EtologArray}
+        <div className="vara-etologer-mobile-wrapper">
+            <DefaulPageLayoutMobile
+                pageTitle={VaraEtologerViewData.pageTitle}
+                pageSubheading={VaraEtologerViewData.pageSubheading}
+                paragraph={VaraEtologerViewData.paragraph}
+                imgMobile={etologerMobile}
+                paragraphOne={VaraEtologerViewData.paragraphOne}
+            // paragraphTwo={VaraEtologerViewData.paragraphTwo}
+            />
+            <div className="vara-etologer-mobile-etologbox-wrapper">
+                {EtologArray}
+            </div>
+            <div className="vara-etologer-mobile-button">
+                <button>Till toppen</button>
+            </div>
         </div>
     )
 }
+

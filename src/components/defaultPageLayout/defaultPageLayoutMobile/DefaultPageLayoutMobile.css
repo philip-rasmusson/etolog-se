@@ -1,0 +1,71 @@
+.default-page-layout-mobile-wrapper {
+  background-color: #f1f1f1;
+  color: #454545;
+  margin: 0 auto;
+}
+
+.default-page-mobile-section-one {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 10vw auto;
+}
+
+.default-page-mobile-section-one h1 {
+  font-size: 7vw;
+  font-weight: 400;
+  margin: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.default-page-mobile-section-one h4 {
+  font-size: 4vw;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: justify;
+  width: 100%;
+}
+
+.default-page-mobile-section-one p {
+  width: 100%;
+  max-width: 40rem;
+  font-weight: 300;
+  font-size: 4vw;
+  text-align: justify;
+}
+
+/* Section two */
+
+.default-page-mobile-section-two {
+  background: none;
+  width: fit-content;
+  padding: 2rem 0;
+  margin: auto;
+  box-shadow: none;
+  width: 80%;
+}
+
+.default-page-mobile-section-two p {
+  width: 100%;
+  max-width: 40rem;
+  font-weight: 300;
+  font-size: 4vw;
+  text-align: justify;
+}
+
+.default-page-mobile-section-img-mobile {
+  box-shadow: #777 0 0.4rem 0.4rem;
+  display: block;
+  margin-top: 3rem;
+  opacity: 0.8;
+  width: 100%;
+}
+
+button {
+  border-radius: 2rem;
+  font-size: 3vw;
+  font-weight: 400;
+  padding: 8px;
+  display: none;
+}

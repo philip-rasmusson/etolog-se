@@ -5,6 +5,7 @@ const  paragraph = 'Hos våra etologer kan du boka rådgivning för flera olika 
 const  imgPlacement = 'left'
 const  paragraphOne = 'Hos våra etologer kan en rådgivning se lite olika ut beroende på vem du bokar hos, men alla kommer att titta på just ditt djurs specifika behov och anpassa träningen och upplägget därefter.'
 const  paragraphTwo = 'Gå in på Våra etologer. Där använder du sökfiltret för att söka fram vilken etolog som passar bäst just för dig, beroende på var du befinner dig geografiskt, vilken typ av djur och vad du vill ha hjälp med.'
+const imgMobileAlt = 'Error'
 
 export default {
   backgroundColor, 
@@ -14,4 +15,5 @@ export default {
   imgPlacement,
   paragraphOne, 
   paragraphTwo, 
+  imgMobileAlt,
 }
