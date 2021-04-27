@@ -1,0 +1,95 @@
+.forelasningar-mobile-wrapper {
+  background-color: #f1f1f1;
+  color: #454545;
+  margin: 0 auto;
+  position: relative;
+}
+
+.forelasningar-mobile-section-two {
+  margin: auto;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.forelasningar-mobile-section-two p {
+  max-width: 36rem;
+  margin: 1rem auto 3rem auto;
+  padding: 0 5vw;
+  font-size: 3vw;
+}
+
+.forelasningar-mobile-category-select {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.forelasningar-mobile-category-select-inner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.forelasningar-mobile-category-inner-box {
+  position: relative;
+}
+
+.forelasningar-mobile-category-inner-box img {
+  border-radius: 2rem;
+  opacity: 0.6;
+  margin: 1rem;
+}
+
+.forelasningar-mobile-category-inner-box:hover img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.forelasningar-mobile-category-inner-box h4 {
+  top: 7vw;
+  text-align: center;
+  z-index: 100;
+  font-size: 6vw;
+}
+
+.forelasningar-mobile-vertical-center {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forelasningar-mobile-vertical-center, .forelasningar-mobile-category-inner-box img {
+  width: 35vw;
+  max-width: 100%;
+  height: 35vw;
+  max-height: 100%;
+}
+
+.forelasningar-mobile-etolog-box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 4rem auto;
+  max-width: 1200px;
+}
+
+.forelasningar-mobile-etolog-box-backgroud {
+  background: none;
+}
+
+.forelasningar-mobile-etolog-box-backgroud h3 {
+  font-size: 5vw;
+}
+
+.forelasningar-mobile-border-mobile {
+  margin: 20vw auto 5vw auto;
+  display: block;
+}
+
+.forelasningar-mobile-etolog-box-wrapper {
+  display: flex;
+  flex-direction: column;
+}

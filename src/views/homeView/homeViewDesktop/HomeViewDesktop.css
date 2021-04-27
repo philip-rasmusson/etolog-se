@@ -46,8 +46,6 @@
   text-align: justify;
 }
 
-.homeview-desktop-section-one-box {}
-
 .homeview-desktop-section-one-box h2 {
   text-transform: uppercase;
   font-weight: 600;
@@ -64,11 +62,13 @@
 /*Section*/
 
 .homeview-desktop-section-container {
+  /* background-color: #fafafa;
+  border: #777 solid 1px;
+  border-radius: 1rem; */
   display: flex;
-  margin: auto;
   justify-content: space-around;
-  max-width: 1000px;
   margin: 5rem auto;
+  max-width: 1000px;
 }
 
 .homeview-desktop-section-left, .homeview-desktop-section-right {
@@ -76,11 +76,12 @@
 }
 
 .homeview-desktop-section-left img {
-  width: 20vw;
-  max-width: 20rem;
   border: 0.555 solid 1px;
   border-radius: 3rem;
   box-shadow: #777 0.4rem 0.4rem 0.4rem;
+  max-width: 20rem;
+  margin: 2rem 0;
+  width: 20vw;
 }
 
 .homeview-desktop-section-right {

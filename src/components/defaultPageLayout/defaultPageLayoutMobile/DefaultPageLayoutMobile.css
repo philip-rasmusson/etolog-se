@@ -61,11 +61,3 @@
   opacity: 0.8;
   width: 100%;
 }
-
-button {
-  border-radius: 2rem;
-  font-size: 3vw;
-  font-weight: 400;
-  padding: 8px;
-  display: none;
-}

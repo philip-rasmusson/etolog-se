@@ -11,6 +11,18 @@ const  paragraphTwo = 'Voluptate velit esse cillum dolore eu fugiat nulla pariat
 const sectionTwoHeadline = "Hitta den perfekta Etologen här"
 const sectionTwoParagraph = "Det här är våra vaniligaste föreläsningskategorier. Klicka på en kategori för att få se vilka etologer som erbjuder föreläsningar inom detta ämne. Givetvis kan vi skräddarsy en föreläsning enligt önskemål, maila då till info@etolog.se"
 
+//Categories
+const category01 = 'hund'  
+const category02 = 'häst' 
+const category03 = 'gris'
+const category04 = 'katt'
+const category05 = 'kanin'
+const category06 = 'smådjur'
+
+//CategoryIndex
+const categoryIndexHeadline = 'Hitta den perfekta Etologen här'
+const categoryIndexHParagraph = 'Det här är våra vaniligaste föreläsningskategorier. Klicka på en kategori för att få se vilka etologer som erbjuder föreläsningar inom detta ämne. Givetvis kan vi skräddarsy en föreläsning enligt önskemål, maila då till info@etolog.se'
+
 export default {
   backgroundColor, 
   pageTitle, 
@@ -21,4 +33,12 @@ export default {
   paragraphTwo, 
   sectionTwoHeadline,
   sectionTwoParagraph,
+  category01,
+  category02,
+  category03,
+  category04,
+  category05,
+  category06,
+  categoryIndexHeadline,
+  categoryIndexHParagraph,
 }

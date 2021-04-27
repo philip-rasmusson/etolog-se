@@ -4,3 +4,21 @@
   margin: 0;
   padding: 0;
 }
+
+button {
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 8px;
+  display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  button {
+    border-radius: 2rem;
+    font-size: 3vw;
+    font-weight: 400;
+    padding: 8px;
+    display: flex;
+  }
+}

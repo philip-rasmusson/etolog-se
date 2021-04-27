@@ -6,6 +6,9 @@ import KonsultuppdragViewData from '../data/KonsultuppdragViewData'
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
 export const KonsultuppdragViewDesktop = () => {
+    const ContactForm = () => {
+        return <form></form>
+    }
     return (
         <div>
             <DefaulPageLayoutDesktop

@@ -11,6 +11,8 @@ import sectionTwoImg from '../img/dog-2983021_1920.jpg'
 import sectionThreeImg from '../img/etolog-Johanna-Strandner.jpg'
 import sectionFourImg from '../img/cat.jpg'
 
+import HomeViewData from '../data/HomeViewData'
+
 export const HomeViewDesktop = () => {
     const HomeViewSectionOneBox = (props: { img?: string, img2?: string, headline?: string, paragraph?: string, display?: string, btn?: string }) => {
         return (
@@ -62,31 +64,25 @@ export const HomeViewDesktop = () => {
                     <HomeViewSectionOneBox
                         display="hidden"
                         img={djuragare}
-                        img2={djuragare}
-                        headline="djurägare"
-                        paragraph="Vi kan hjälpa dig med ditt husdjur!
-          Oavsett om du behöver hjälp med 
-          vardagsträning, beteendeproblematik 
-          eller förebyggande träning."
-                        btn="Boka en konsultation"
+                        headline={HomeViewData.sectionOneHeadline01}
+                        paragraph={HomeViewData.sectionOneParagraph01}
+                        btn={HomeViewData.sectionOneBtn01}
                     />
                 </div>
                 <div>
                     <HomeViewSectionOneBox
                         img={kliniker}
-                        img2={homeviewImg4}
-                        headline="kliniker"
-                        paragraph="För ett trovärdigt holistiskt perspektiv bör också beteenderådgivning vara lika evidensbaserad och kvalitativ som veterinärmedicinen. Erbjud professionell beteende-rådgivning på din klinik."
-                        btn="Boka en konsultation"
+                        headline={HomeViewData.sectionOneHeadline02}
+                        paragraph={HomeViewData.sectionOneParagraph02}
+                        btn={HomeViewData.sectionOneBtn02}
                     />
                 </div>
                 <div>
                     <HomeViewSectionOneBox
                         img={verksamheter}
-                        img2={homeviewImg6}
-                        headline="verksamheter"
-                        paragraph="Våra etologer är utbildade i djurhållning, djurhälsa och smittskydd. Vi har också kompetens inom djurskydd, försöksdesign och avelsarbete. Vi kan erbjuda din verksamhet engagerade och sakkunniga konsulter. Våra etologer har nära samarbete med veterinär."
-                        btn="Boka en konsultation"
+                        headline={HomeViewData.sectionOneHeadline03}
+                        paragraph={HomeViewData.sectionOneParagraph03}
+                        btn={HomeViewData.sectionOneBtn03}
                     />
                 </div>
             </div>
@@ -98,11 +94,9 @@ export const HomeViewDesktop = () => {
             <div className="section-margin homeViewSectionTwo">
                 <HomeViewSection
                     img={sectionTwoImg}
-                    headline="webkurser"
-                    paragraph="Vill du och ditt djur lära er något nytt tillsammans? Behöver du en
-          rolig present att ge bort? Det kommer att komma fler och fler
-          webbkurser framöver så håll utkik!"
-                    btn="se våra webkurser"
+                    headline={HomeViewData.sectionTwoHeadline01}
+                    paragraph={HomeViewData.sectionTwoParagraph01}
+                    btn={HomeViewData.sectionTwoBtn01}
                 />
             </div>
             <div className="border"></div>
@@ -115,24 +109,18 @@ export const HomeViewDesktop = () => {
                 <HomeViewSection
                     mirror="yes"
                     img={sectionThreeImg}
-                    headline="våra etologer"
-                    paragraph="En Etolog är en person som är utbildad i djurs beteenden och orsakerna bakom dem. Etologi är en fördjupning inom ämnet zoologi (biologi). 
-
-          Våra Etologer har en bred grundkunskap om alla djurslag och djurs beteenden. Våra medlemmar har också specialiserat inom vissa områden eller mot vissa djurarter vilket gör att vi tillsammans har en mycket stor vetenskapligt förankrad kunskapsbas. 
-          
-          Alla våra etologer är anslutna till yrkesorganisationen för etologer, Sveriges Akademiska Etologer (SAE). De har tydliga kunskapskrav för sitt medlemskap vilket gör att du kan känna dig trygg med vår kompetens. "
-                    btn="till våra etologer"
+                    headline={HomeViewData.sectionTwoHeadline02}
+                    paragraph={HomeViewData.sectionTwoParagraph02}
+                    btn={HomeViewData.sectionTwoBtn02}
                 />
             </div>
             <div className="border"></div>
             <div className="section-margin homeview-desktop-section-four">
                 <HomeViewSection
                     img={sectionFourImg}
-                    headline="föreläsningar"
-                    paragraph="Vi skräddarsyr föreläsningen för dig! Alla våra föreläsare är utbildade etologer med god kompetens i sitt ämne. Vad vill du veta mer om? Hur lång föreläsning vill du ha? En serie på fler tillfällen? Workshop?
-
-          Maila oss dina önskemål så tar vi fram ett koncept som fungerar för dig och din verksamhet. Vi erbjuder föreläsningar och kurser i djurhållning, djurhälsa, etologi, djurskydd och det mesta annat som rör djur"
-                    btn="till föreläsningar"
+                    headline={HomeViewData.sectionTwoHeadline03}
+                    paragraph={HomeViewData.sectionTwoParagraph03}
+                    btn={HomeViewData.sectionTwoBtn03}
                 />
             </div>
         </div>
