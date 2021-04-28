@@ -1,20 +1,21 @@
 import './DefaultPageLayoutDesktop.css'
 
-export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubheading?: string, paragraph?: string, imgPlacement?: string, backgroundColor?: any, img?: string, paragraphOne?: string, paragraphTwo?: string, imgAlt?: string }) => {
+export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubheading?: string, pageParagraph1?: string, pageParagraph2?: string, imgPlacement?: string, backgroundColor?: any, img?: string, sectionTwoParagraph1?: string, sectionTwoParagraph2?: string, imgAlt?: string }) => {
 
-  const SectionOne = (props: { pageTitle?: string, pageSubheading?: string, paragraph?: string }) => {
+  const SectionOne = (props: { pageTitle?: string, pageSubheading?: string, pageParagraph1?: string, pageParagraph2?: string }) => {
     return (
-      <div className="default-page-desktop-section-one-wrapper">
+      <div className="default-page-desktop-section-one-wrapper font-grey">
         <h1>{props.pageTitle}</h1>
         <h4>{props.pageSubheading}</h4>
         <div>
-          <p>{props.paragraph}</p>
+          <p>{props.pageParagraph1}</p>
+          <p>{props.pageParagraph2}</p>
         </div>
       </div>
     )
   }
 
-  const SectionTwo = (props: { imgPlacement?: string, backgroundColor?: any, img?: string, paragraphOne?: string, paragraphTwo?: string, imgAlt?: string }) => {
+  const SectionTwo = (props: { imgPlacement?: string, backgroundColor?: any, img?: string, sectionTwoParagraph1?: string, sectionTwoParagraph2?: string, imgAlt?: string }) => {
     return (
       <>
         {props.imgPlacement === 'left' ? (
@@ -25,9 +26,9 @@ export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubhead
               </div>
               <div className="default-page-desktop-section-two-box-right">
                 <div>
-                  <p>{props.paragraphOne}</p>
+                  <p>{props.sectionTwoParagraph1}</p>
                   <br />
-                  <p>{props.paragraphTwo}</p>
+                  <p>{props.sectionTwoParagraph2}</p>
                 </div>
               </div>
             </div>
@@ -37,9 +38,9 @@ export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubhead
             <div className="default-page-desktop-section-two-box" style={props.backgroundColor}>
               <div className="default-page-desktop-section-two-box-right">
                 <div>
-                  <p>{props.paragraphOne}</p>
+                  <p>{props.sectionTwoParagraph1}</p>
                   <br />
-                  <p>{props.paragraphTwo}</p>
+                  <p>{props.sectionTwoParagraph2}</p>
                 </div>
               </div>
               <div className="default-page-desktop-section-two-box-left">
@@ -52,18 +53,19 @@ export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubhead
     )
   }
   return (
-    <div className="default-page-desktop-wrapper">
+    <div className="default-page-desktop-wrapper background-white">
       <SectionOne
         pageTitle={props.pageTitle}
         pageSubheading={props.pageSubheading}
-        paragraph={props.paragraph}
+        pageParagraph1={props.pageParagraph1}
+        pageParagraph2={props.pageParagraph2}
       />
       <SectionTwo
         backgroundColor={props.backgroundColor}
         imgPlacement={props.imgPlacement}
         img={props.img}
-        paragraphOne={props.paragraphOne}
-        paragraphTwo={props.paragraphTwo}
+        sectionTwoParagraph1={props.sectionTwoParagraph1}
+        sectionTwoParagraph2={props.sectionTwoParagraph2}
       />
     </div>
   )

@@ -1,3 +1,46 @@
 .radgivning-dekstop-section-three-wrapper {
-  background-color: #f1f1f1;
+  display: flex;
+  max-width: 1200PX;
+  margin: auto;
+}
+
+.radgivning-dekstop-section-three-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  width: 50%;
+}
+
+.radgivning-dekstop-section-three-text {
+  border: rgba(0, 0, 0, 0.315) solid 1px;
+  border-radius: 2rem;
+  margin: auto;
+  width: 22rem;
+}
+
+.radgivning-dekstop-section-three-text p {
+  margin: 1rem auto;
+  text-align: center;
+  width: 20rem;
+}
+
+.radgivning-dekstop-section-three-text button {
+  margin: 1rem auto;
+  width: fit-content;
+}
+
+.radgivning-dekstop-section-three-img {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10rem auto 0 0;
+  padding: 0;
+  /* background-color: hotpink; */
+}
+
+.radgivning-dekstop-section-three-img img {
+  max-width: 50rem;
+  margin: auto 0 0 auto;
+  width: 90%;
 }

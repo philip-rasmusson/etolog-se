@@ -109,16 +109,8 @@
   display: flex;
 }
 
-.homeview-mobile-section-four, #hidden, .border, .homeview-mobile-img-desktop {
-  display: none;
-}
-
 .homeview-mobile-img-mobile {
   display: flex;
-}
-
-.section-margin {
-  margin: 2rem auto;
 }
 
 .homeview-mobile-button {

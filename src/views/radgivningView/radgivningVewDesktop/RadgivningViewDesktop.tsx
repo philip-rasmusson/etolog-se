@@ -7,25 +7,29 @@ import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/d
 
 export const RadgivningViewDesktop = () => {
   return (
-    <div className="radgivning-desktop-wrapper">
+    <div className="radgivning-dekstop-wrapper background-white">
       <DefaulPageLayoutDesktop
         backgroundColor={RadgivningViewData.backgroundColor}
         pageTitle={RadgivningViewData.pageTitle}
         pageSubheading={RadgivningViewData.pageSubheading}
-        paragraph={RadgivningViewData.paragraph}
+        pageParagraph1={RadgivningViewData.pageParagraph1}
+        pageParagraph2={RadgivningViewData.pageParagraph2}
         imgPlacement={RadgivningViewData.imgPlacement}
         img={cat}
-        paragraphOne={RadgivningViewData.paragraphOne}
-        paragraphTwo={RadgivningViewData.paragraphTwo}
+        sectionTwoParagraph1={RadgivningViewData.sectionTwoParagraph1}
       />
-      <div className="radgivning-dekstop-section-three-wrapper">
-        <div>
-          <p>
-            {RadgivningViewData.sectionThreeParagraph}
-          </p>
-          <button>{RadgivningViewData.sectionThreeButton}</button>
+      <div className="radgivning-dekstop-section-three-wrapper background-white">
+        <div className="radgivning-dekstop-section-three-text-wrapper">
+          <div className="radgivning-dekstop-section-three-text box-shadow font-grey">
+            <p>
+              {RadgivningViewData.sectionThreeParagraph}
+            </p>
+            <button>{RadgivningViewData.sectionThreeButton}</button>
+          </div>
         </div>
-        <img src={radgivning} alt=""></img>
+        <div className="radgivning-dekstop-section-three-img">
+          <img src={radgivning} alt="" />
+        </div>
       </div>
     </div>
   )

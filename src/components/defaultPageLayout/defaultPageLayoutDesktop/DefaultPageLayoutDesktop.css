@@ -1,10 +1,8 @@
 .default-page-desktop-wrapper {
-  background-color: #f1f1f1;
   padding-bottom: 2rem;
 }
 
 .default-page-desktop-section-one-wrapper {
-  color: rgb(71, 71, 71);
   margin: 0 auto 0 auto;
   padding-top: 3rem;
   max-width: 800px;
@@ -51,14 +49,16 @@
 }
 
 .default-page-desktop-section-two-box-right {
-  padding: 2rem;
-  text-align: center;
-  font-size: 1rem;
   color: #f1f1f1;
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
   justify-content: center;
   max-width: 30rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 .default-page-desktop-section-two-box-left img {

@@ -42,11 +42,10 @@ export const VaraEtologerViewDesktop = () => {
                 backgroundColor={VaraEtologerViewData.backgroundColor}
                 pageTitle={VaraEtologerViewData.pageTitle}
                 pageSubheading={VaraEtologerViewData.pageSubheading}
-                paragraph={VaraEtologerViewData.paragraph}
+                pageParagraph1={VaraEtologerViewData.pageParagraph1}
                 imgPlacement={VaraEtologerViewData.imgPlacement}
                 img={varaEtologer}
-                paragraphOne={VaraEtologerViewData.paragraphOne}
-                paragraphTwo={VaraEtologerViewData.paragraphTwo}
+                sectionTwoParagraph1={VaraEtologerViewData.sectionTwoParagraph1}
             />
             <div className="vara-etologer-desktop-etologer-wrapper">
                 {EtologArray}

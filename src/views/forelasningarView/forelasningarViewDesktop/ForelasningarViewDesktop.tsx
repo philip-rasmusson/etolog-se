@@ -18,7 +18,7 @@ import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/d
 export const ForelasningarViewDesktop = () => {
   const CategoryIndex = (props: { headline: string, paragraph: string }) => {
     return (
-      <div className="forelasningar-desktop--section-two">
+      <div className="forelasningar-desktop-section-two background-white font-grey">
         <h1 className="font-upper">{props.headline}</h1>
         <p className="">{props.paragraph}</p>
         <div className="forelasningar-desktop--category-select">
@@ -69,18 +69,17 @@ export const ForelasningarViewDesktop = () => {
         backgroundColor={ForelasningarViewData.backgroundColor}
         pageTitle={ForelasningarViewData.pageTitle}
         pageSubheading={ForelasningarViewData.pageSubheading}
-        paragraph={ForelasningarViewData.paragraph}
+        pageParagraph1={ForelasningarViewData.pageParagraph1}
         imgPlacement={ForelasningarViewData.imgPlacement}
         img={forelasningar}
-        paragraphOne={ForelasningarViewData.paragraphOne}
-        paragraphTwo={ForelasningarViewData.paragraphTwo}
+        sectionTwoParagraph1={ForelasningarViewData.sectionTwoParagraph1}
       />
       <div className="forelasningar-desktop-wrapper">
         <CategoryIndex
           headline={ForelasningarViewData.categoryIndexHeadline}
           paragraph={ForelasningarViewData.categoryIndexHParagraph}
         />
-        <div className="forelasningar-desktop-etolog-box-wrapper">
+        <div className="forelasningar-desktop-etolog-box-wrapper background-white">
           {ShowEtologer}
         </div>
       </div>

@@ -7,10 +7,24 @@
 
 button {
   border-radius: 2rem;
+  background-color: #36536d;
+  color: #f1f1f1;
+  display: flex;
   font-size: 1rem;
   font-weight: 400;
   padding: 8px;
-  display: flex;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.452) 3px 5px 10px;
+}
+
+.background-white {
+  background-color: #f1f1f1;
+}
+
+.font-grey {
+  color: #707070
 }
 
 @media screen and (max-width: 760px) {

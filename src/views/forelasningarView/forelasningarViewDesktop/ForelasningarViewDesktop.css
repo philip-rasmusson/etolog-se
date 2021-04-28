@@ -1,12 +1,11 @@
 .forelasningar-desktop-wrapper {
-  background-color: #f1f1f1;
-  color: #454545;
   margin: 0 auto;
   position: relative;
 }
 
 .forelasningar-desktop-section-two {
-  margin: 8rem auto;
+  margin: 0 auto;
+  padding-top: 5rem;
   text-align: center;
 }
 
@@ -24,9 +23,12 @@
 
 .forelasningar-desktop-category-select-inner {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
   max-width: 60rem;
+  padding-bottom: 5rem;
+  border-bottom: black solid 1px;
 }
 
 .forelasningar-desktop-category-inner-box {
@@ -45,10 +47,14 @@
 }
 
 .forelasningar-desktop-category-inner-box h4 {
-  top: 7vw;
-  text-align: center;
-  z-index: 100;
+  color: #f1f1f1;
+  font-weight: 500;
   font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.582) 3px 5px 10px;
+  top: 7vw;
+  z-index: 100;
 }
 
 .forelasningar-desktop-vertical-center {
@@ -76,7 +82,6 @@
 }
 
 .forelasningar-desktop-etolog-box-backgroud {
-  /* background-color: rgb(201, 214, 223); */
   padding: 2rem 0;
   margin-top: 4rem;
 }
@@ -86,11 +91,10 @@
   font-size: 2rem;
 }
 
-.border {
-  margin: 5rem auto;
-}
-
 .forelasningar-desktop-etolog-box-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding-top: 5rem;
 }

@@ -12,10 +12,10 @@ export const RadgivningViewMobile = () => {
       <DefaulPageLayoutMobile
         pageTitle={RadgivningViewData.pageTitle}
         pageSubheading={RadgivningViewData.pageSubheading}
-        paragraph={RadgivningViewData.paragraph}
+        paragraph={RadgivningViewData.pageParagraph1}
         imgMobile={catMobile}
-        paragraphOne={RadgivningViewData.paragraphOne}
-        paragraphTwo={RadgivningViewData.paragraphTwo}
+        paragraphOne={RadgivningViewData.sectionTwoParagraph1}
+      // paragraphTwo={RadgivningViewData.paragraphTwo}
       />
       <div className="radgivning-mobile-section-three-wrapper">
         <div>
