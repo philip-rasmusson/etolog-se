@@ -1,13 +1,16 @@
 
+//Intro text
+const introText = 'En etolog kan göra underverk i relationer mellan djur och människor. Genom att analysera djurets beteende och undersöka orsakerna bakom det kan vi tillsammans skapa nya förutsättningar för att ändra, forma, ta bort eller skapa beteenden. Etolog.se erbjuder etologer till privatpersoner, verksamheter, kliniker, skolor, djurparker och har även onlineföreläsningar och webkurser. Boka din etolog här hos oss!'
+
 //Section one
 const sectionOneHeadline01 = 'djurägare'
 const sectionOneParagraph01 = 'Vi kan hjälpa dig med ditt husdjur! Oavsett om du behöver hjälp med vardagsträning, beteendeproblematik eller förebyggande träning.'
 const sectionOneBtn01 = 'Boka en konsultation'
 const sectionOneHeadline02 = 'kliniker'
-const sectionOneParagraph02 = 'För ett trovärdigt holistiskt perspektiv bör också beteenderådgivning vara lika evidensbaserad och kvalitativ som veterinärmedicinen. Erbjud professionell beteende-rådgivning på din klinik.'
+const sectionOneParagraph02 = 'För ett holistiskt perspektiv bör beteenderådgivning hålla samma evidensbaserad och kvalitativ som veterinärmedicinen. Erbjud professionell hjälp på din klinik.'
 const sectionOneBtn02 = 'Boka en konsultation'
 const sectionOneHeadline03 = 'verksamheter'
-const sectionOneParagraph03 = 'Våra etologer är utbildade i djurhållning, djurhälsa och smittskydd. Vi har också kompetens inom djurskydd, försöksdesign och avelsarbete. Vi kan erbjuda din verksamhet engagerade och sakkunniga konsulter. Våra etologer har nära samarbete med veterinär.'
+const sectionOneParagraph03 = 'Våra etologer är bland annat utbildade i etologi, djurhållning, djurhälsa, djurskydd, försöksdesign och smittskydd. Vi har en konsult som passar din verksamhet.'
 const sectionOneBtn03 = 'Boka en konsultation'
 
 //Section two
@@ -22,6 +25,8 @@ const sectionTwoParagraph03 = 'Vi skräddarsyr föreläsningen för dig! Alla v�
 const sectionTwoBtn03 = 'till föreläsningar'
 
 export default {
+  //Intro text
+  introText,
   //Section one
   sectionOneHeadline01,
   sectionOneParagraph01,

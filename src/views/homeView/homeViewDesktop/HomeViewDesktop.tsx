@@ -1,9 +1,10 @@
+import { useHistory } from "react-router-dom"
 
 import './HomeViewDesktop.css'
 import djuragare from '../img/djuragare.png'
 import kliniker from '../img/kliniker.png'
 import verksamheter from '../img/verksamheter.png'
-import homeviewImg from '../img/homeviewImg.png'
+import homeviewImg from '../img/homeviewImgB.png'
 import homeviewImg2 from '../img/homeviewImg3.jpg'
 import homeviewImg4 from '../img/homeviewImg4.jpg'
 import homeviewImg6 from '../img/homeviewImg6.jpg'
@@ -12,16 +13,21 @@ import sectionThreeImg from '../img/etolog-Johanna-Strandner.jpg'
 import sectionFourImg from '../img/cat.jpg'
 
 import HomeViewData from '../data/HomeViewData'
+import RoutingPath from '../../../routes/RoutingPath'
 
 export const HomeViewDesktop = () => {
-    const HomeViewSectionOneBox = (props: { img?: string, img2?: string, headline?: string, paragraph?: string, display?: string, btn?: string }) => {
+    const history = useHistory()
+    const HomeViewSectionOneBox = (props: { img?: string, img2?: string, headline?: string, paragraph?: string, display?: string, btn?: string, xx?: any }) => {
         return (
             <>
                 <div className="homeview-desktop-section-one-box">
                     <img src={props.img} alt="" className="homeview-desktop-img-desktop"></img>
                     <h2>{props.headline}</h2>
-                    <p>{props.paragraph}</p>
-                    <button className="homeview-desktop-button">{props.btn}</button>
+                    <span className="homeview-desktop-section-one-span">
+
+                        <p>{props.paragraph}</p>
+                        <button className="homeview-desktop-button">{props.btn}</button>
+                    </span>
                 </div>
             </>
         )
@@ -30,7 +36,7 @@ export const HomeViewDesktop = () => {
         return (
             <div>
                 {props.mirror === 'yes' ? (
-                    <div className="homeview-desktop-section-container sectionMirror">
+                    <div className="homeview-desktop-section-container-mirror">
                         <div className="homeview-desktop-section-right">
                             <h3>{props.headline}</h3>
                             <p>{props.paragraph}</p>
@@ -57,8 +63,14 @@ export const HomeViewDesktop = () => {
             </div>
         )
     }
+    // const LinkToPath = (xx: string) => {
+    //     history.push(xx)
+    // }
     return (
-        <div className="homeview-desktop-body">
+        <div className="homeview-desktop-wrapper">
+            <div className="homeview-desktop-intro-text">
+                <h4>{HomeViewData.introText}</h4>
+            </div>
             <div className="homeview-desktop-section-one">
                 <div>
                     <HomeViewSectionOneBox
@@ -67,6 +79,7 @@ export const HomeViewDesktop = () => {
                         headline={HomeViewData.sectionOneHeadline01}
                         paragraph={HomeViewData.sectionOneParagraph01}
                         btn={HomeViewData.sectionOneBtn01}
+                        xx={RoutingPath.varaEtologerView}
                     />
                 </div>
                 <div>
@@ -75,6 +88,7 @@ export const HomeViewDesktop = () => {
                         headline={HomeViewData.sectionOneHeadline02}
                         paragraph={HomeViewData.sectionOneParagraph02}
                         btn={HomeViewData.sectionOneBtn02}
+                        xx={RoutingPath.varaEtologerView}
                     />
                 </div>
                 <div>
@@ -83,13 +97,14 @@ export const HomeViewDesktop = () => {
                         headline={HomeViewData.sectionOneHeadline03}
                         paragraph={HomeViewData.sectionOneParagraph03}
                         btn={HomeViewData.sectionOneBtn03}
+                        xx={RoutingPath.varaEtologerView}
                     />
                 </div>
             </div>
             <img
                 src={homeviewImg}
                 alt=""
-                className="section-margin homeview-desktop-body-img"
+                className="homeview-desktop-img"
             ></img>
             <div className="section-margin homeViewSectionTwo">
                 <HomeViewSection
@@ -99,12 +114,7 @@ export const HomeViewDesktop = () => {
                     btn={HomeViewData.sectionTwoBtn01}
                 />
             </div>
-            <div className="border"></div>
-            <img
-                src={homeviewImg2}
-                alt=""
-                className="section-margin homeview-desktop-body-img2"
-            ></img>
+
             <div className="section-margin homeViewSectionThree">
                 <HomeViewSection
                     mirror="yes"
@@ -114,7 +124,6 @@ export const HomeViewDesktop = () => {
                     btn={HomeViewData.sectionTwoBtn02}
                 />
             </div>
-            <div className="border"></div>
             <div className="section-margin homeview-desktop-section-four">
                 <HomeViewSection
                     img={sectionFourImg}

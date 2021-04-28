@@ -1,3 +1,6 @@
+import { useHistory } from "react-router-dom"
+import RoutingPath from '../../../routes/RoutingPath'
+
 import './RadgivningViewDesktop.css'
 import RadgivningViewData from '../data/RadgivningViewData'
 import cat from '../img/cat4.jpg'
@@ -6,6 +9,7 @@ import radgivning from '../img/radgivning.png'
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
 export const RadgivningViewDesktop = () => {
+  const history = useHistory()
   return (
     <div className="radgivning-dekstop-wrapper background-white">
       <DefaulPageLayoutDesktop
@@ -24,7 +28,7 @@ export const RadgivningViewDesktop = () => {
             <p>
               {RadgivningViewData.sectionThreeParagraph}
             </p>
-            <button>{RadgivningViewData.sectionThreeButton}</button>
+            <button onClick={() => history.push(RoutingPath.varaEtologerView)}>{RadgivningViewData.sectionThreeButton}</button>
           </div>
         </div>
         <div className="radgivning-dekstop-section-three-img">
