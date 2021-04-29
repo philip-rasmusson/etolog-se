@@ -12,10 +12,24 @@ import { EtologBoxDesktop } from '../../../components/etologBox/etologBoxDesktop
 
 
 export const VaraEtologerViewDesktop = () => {
-    const ShowEtologer = etologer.map((etologer) => {
+    const showEtologer = etologer.map((etologer) => {
         return (
             <option value={etologer.id}>
                 {etologer.first_name} {etologer.last_name}
+            </option>
+        )
+    })
+    const showCategory = etologer.map((etologer) => {
+        return (
+            <option value={etologer.id}>
+                {etologer.lecture}
+            </option>
+        )
+    })
+    const showCity = etologer.map((etologer) => {
+        return (
+            <option value={etologer.city}>
+                {etologer.city}
             </option>
         )
     })
@@ -47,6 +61,20 @@ export const VaraEtologerViewDesktop = () => {
                 img={varaEtologer}
                 sectionTwoParagraph1={VaraEtologerViewData.sectionTwoParagraph1}
             />
+            <div className="vara-etologer-desktop-search-box-wrapper">
+                <select className="vara-etologer-select-box box-shadow">
+                    <option value="0">Välj etolog...</option>
+                    {showEtologer}
+                </select>
+                <select className="vara-etologer-select-box box-shadow">
+                    <option value="0">Välj kategori...</option>
+                    {showCategory}
+                </select>
+                <select className="vara-etologer-select-box box-shadow">
+                    <option value="0">Välj stad...</option>
+                    {showCity}
+                </select>
+            </div>
             <div className="vara-etologer-desktop-etologer-wrapper">
                 {EtologArray}
             </div>

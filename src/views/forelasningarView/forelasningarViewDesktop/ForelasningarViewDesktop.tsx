@@ -17,6 +17,7 @@ import categoryExotiska from "../img/CategoryBox/category-exotiska.jpg"
 import categoryRovdjur from "../img/CategoryBox/category-rovdjur.jpg"
 import categoryFaglar from "../img/CategoryBox/category-faglar.jpg"
 
+
 import { EtologBoxDesktop } from "../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop"
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
@@ -86,6 +87,8 @@ export const ForelasningarViewDesktop = () => {
         <CategoryIndex
           paragraph={ForelasningarViewData.categoryIndexHParagraph}
         />
+        <div className="forelasningar-desktop-selectbox-wrapper">
+        </div>
         <div className="forelasningar-desktop-etolog-box-wrapper background-white">
           {ShowEtologer}
         </div>

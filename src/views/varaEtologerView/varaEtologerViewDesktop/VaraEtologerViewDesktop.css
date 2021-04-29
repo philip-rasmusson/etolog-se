@@ -11,3 +11,10 @@
   padding-top: 5rem;
   padding-bottom: 7rem;
 }
+
+.vara-etologer-desktop-search-box-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin: 5rem auto 0 auto;
+}

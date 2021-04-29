@@ -10,6 +10,27 @@ import etologer from '../../../data/data-etologer.json'
 import { EtologBoxMobile } from '../../../components/etologBox/etologBoxMobile/EtologBoxMobile'
 
 export const VaraEtologerViewMobile = () => {
+    const showEtologer = etologer.map((etologer) => {
+        return (
+            <option value={etologer.id}>
+                {etologer.first_name} {etologer.last_name}
+            </option>
+        )
+    })
+    const showCategory = etologer.map((etologer) => {
+        return (
+            <option value={etologer.id}>
+                {etologer.lecture}
+            </option>
+        )
+    })
+    const showCity = etologer.map((etologer) => {
+        return (
+            <option value={etologer.city}>
+                {etologer.city}
+            </option>
+        )
+    })
     const ShowEtologer = etologer.map((etologer) => {
         return (
             <option value={etologer.id}>
@@ -35,7 +56,7 @@ export const VaraEtologerViewMobile = () => {
         }
     })
     return (
-        <div className="vara-etologer-mobile-wrapper">
+        <div className="vara-etologer-mobile-wrapper" id="vara-etologer-mobile-id">
             <DefaulPageLayoutMobile
                 pageTitle={VaraEtologerViewData.pageTitle}
                 pageSubheading={VaraEtologerViewData.pageSubheading}
@@ -44,6 +65,20 @@ export const VaraEtologerViewMobile = () => {
                 sectionTwoParagraph1={VaraEtologerViewData.sectionTwoParagraph1}
             // paragraphTwo={VaraEtologerViewData.paragraphTwo}
             />
+            <div className="vara-etologer-mobile-search-box-wrapper">
+                <select className="vara-etologer-select-box box-shadow">
+                    <option value="0">Välj etolog...</option>
+                    {showEtologer}
+                </select>
+                <select className="vara-etologer-select-box box-shadow">
+                    <option value="0">Välj kategori...</option>
+                    {showCategory}
+                </select>
+                <select className="vara-etologer-select-box box-shadow">
+                    <option value="0">Välj stad...</option>
+                    {showCity}
+                </select>
+            </div>
             <div className="vara-etologer-mobile-etologbox-wrapper">
                 {EtologArray}
             </div>

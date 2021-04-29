@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-button {
+button, .vara-etologer-select-box {
   border-radius: 2rem;
   background-color: #36536d;
   color: #f1f1f1;
