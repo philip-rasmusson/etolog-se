@@ -1,454 +1,278 @@
 [
   {
     "id": 1,
-    "first_name": "Anne",
-    "last_name": "Gager",
-    "desc": "Häst, enhörning och komodovaraner",
-    "phone": "203 831 1765",
-    "email": "agager0@yelp.com",
-    "city": "Tamberías",
-    "homepage": "www.google.com",
-    "lecture": ["hund", "katt", "broms"]
+    "first_name": "Irene",
+    "last_name": "Westerholm",
+    "desc": "Kamphundar",
+    "phone": "070 460 6740",
+    "email": "info@hundlaroverket.se",
+    "city": "Nynäshamn",
+    "homepage": "https://hundlaroverket.se/",
+    "lecture": ["hund"]
   },
+  
   {
     "id": 2,
-    "first_name": "Jesus",
-    "last_name": "Inman",
-    "desc": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-    "phone": "510 222 5906",
-    "email": "jinman1@so-net.ne.jp",
-    "city": "Kill"
+    "first_name": "Linda",
+    "last_name": "Strohmaier",
+    "desc": "Katt, hund, kanin, marsvin och fjäderfä",
+    "phone": "072 337 9800",
+    "email": "Info@djurkonsultenzed.se",
+    "city": "Frövi",
+    "homepage": "https://djurkonsultenzed.se/",
+    "lecture": ["hund", "katt", "fjäderfä","kanin","marsvin","enligt önskemål"]
   },
+  
   {
     "id": 3,
-    "first_name": "Ernst",
-    "last_name": "Kornilyev",
-    "desc": "Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.",
-    "phone": "349 863 4165",
-    "email": "ekornilyev2@webmd.com",
-    "city": "Tidili Mesfioua"
+    "first_name": "Paulina",
+    "last_name": "Lundberg",
+    "desc": "Häst, hund och katt",
+    "phone": "073 836 2534",
+    "email": "paulina.emilia.lundberg@gmail.com",
+    "city": "Linköping",
+    "homepage": "http://paulina-etolog.se/",
+    "lecture": ["häst", "hund", "katt", "inlärning", "flockdynamik","relation djur - människa"]
   },
+  
   {
     "id": 4,
-    "first_name": "Jonathan",
-    "last_name": "Basketter",
-    "desc": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
-    "phone": "934 465 7077",
-    "email": "jbasketter3@cafepress.com",
-    "city": "Ayagoz"
+    "first_name": "Jannice",
+    "last_name": "Kindsjö",
+    "desc": "Hund och djursjukvård",
+    "phone": "070 222 9557",
+    "email": "jannice@duochdjur.se",
+    "city": "Sundsvall",
+    "homepage": "http://www.duochdjur.se/",
+    "lecture": ["hund", "ljudrädsla", "dogparkour","hantering","vänligen vård","enligt önskemål"]
   },
+  
+  
   {
     "id": 5,
-    "first_name": "Vilhelmina",
-    "last_name": "Ondrich",
-    "desc": "Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-    "phone": "197 683 2178",
-    "email": "vondrich4@soundcloud.com",
-    "city": "Stepnica"
+    "first_name": "Anna-Maria",
+    "last_name": "Svedberg",
+    "desc": "Hund och katt",
+    "phone": "070 175 7387",
+    "email": "Anna-maria@etologica.se",
+    "city": "Härnösand",
+    "homepage": "http://etologica.se/",
+    "lecture": ["hund","katt","vattensköldpaddor","stress hos hund","berikning för hund","reaktiva hundar","kattens beteendebehov och problemlösning"]
   },
+  
+  
   {
     "id": 6,
-    "first_name": "Hayes",
-    "last_name": "Katz",
-    "desc": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "phone": "356 805 2488",
-    "email": "hkatz5@sun.com",
-    "city": "Srinagarindra"
+    "first_name": "Ann-Sofie",
+    "last_name": "Sandell",
+    "desc": "Häst, hund, katt och sällskapsdjur",
+    "phone": "070 686 3872",
+    "email": "info@djurkompassen.se ",
+    "city": "Näshulta",
+    "homepage": "https://www.djurkompassen.se/ ",
+    "lecture": ["hund", "katt", "häst","sällskapsdjur","klickerträning"]
   },
+  
+  
   {
     "id": 7,
-    "first_name": "Corney",
-    "last_name": "Gurr",
-    "desc": "In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.",
-    "phone": "100 959 2612",
-    "email": "cgurr6@netvibes.com",
-    "city": "Tangwang"
+    "first_name": "Charlotte",
+    "last_name": "Friis",
+    "desc": "Hund",
+    "phone": "0045 505 94 835",
+    "email": "lifewadog@gmail.com",
+    "city": "Göteborg",
+    "homepage": "https://lifewithadog.org/",
+    "lecture": ["hundbeteende"]
   },
+  
+  
   {
     "id": 8,
-    "first_name": "Davidde",
-    "last_name": "Pleven",
-    "desc": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus.",
-    "phone": "450 330 1235",
-    "email": "dpleven7@cornell.edu",
-    "city": "Peimei"
+    "first_name": "Emelie",
+    "last_name": "De Boussard",
+    "desc": "Häst, hund och smådjur",
+    "phone": "070 989 2459",
+    "email": "emelie@kognitionsetologerna.se",
+    "city": "Borås",
+    "homepage": "https://kognitionsetologerna.se/",
+    "lecture": ["hundens beteende och kognition", "hästens beteende och kognition", "övriga sällskapsdjur"]
   },
+  
+  
   {
     "id": 9,
-    "first_name": "Merl",
-    "last_name": "Puckey",
-    "desc": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    "phone": "731 470 9066",
-    "email": "mpuckey8@gov.uk",
-    "city": "Międzyrzecz"
+    "first_name": "Nathalie",
+    "last_name": "Nilsson",
+    "desc": "Hund",
+    "phone": "073 627 6599",
+    "email": "nathalie@hundiagavle.se",
+    "city": "Gävle",
+    "homepage": "https://hundiagavle.se/",
+    "lecture": ["hund"]
   },
+  
+  
   {
     "id": 10,
-    "first_name": "Sherilyn",
-    "last_name": "Townsley",
-    "desc": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.",
-    "phone": "242 508 9975",
-    "email": "stownsley9@parallels.com",
-    "city": "Nordeste"
+    "first_name": "Eva",
+    "last_name": "Wennman",
+    "desc": "Katt",
+    "phone": "073 935 3699",
+    "email": "eva.w@hotmail.com",
+    "city": "Uppsala",
+    "homepage": "https://catcomplete.se/",
+    "lecture": ["katter – problembeteenden (etologi)", "kost och näring (nutriotion)", "relationen mellan katt och människa (antrozoologi)"]
   },
+  
+  
   {
     "id": 11,
-    "first_name": "Victoir",
-    "last_name": "Skellorne",
-    "desc": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
-    "phone": "387 769 7054",
-    "email": "vskellornea@utexas.edu",
-    "city": "Ţāqchah Khānah"
+    "first_name": "Anna",
+    "last_name": "Harenius",
+    "desc": "Kanin och djurvälfärd",
+    "phone": "070 768 0559",
+    "email": "Anna.harenius@gmail.com",
+    "city": "Uppsala",
+    "homepage": "https://skvf.se/",
+    "lecture": ["kanin", "djurskydd/djurvälfärd/djuretik"]
   },
+  
+  
   {
     "id": 12,
-    "first_name": "Hube",
-    "last_name": "Nudds",
-    "desc": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl.",
-    "phone": "342 912 4811",
-    "email": "hnuddsb@globo.com",
-    "city": "Ängelholm"
+    "first_name": "Linn",
+    "last_name": "Larsson",
+    "desc": "Hund, rovdjur och djurpark",
+    "phone": "070 473 6176",
+    "email": "Linn.km.larsson@gmail.com",
+    "city": "Orsa",
+    "homepage": "linkedin.com/in/linn-larsson-b2a31314a",
+    "lecture": ["djurparksdjur", "berikning", "träning", "djurvälfärd", "rovdjur"]
   },
+  
+  
   {
     "id": 13,
-    "first_name": "Suzette",
-    "last_name": "Smorthwaite",
-    "desc": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-    "phone": "683 558 0682",
-    "email": "ssmorthwaitec@cpanel.net",
-    "city": "San Isidro de Lules"
+    "first_name": "Renate",
+    "last_name": " Larssen",
+    "desc": "Häst",
+    "phone": "072 565 3438",
+    "email": " renate.larssen@hotmail.com",
+    "city": " Linköping",
+    "homepage": " https://hippologiskt.com/",
+    "lecture": ["hästar", "hästars beteende och träning", "vetenskapsbaserad hästhållning", "enligt önskemål"]
   },
+  
+  
   {
     "id": 14,
-    "first_name": "Wendel",
-    "last_name": "Rewcassell",
-    "desc": "Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius.",
-    "phone": "388 317 4101",
-    "email": "wrewcasselld@friendfeed.com",
-    "city": "Xinning"
+    "first_name": "Emilie",
+    "last_name": "Wass Grunander",
+    "desc": "Häst och katt",
+    "phone": "073 780 2592",
+    "email": "emilie_wass@hotmail.se",
+    "city": "Uppsala",
+    "homepage": "ingen hemsida",
+    "lecture": ["inga föreläsningar"]
   },
+  
+  
   {
     "id": 15,
-    "first_name": "Fionna",
-    "last_name": "Romanetti",
-    "desc": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.",
-    "phone": "821 699 3762",
-    "email": "fromanettie@amazon.de",
-    "city": "Jintao"
+    "first_name": "Anna",
+    "last_name": "Roos",
+    "desc": "Hund",
+    "phone": "070 768 7131",
+    "email": "Sprollan97@live.se",
+    "city": "Stockholm",
+    "homepage": ". ingen hemsida",
+    "lecture": ["hund"]
   },
+  
+  
   {
     "id": 16,
-    "first_name": "Aurthur",
-    "last_name": "Spaughton",
-    "desc": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
-    "phone": "943 857 1218",
-    "email": "aspaughtonf@cmu.edu",
-    "city": "Heping"
+    "first_name": "Moa",
+    "last_name": "Nygren",
+    "desc": "Katt",
+    "phone": "070 274 5848",
+    "email": "Moa@nygren.ch",
+    "city": "Norrtälje",
+    "homepage": "ingen hemsida",
+    "lecture": ["inga föreläsningar"]
   },
   {
     "id": 17,
-    "first_name": "Anabal",
-    "last_name": "Fincke",
-    "desc": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
-    "phone": "651 375 1541",
-    "email": "afinckeg@stumbleupon.com",
-    "city": "Alenquer"
+    "first_name": "Ulrica",
+    "last_name": "Ahlrot",
+    "desc": "Katt och djurparksdjur",
+    "phone": "inget nummer",
+    "email": "ulricaahlrot@etolog.se",
+    "city": "Göteborg",
+    "homepage": "ingen hemsida",
+    "lecture": ["katt", "vilda kattdjur", "djurparksdjur"]
   },
+  
   {
     "id": 18,
-    "first_name": "Kaycee",
-    "last_name": "Rizzelli",
-    "desc": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue.",
-    "phone": "356 470 7005",
-    "email": "krizzellih@harvard.edu",
-    "city": "Cavaillon"
+    "first_name": "Emma",
+    "last_name": "Almquist",
+    "desc": "Hund, kanin och smågnagare",
+    "phone": "inget nummer",
+    "email": "emmaalmquist@etolog.se",
+    "city": "Lund",
+    "homepage": "https://djurvetologen.se/",
+    "lecture": ["hund", "kanin", "smågnagare", "berikning"]
   },
+  
   {
     "id": 19,
-    "first_name": "Kristen",
-    "last_name": "Manie",
-    "desc": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis.",
-    "phone": "734 491 7175",
-    "email": "kmaniei@ow.ly",
-    "city": "Shatian"
+    "first_name": "Johanna",
+    "last_name": "Strander",
+    "desc": "Hund, och nöt",
+    "phone": "inget nummer",
+    "email": "johannastrandner@etolog.se",
+    "city": "Göteborg",
+    "homepage": "https://www.facebook.com/fotografjohannastrandner",
+    "lecture": ["hund", "hundträning", "djurfotografering"]
   },
+  
   {
     "id": 20,
-    "first_name": "Moselle",
-    "last_name": "Broomer",
-    "desc": "Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis.",
-    "phone": "365 413 6031",
-    "email": "mbroomerj@auda.org.au",
-    "city": "Binonga"
+    "first_name": "Astrid",
+    "last_name": "Söderqvist",
+    "desc": "Hund, katt och gris",
+    "phone": "inget nummer",
+    "email": "astridsoderqvist@etolog.se",
+    "city": "Linköping",
+    "homepage": "https://emotionsetologen.se/",
+    "lecture": ["hund", "katt", "gris"]
   },
+  
+  
   {
     "id": 21,
-    "first_name": "Karel",
-    "last_name": "Rudderham",
-    "desc": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.",
-    "phone": "553 289 4459",
-    "email": "krudderhamk@bravesites.com",
-    "city": "Anfusi"
+    "first_name": "Victoria",
+    "last_name": "Källström",
+    "desc": "Hund, kanin och gnagare",
+    "phone": "inget nummer",
+    "email": "victoriakallstrom@etolog.se",
+    "city": "Göteborg",
+    "homepage": "https://www.facebook.com/EtoWise-Victoria-K%C3%A4llstr%C3%B6m-114610217041132",
+    "lecture": ["hund","kanin","gnagare"]
   },
+  
+  
   {
     "id": 22,
-    "first_name": "Brander",
-    "last_name": "Perham",
-    "desc": "Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis.",
-    "phone": "978 262 3084",
-    "email": "bperhaml@dion.ne.jp",
-    "city": "Fuding"
-  },
-  {
-    "id": 23,
-    "first_name": "Clair",
-    "last_name": "Turpie",
-    "desc": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-    "phone": "785 345 2916",
-    "email": "cturpiem@boston.com",
-    "city": "Xiaochuan"
-  },
-  {
-    "id": 24,
-    "first_name": "Robin",
-    "last_name": "Sugden",
-    "desc": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque.",
-    "phone": "616 823 3174",
-    "email": "rsugdenn@oaic.gov.au",
-    "city": "Calarcá"
-  },
-  {
-    "id": 25,
-    "first_name": "Fidelity",
-    "last_name": "Hassey",
-    "desc": "Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.",
-    "phone": "237 513 8181",
-    "email": "fhasseyo@livejournal.com",
-    "city": "Novo-Peredelkino"
-  },
-  {
-    "id": 26,
-    "first_name": "Raul",
-    "last_name": "Johnsson",
-    "desc": "Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-    "phone": "613 377 5558",
-    "email": "rjohnssonp@360.cn",
-    "city": "Vitebsk"
-  },
-  {
-    "id": 27,
-    "first_name": "Selig",
-    "last_name": "Fores",
-    "desc": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl.",
-    "phone": "287 724 1758",
-    "email": "sforesq@fda.gov",
-    "city": "Colcabamba"
-  },
-  {
-    "id": 28,
-    "first_name": "Petr",
-    "last_name": "Coogan",
-    "desc": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.",
-    "phone": "662 746 8990",
-    "email": "pcooganr@seesaa.net",
-    "city": "Santa Fe"
-  },
-  {
-    "id": 29,
-    "first_name": "Arron",
-    "last_name": "Surmon",
-    "desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-    "phone": "120 491 8211",
-    "email": "asurmons@psu.edu",
-    "city": "Ndélé"
-  },
-  {
-    "id": 30,
-    "first_name": "Dmitri",
-    "last_name": "McGarry",
-    "desc": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.",
-    "phone": "769 489 7343",
-    "email": "dmcgarryt@irs.gov",
-    "city": "Samparna"
-  },
-  {
-    "id": 31,
-    "first_name": "Cordy",
-    "last_name": "Bielfeld",
-    "desc": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-    "phone": "959 119 0361",
-    "email": "cbielfeldu@engadget.com",
-    "city": "Luniao"
-  },
-  {
-    "id": 32,
-    "first_name": "Northrup",
-    "last_name": "Doxsey",
-    "desc": "Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.",
-    "phone": "535 891 3484",
-    "email": "ndoxseyv@skyrock.com",
-    "city": "Senada"
-  },
-  {
-    "id": 33,
-    "first_name": "Rora",
-    "last_name": "Garcia",
-    "desc": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.",
-    "phone": "253 786 0699",
-    "email": "rgarciaw@sourceforge.net",
-    "city": "Pitangui"
-  },
-  {
-    "id": 34,
-    "first_name": "Claresta",
-    "last_name": "Nosworthy",
-    "desc": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.",
-    "phone": "358 875 5938",
-    "email": "cnosworthyx@oracle.com",
-    "city": "Ni’ao"
-  },
-  {
-    "id": 35,
-    "first_name": "Ewen",
-    "last_name": "Linsley",
-    "desc": "Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
-    "phone": "458 160 5296",
-    "email": "elinsleyy@themeforest.net",
-    "city": "Cibojong"
-  },
-  {
-    "id": 36,
-    "first_name": "Claus",
-    "last_name": "Labbey",
-    "desc": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl.",
-    "phone": "472 290 0763",
-    "email": "clabbeyz@cpanel.net",
-    "city": "Xia Dawo"
-  },
-  {
-    "id": 37,
-    "first_name": "Nils",
-    "last_name": "Fley",
-    "desc": "Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.",
-    "phone": "982 649 9464",
-    "email": "nfley10@washington.edu",
-    "city": "Cafayate"
-  },
-  {
-    "id": 38,
-    "first_name": "Aigneis",
-    "last_name": "Gatehouse",
-    "desc": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
-    "phone": "688 212 6779",
-    "email": "agatehouse11@microsoft.com",
-    "city": "Rybinsk"
-  },
-  {
-    "id": 39,
-    "first_name": "Etty",
-    "last_name": "Tinghill",
-    "desc": "Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
-    "phone": "930 456 4242",
-    "email": "etinghill12@studiopress.com",
-    "city": "Ubá"
-  },
-  {
-    "id": 40,
-    "first_name": "Avis",
-    "last_name": "Cordeux",
-    "desc": "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue.",
-    "phone": "470 159 8747",
-    "email": "acordeux13@yale.edu",
-    "city": "Caringin"
-  },
-  {
-    "id": 41,
-    "first_name": "Gannon",
-    "last_name": "Hullock",
-    "desc": "Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "phone": "314 488 8732",
-    "email": "ghullock14@drupal.org",
-    "city": "Dadap"
-  },
-  {
-    "id": 42,
-    "first_name": "Renate",
-    "last_name": "Janusik",
-    "desc": "Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.",
-    "phone": "974 230 5567",
-    "email": "rjanusik15@live.com",
-    "city": "Bila"
-  },
-  {
-    "id": 43,
-    "first_name": "Jinny",
-    "last_name": "Rickson",
-    "desc": "In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
-    "phone": "482 807 9098",
-    "email": "jrickson16@icio.us",
-    "city": "Changdai"
-  },
-  {
-    "id": 44,
-    "first_name": "Bronson",
-    "last_name": "Potes",
-    "desc": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    "phone": "254 966 3528",
-    "email": "bpotes17@pen.io",
-    "city": "Chigorodó"
-  },
-  {
-    "id": 45,
-    "first_name": "Jilly",
-    "last_name": "MacCartan",
-    "desc": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
-    "phone": "107 771 7643",
-    "email": "jmaccartan18@de.vu",
-    "city": "Itapuranga"
-  },
-  {
-    "id": 46,
-    "first_name": "Faustina",
-    "last_name": "Edmed",
-    "desc": "Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-    "phone": "236 945 3523",
-    "email": "fedmed19@sohu.com",
-    "city": "Jomsom"
-  },
-  {
-    "id": 47,
-    "first_name": "Marieann",
-    "last_name": "Schimonek",
-    "desc": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-    "phone": "248 628 3561",
-    "email": "mschimonek1a@army.mil",
-    "city": "Kedian"
-  },
-  {
-    "id": 48,
-    "first_name": "Daniel",
-    "last_name": "Pyett",
-    "desc": "Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-    "phone": "809 300 5176",
-    "email": "dpyett1b@intel.com",
-    "city": "Nularan"
-  },
-  {
-    "id": 49,
-    "first_name": "Candida",
-    "last_name": "Brydell",
-    "desc": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-    "phone": "209 529 5926",
-    "email": "cbrydell1c@deliciousdays.com",
-    "city": "Estrada"
-  },
-  {
-    "id": 50,
-    "first_name": "Justinian",
-    "last_name": "Soares",
-    "desc": "Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    "phone": "325 918 0160",
-    "email": "jsoares1d@umich.edu",
-    "city": "La Cesira"
+    "first_name": "Ellen",
+    "last_name": "Kilander",
+    "desc": "Häst och hund",
+    "phone": "inget nummer",
+    "email": "info@etolog.se ",
+    "city": "Göteborg",
+    "homepage": "etolog.se ",
+    "lecture": ["häst"]
   }
 ]

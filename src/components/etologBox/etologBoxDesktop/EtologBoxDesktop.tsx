@@ -10,7 +10,7 @@ import {
 
 export const EtologBoxDesktop = (props: { id?: number, name?: string, img?: string, description?: string, phone?: string, email?: string, city?: string }) => {
   return (
-    <div className="etolog-desktop-box">
+    <div className="etolog-desktop-box font-grey">
       <div className="etolog-desktop-box-headline">{props.name}</div>
       <img src={props.img} alt="" className="box-shadow etolog-desktop-box-img"></img>
       <div className="etolog-desktop-box-paragraph">{props.description}</div>

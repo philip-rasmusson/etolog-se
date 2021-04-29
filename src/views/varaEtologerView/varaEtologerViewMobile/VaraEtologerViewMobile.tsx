@@ -10,6 +10,12 @@ import etologer from '../../../data/data-etologer.json'
 import { EtologBoxMobile } from '../../../components/etologBox/etologBoxMobile/EtologBoxMobile'
 
 export const VaraEtologerViewMobile = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
     const showEtologer = etologer.map((etologer) => {
         return (
             <option value={etologer.id}>
@@ -83,7 +89,7 @@ export const VaraEtologerViewMobile = () => {
                 {EtologArray}
             </div>
             <div className="vara-etologer-mobile-button">
-                <button>Till toppen</button>
+                <button onClick={() => scrollToTop()}>Till toppen</button>
             </div>
         </div>
     )

@@ -1,11 +1,13 @@
 .etolog-desktop-box {
-  max-width: 16rem;
-  padding: 2rem 1rem;
-  margin: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  border-radius: 2rem;
+  border: grey solid 1px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+  width: 13rem;
+  padding: 2rem 1rem;
 }
 
 .etolog-desktop-box-headline {
@@ -15,7 +17,7 @@
 
 .etolog-desktop-box-img {
   width: 30vw;
-  max-width: 12rem;
+  max-width: 10rem;
   border-radius: 2rem;
   margin-top: 2rem;
 }
@@ -23,7 +25,8 @@
 .etolog-desktop-box-paragraph {
   padding: 2rem 0;
   text-align: justify;
-  font-size: smaller;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .etolog-desktop-box-phone, .etolog-desktop-box-email, .etolog-desktop-box-city {

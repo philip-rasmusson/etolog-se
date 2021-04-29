@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import './VaraEtologerViewDesktop.css'
 
 import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
@@ -5,6 +7,8 @@ import varaEtologer from '../img/etologer.png'
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
 import etologer from '../../../data/data-etologer.json'
+import city from '../../../data/data-city.json'
+import categories from '../../../data/data-categories.json'
 
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 import { EtologBoxDesktop } from '../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop'
@@ -12,6 +16,14 @@ import { EtologBoxDesktop } from '../../../components/etologBox/etologBoxDesktop
 
 
 export const VaraEtologerViewDesktop = () => {
+
+    const [filterCategory, setFilterCategory] = useState('')
+
+    const selectCategory = () => {
+        const x = document.getElementById('vara-etologer-select-box')?.nodeValue
+        console.log(x)
+    }
+
     const showEtologer = etologer.map((etologer) => {
         return (
             <option value={etologer.id}>
@@ -19,22 +31,34 @@ export const VaraEtologerViewDesktop = () => {
             </option>
         )
     })
-    const showCategory = etologer.map((etologer) => {
+
+    // const showLecture = () => {
+    //     for (let i = 0; i < VaraEtologerViewData.lectures.length; i++) {
+    //         console.log(VaraEtologerViewData.lectures)
+    //         return (
+    //             <option value={i}>
+    //                 {VaraEtologerViewData.lectures[i]}
+    //             </option>)
+    //     }
+    // }
+
+    const showCategory = categories.map((categories) => {
+
         return (
-            <option value={etologer.id}>
-                {etologer.lecture}
+            <option value={categories.category}>
+                {categories.category}
             </option>
         )
     })
-    const showCity = etologer.map((etologer) => {
+    const showCity = city.map((city) => {
         return (
-            <option value={etologer.city}>
-                {etologer.city}
+            <option value={city.key}>
+                {city.value}
             </option>
         )
     })
     const EtologArray = etologer.map((etologer) => {
-        if (etologer.id < 7) {
+        if (etologer.desc.includes(filterCategory)) {
             return (
                 <div className="vara-etologer-etolog-box">
                     <EtologBoxDesktop
@@ -66,12 +90,11 @@ export const VaraEtologerViewDesktop = () => {
                     <option value="0">Välj etolog...</option>
                     {showEtologer}
                 </select>
-                <select className="vara-etologer-select-box box-shadow">
+                <select id="vara-etologer-select-box" className="vara-etologer-select-box box-shadow" onChange={() => selectCategory()}>
                     <option value="0">Välj kategori...</option>
                     {showCategory}
                 </select>
                 <select className="vara-etologer-select-box box-shadow">
-                    <option value="0">Välj stad...</option>
                     {showCity}
                 </select>
             </div>
