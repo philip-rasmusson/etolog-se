@@ -9,7 +9,6 @@ const  sectionTwoParagraph1 = 'Hitta den perfekta etologen här'
 
 
 //Section Three
-const sectionThreeHeadline = "Hitta den perfekta Etologen här"
 const sectionThreeParagraph = "Det här är våra vaniligaste föreläsningskategorier. Klicka på en kategori för att få se vilka etologer som erbjuder föreläsningar inom detta ämne. Givetvis kan vi skräddarsy en föreläsning enligt önskemål, maila då till info@etolog.se"
 
 //Categories
@@ -36,7 +35,6 @@ export default {
   sectionTwoParagraph1, 
   imgPlacement,
   pageParagraph1, 
-  sectionThreeHeadline,
   sectionThreeParagraph,
   category01,
   category02,

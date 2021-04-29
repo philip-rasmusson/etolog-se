@@ -3,6 +3,23 @@
   background-color: #f1f1f1;
 }
 
+/* Intro text */
+
+.homeview-mobile-intro-text {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10vw;
+}
+
+.homeview-mobile-intro-text p, .homeview-mobile-section-wrapper p {
+  font-size: 4vw;
+  font-weight: 300;
+  padding: 0;
+  text-align: justify;
+}
+
+/* Section One */
+
 .homeview-mobile-section-one {
   flex-direction: column;
   margin: 0;
@@ -18,102 +35,39 @@
   margin: 0;
 }
 
-.homeview-mobile-section-one div img {
-  width: 100%;
-  max-width: 100%;
-  border-radius: 0;
-  box-shadow: #777 0 0.4rem 0.4rem;
-}
-
-.homeview-mobile-section-one div p {
-  max-width: 80%;
-  text-align: justify;
-  margin-bottom: 0;
-}
-
-.homeview-mobile-section-one-box {
-  padding: 0;
-  margin: 2vw 0;
-}
-
-.homeview-mobile-section-one-box .button {
-  display: flex;
-}
-
-.homeview-mobile-section-one-box h2 {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.homeview-mobile-section-one-box img, .homeview-mobile-body-img, .homeview-mobile-body-img2 {
-  margin: 15vw 0;
-}
-
-.homeview-mobile-section-one-box p, .homeview-mobile-section-one-box h3 {
-  margin: 6vw 0;
-}
-
-/*Section*/
-
-.homeview-mobile-section-container {
+.homeview-mobile-section-wrapper {
   display: flex;
   flex-direction: column;
-  margin: auto;
   justify-content: space-around;
-}
-
-.homeview-mobile-section-left, .homeview-mobile-section-right {
-  margin: 0 4vw;
-}
-
-.homeview-mobile-section-left img {
-  display: none;
-}
-
-.homeview-mobile-section-left {
-  margin: auto;
-}
-
-.homeview-mobile-section-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: auto;
   text-align: center;
-  margin-bottom: 10vw;
+  padding-bottom: 10vw;
+  width: 80%;
 }
 
-.homeview-mobile-body-img, .homeview-mobile-body-img2 {
-  display: flex;
-  width: 100%;
+.homeview-mobile-img, .homeview-mobile-img2 {
   box-shadow: #777 0 0.4rem 0.4rem;
+  display: flex;
+  margin: 15vw 0;
+  width: 100%;
 }
 
-.homeview-mobile-section-right h3, .homeview-mobile-section-right p, .homeview-mobile-section-right button {
+.homeview-mobile-img2 {
+  opacity: 0.8;
+}
+
+.homeview-mobile-section-wrapper h3, .homeview-mobile-section-wrapper p, .homeview-mobile-section-wrapper button {
   margin: 1rem 0;
 }
 
-.homeview-mobile-section-right h3 {
+.homeview-mobile-section-wrapper h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-.homeview-mobile-section-right p {
-  max-width: 25rem;
-  text-align: justify;
-}
-
-.homeview-mobile-section-right button {
+.homeview-mobile-section-wrapper button {
   margin: auto;
   display: flex;
-}
-
-.homeview-mobile-img-mobile {
-  display: flex;
-}
-
-.homeview-mobile-button {
-  display: block;
-  margin-top: 6vw;
 }

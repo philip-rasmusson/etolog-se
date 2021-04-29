@@ -9,12 +9,12 @@
 
 .footer-mobile-container-left {
     margin: auto;
-    max-width: 90%;
+    width: 80%;
     margin-top: 0;
 }
 
 .footer-mobile-container-left h1 {
-    font-size: 15vw;
+    font-size: 12vw;
     letter-spacing: 3vw;
     padding: 0;
     margin: 1rem auto 1vw 0;
@@ -24,6 +24,8 @@
 
 .footer-mobile-container-left p {
     font-size: 0.7rem;
+    max-width: 30rem;
+    margin: auto;
 }
 
 .footer-mobile-container-right {
@@ -32,12 +34,12 @@
 }
 
 .footer-mobile-container-right-boka {
-    font-size: 18vw;
+    font-size: 15vw;
     letter-spacing: 3vw;
     background-color: #f1f1f1;
     color: #2c3741;
     width: fit-content;
-    margin: auto;
+    margin: 2rem auto;
     padding: 0 3vw;
     border-radius: 7vw;
 }

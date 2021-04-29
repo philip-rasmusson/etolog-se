@@ -14,6 +14,7 @@
 .default-page-mobile-section-one h1 {
   font-size: 7vw;
   font-weight: 400;
+  letter-spacing: 2px;
   margin: 2rem 0;
   text-align: center;
   text-transform: uppercase;
@@ -37,27 +38,33 @@
 
 /* Section two */
 
-.default-page-mobile-section-two {
+.default-page-mobile-section-two-wrapper {
+  display: grid;
   background: none;
-  width: fit-content;
-  padding: 2rem 0;
-  margin: auto;
   box-shadow: none;
-  width: 80%;
+  padding: 3rem 0;
+  width: 100%;
 }
 
-.default-page-mobile-section-two p {
-  width: 100%;
-  max-width: 40rem;
-  font-weight: 300;
-  font-size: 4vw;
-  text-align: justify;
+.default-page-mobile-section-two-wrapper p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 5vw;
+  text-align: center;
+  text-shadow: #000000 2px 1px 6px;
+  width: 80%;
+  z-index: 100;
+}
+
+.default-page-mobile-section-two-wrapper p, .default-page-mobile-section-two-wrapper img {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  align-self: center;
+  justify-self: center;
 }
 
 .default-page-mobile-section-img-mobile {
   box-shadow: #777 0 0.4rem 0.4rem;
-  display: block;
-  margin-top: 3rem;
-  opacity: 0.8;
+  opacity: 0.4;
   width: 100%;
 }

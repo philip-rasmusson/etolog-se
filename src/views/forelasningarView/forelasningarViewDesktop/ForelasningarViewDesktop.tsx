@@ -21,7 +21,7 @@ import { EtologBoxDesktop } from "../../../components/etologBox/etologBoxDesktop
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
 export const ForelasningarViewDesktop = () => {
-  const CategoryIndex = (props: { headline: string, paragraph: string }) => {
+  const CategoryIndex = (props: { headline?: string, paragraph: string }) => {
     return (
       <div className="forelasningar-desktop-section-two background-white font-grey">
         <h1 className="font-upper">{props.headline}</h1>

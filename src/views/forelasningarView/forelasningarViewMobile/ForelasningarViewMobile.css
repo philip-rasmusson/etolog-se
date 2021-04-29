@@ -1,8 +1,5 @@
 .forelasningar-mobile-wrapper {
-  background-color: #f1f1f1;
-  color: #454545;
   margin: 0 auto;
-  position: relative;
 }
 
 .forelasningar-mobile-section-two {
@@ -12,10 +9,11 @@
 }
 
 .forelasningar-mobile-section-two p {
-  max-width: 36rem;
-  margin: 1rem auto 3rem auto;
-  padding: 0 5vw;
+  margin: 0 auto 3rem auto;
+  width: 80%;
+  font-weight: 300;
   font-size: 3vw;
+  text-align: justify;
 }
 
 .forelasningar-mobile-category-select {
@@ -31,34 +29,35 @@
 }
 
 .forelasningar-mobile-category-inner-box {
-  position: relative;
+  display: grid;
 }
 
 .forelasningar-mobile-category-inner-box img {
   border-radius: 2rem;
-  opacity: 0.6;
+  opacity: 0.7;
   margin: 1rem;
 }
 
 .forelasningar-mobile-category-inner-box:hover img {
   opacity: 1;
-  cursor: pointer;
 }
 
 .forelasningar-mobile-category-inner-box h4 {
-  top: 7vw;
-  text-align: center;
+  color: #fff;
+  font-size: 5vw;
+  font-weight: 400;
+  text-shadow: rgba(0, 0, 0, 0.651) 3px 5px 7px;
+  text-transform: uppercase;
+  width: 35vw;
   z-index: 100;
-  font-size: 6vw;
 }
 
-.forelasningar-mobile-vertical-center {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.forelasningar-mobile-category-inner-box img, .forelasningar-mobile-category-inner-box h4 {
+  align-self: center;
+  cursor: pointer;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  justify-self: center;
 }
 
 .forelasningar-mobile-vertical-center, .forelasningar-mobile-category-inner-box img {

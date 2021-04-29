@@ -39,9 +39,9 @@ export const VaraEtologerViewMobile = () => {
             <DefaulPageLayoutMobile
                 pageTitle={VaraEtologerViewData.pageTitle}
                 pageSubheading={VaraEtologerViewData.pageSubheading}
-                paragraph={VaraEtologerViewData.paragraph}
+                pageParagraph1={VaraEtologerViewData.pageParagraph1}
                 imgMobile={etologerMobile}
-                paragraphOne={VaraEtologerViewData.paragraphOne}
+                sectionTwoParagraph1={VaraEtologerViewData.sectionTwoParagraph1}
             // paragraphTwo={VaraEtologerViewData.paragraphTwo}
             />
             <div className="vara-etologer-mobile-etologbox-wrapper">

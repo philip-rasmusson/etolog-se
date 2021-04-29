@@ -12,10 +12,9 @@ export const KonsultuppdragViewMobile = () => {
             <DefaulPageLayoutMobile
                 pageTitle={KonsultuppdragViewData.pageTitle}
                 pageSubheading={KonsultuppdragViewData.pageSubheading}
-                paragraph={KonsultuppdragViewData.paragraph}
+                pageParagraph1={KonsultuppdragViewData.pageParagraph1}
                 imgMobile={konsultuppdragMobile}
-                paragraphOne={KonsultuppdragViewData.paragraphOne}
-                paragraphTwo={KonsultuppdragViewData.paragraphTwo}
+                sectionTwoParagraph1={KonsultuppdragViewData.sectionTwoParagraph1}
             />
             <div className="forelasning-mobile-white-space"></div>
         </div>
