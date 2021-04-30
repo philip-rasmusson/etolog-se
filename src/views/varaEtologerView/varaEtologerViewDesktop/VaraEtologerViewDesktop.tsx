@@ -12,6 +12,7 @@ import categories from '../../../data/data-categories.json'
 
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 import { EtologBoxDesktop } from '../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop'
+import { AnyARecord } from 'node:dns'
 
 
 
@@ -19,9 +20,19 @@ export const VaraEtologerViewDesktop = () => {
 
     const [filterCategory, setFilterCategory] = useState('')
 
-    const selectCategory = () => {
-        const x = document.getElementById('vara-etologer-select-box')?.nodeValue
-        console.log(x)
+    // const handleSelectedCategoryChange = (event: any, target: keyof createNewProduct) => {
+    //     const find = (productCategories.find(({ productCategoryName }) => productCategoryName === event.target.value))
+    //     setProduct({ ...product, [target]: find?._id })
+    // }
+
+    // const selectCategoryB = () => {
+    //     return <select onChange={(event) => handleSelectedCategoryChange(event, 'productCategory')} >
+    //         {productCategories.map((x: productCategoryNameId) => <option key={x?._id}>{x?.productCategoryName}</option>)}
+    //     </select>
+    // }
+
+    const selectCategory = (event: any) => {
+        setFilterCategory(event)
     }
 
     const showEtologer = etologer.map((etologer) => {
@@ -42,11 +53,11 @@ export const VaraEtologerViewDesktop = () => {
     //     }
     // }
 
-    const showCategory = categories.map((categories) => {
+    const showCategory = categories.map((x) => {
 
         return (
-            <option value={categories.category}>
-                {categories.category}
+            <option value={x.category}>
+                {x.category}
             </option>
         )
     })
@@ -90,7 +101,7 @@ export const VaraEtologerViewDesktop = () => {
                     <option value="0">Välj etolog...</option>
                     {showEtologer}
                 </select>
-                <select id="vara-etologer-select-box" className="vara-etologer-select-box box-shadow" onChange={() => selectCategory()}>
+                <select id="vara-etologer-select-box" className="vara-etologer-select-box box-shadow" onChange={(event) => selectCategory(event.target.value)}>
                     <option value="0">Välj kategori...</option>
                     {showCategory}
                 </select>
