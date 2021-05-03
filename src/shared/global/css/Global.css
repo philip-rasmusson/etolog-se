@@ -12,6 +12,7 @@
 .link-nav {
   color: #f1f1f1;
   text-decoration: none;
+  display: none;
 }
 
 button, .vara-etologer-select-box {
