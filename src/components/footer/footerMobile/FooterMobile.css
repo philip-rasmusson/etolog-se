@@ -45,12 +45,12 @@
     text-decoration: none;
 }
 
-.footer-mobile-container-right-social-media {
+.footer-mobile-social-media-icons-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.footer-mobile-container-right-social-media div {
+.footer-mobile-social-media-icons-wrapper a {
     padding: 1rem 1rem 0 1rem;
     font-size: 18vw;
     color: rgb(218, 211, 127);

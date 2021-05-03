@@ -49,12 +49,12 @@
     text-decoration: none;
 }
 
-.footer-desktop-container-right-social-media {
+.footer-desktop-social-media-icons-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.footer-desktop-container-right-social-media div {
+.footer-desktop-social-media-icons-wrapper a {
     padding: 1rem;
     font-size: 4rem;
     color: rgb(218, 211, 127);

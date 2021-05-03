@@ -11,7 +11,7 @@
 
 .header-desktop-slogan {
   background: none;
-  color: #f1f1f1;
+  color: #fff;
   position: absolute;
   top: 37.5vw;
   width: 100%;
@@ -25,15 +25,15 @@
   text-shadow: #000 0.5rem 0.5rem 0.5rem;
 }
 
-.header-desktop-social-media {
+.header-desktop-social-media-icons-wrapper {
   display: flex;
   position: absolute;
-  right: 1vw;
   top: 44vw;
+  right: 1vw;
 }
 
-.header-desktop-social-media div {
-  color: rgb(218, 211, 127);
-  font-size: 3vw;
+.header-desktop-social-media-icons-wrapper a {
   padding: 0.5vw;
+  font-size: 3vw;
+  color: rgb(218, 211, 127);
 }
