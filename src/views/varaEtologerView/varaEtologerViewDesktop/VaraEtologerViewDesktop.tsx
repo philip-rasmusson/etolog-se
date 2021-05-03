@@ -20,16 +20,6 @@ export const VaraEtologerViewDesktop = () => {
 
     const [filterCategory, setFilterCategory] = useState('')
 
-    // const handleSelectedCategoryChange = (event: any, target: keyof createNewProduct) => {
-    //     const find = (productCategories.find(({ productCategoryName }) => productCategoryName === event.target.value))
-    //     setProduct({ ...product, [target]: find?._id })
-    // }
-
-    // const selectCategoryB = () => {
-    //     return <select onChange={(event) => handleSelectedCategoryChange(event, 'productCategory')} >
-    //         {productCategories.map((x: productCategoryNameId) => <option key={x?._id}>{x?.productCategoryName}</option>)}
-    //     </select>
-    // }
 
     const selectCategory = (event: any) => {
         setFilterCategory(event)
