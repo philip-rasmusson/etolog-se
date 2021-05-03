@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/etolog-se/static/css/main.675c49c1.chunk.css",
-    "main.js": "/etolog-se/static/js/main.628818f9.chunk.js",
-    "main.js.map": "/etolog-se/static/js/main.628818f9.chunk.js.map",
+    "main.js": "/etolog-se/static/js/main.d808bc20.chunk.js",
+    "main.js.map": "/etolog-se/static/js/main.d808bc20.chunk.js.map",
     "runtime-main.js": "/etolog-se/static/js/runtime-main.17460e13.js",
     "runtime-main.js.map": "/etolog-se/static/js/runtime-main.17460e13.js.map",
     "static/js/2.de8f5a9b.chunk.js": "/etolog-se/static/js/2.de8f5a9b.chunk.js",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.17460e13.js",
     "static/js/2.de8f5a9b.chunk.js",
     "static/css/main.675c49c1.chunk.css",
-    "static/js/main.628818f9.chunk.js"
+    "static/js/main.d808bc20.chunk.js"
   ]
 }
