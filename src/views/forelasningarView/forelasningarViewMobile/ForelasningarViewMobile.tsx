@@ -1,3 +1,6 @@
+import { useState } from "react"
+
+
 import './ForelasningarViewMobile.css'
 import forelasningarMobile from '../img/forelasningarMobile.jpg'
 import ForelasningarViewData from "../data/ForelasningarViewData"
@@ -22,6 +25,12 @@ import { DefaulPageLayoutMobile } from "../../../components/defaultPageLayout/de
 
 
 export const ForelasningarViewMobile = () => {
+  const [filterCategory, setFilterCategory] = useState('')
+
+  const selectCategory = (event: any) => {
+    setFilterCategory(event)
+  }
+
   const CategoryIndex = (props: { paragraph: string }) => {
     return (
       <div className="forelasningar-mobile-section-two background-white font-grey">
@@ -50,12 +59,12 @@ export const ForelasningarViewMobile = () => {
         <h4 className="font-upper text-shadow">
           {props.title}
         </h4>
-        <img src={props.img} className="box-shadow" alt={props.title} />
+        <img src={props.img} className="box-shadow" alt={props.title} onClick={(event) => selectCategory(props.title)} />
       </div>
     )
   }
   const ShowEtologer = etologer.map((etologer) => {
-    if (etologer.id < 7) {
+    if (etologer.lecture?.includes(filterCategory)) {
       return (
         <div className="vara-etologer-etolog-box">
           <EtologBoxMobile
@@ -87,6 +96,7 @@ export const ForelasningarViewMobile = () => {
         <div className="forelasningar-mobile-etolog-box-wrapper background-white">
           {ShowEtologer}
         </div>
+        <button onClick={() => setFilterCategory('')} >Visa alla etologer</button>
       </div>
     </>
   )

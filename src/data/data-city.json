@@ -1,20 +1,17 @@
 [
-  {
-    "key": 0,
-    "value": "Välj stad..."
-  },
-  { "key": 1, "value": "Nynäshamn" },
-  { "key": 2, "value": "Frövi" },
-  { "key": 3, "value": "Linköping" },
-  { "key": 4, "value": "Härnösand" },
-  { "key": 5, "value": "Näshulta" },
-  { "key": 6, "value": "Göteborg" },
-  { "key": 7, "value": "Borås" },
-  { "key": 8, "value": "Gävle" },
-  { "key": 9, "value": "Uppsala" },
-  { "key": 10, "value": "Sundsvall" },
-  { "key": 11, "value": "Orsa" },
-  { "key": 12, "value": "Stockholm" },
-  { "key": 13, "value": "Norrtälje" }
+  { "city": "Välj stad..." },
+  { "city": "Nynäshamn" },
+  { "city": "Frövi" },
+  { "city": "Linköping" },
+  { "city": "Härnösand" },
+  { "city": "Näshulta" },
+  { "city": "Göteborg" },
+  { "city": "Borås" },
+  { "city": "Gävle" },
+  { "city": "Uppsala" },
+  {  "city": "Sundsvall" },
+  {  "city": "Orsa" },
+  {  "city": "Stockholm" },
+  {  "city": "Norrtälje" }
   
 ]

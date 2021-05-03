@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import './ForelasningarViewDesktop.css'
 import ForelasningarViewData from '../data/ForelasningarViewData'
 import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
@@ -17,11 +19,19 @@ import categoryExotiska from "../img/CategoryBox/category-exotiska.jpg"
 import categoryRovdjur from "../img/CategoryBox/category-rovdjur.jpg"
 import categoryFaglar from "../img/CategoryBox/category-faglar.jpg"
 
+import categories from '../../../data/data-categories.json'
 
 import { EtologBoxDesktop } from "../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop"
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
 export const ForelasningarViewDesktop = () => {
+
+  const [filterCategory, setFilterCategory] = useState('')
+
+  const selectCategory = (event: any) => {
+    setFilterCategory(event)
+  }
+
   const CategoryIndex = (props: { headline?: string, paragraph: string }) => {
     return (
       <div className="forelasningar-desktop-section-two background-white font-grey">
@@ -51,12 +61,12 @@ export const ForelasningarViewDesktop = () => {
         <h4 className="font-upper text-shadow">
           {props.title}
         </h4>
-        <img src={props.img} className="box-shadow" alt={props.title} />
+        <img src={props.img} className="box-shadow" alt={props.title} onClick={(event) => selectCategory(props.title)} />
       </div>
     )
   }
   const ShowEtologer = etologer.map((etologer) => {
-    if (etologer.id < 7) {
+    if (etologer.lecture?.includes(filterCategory)) {
       return (
         <div className="forelasningar-desktop-etolog-box">
           <EtologBoxDesktop

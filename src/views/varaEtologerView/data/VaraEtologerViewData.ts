@@ -4,7 +4,7 @@ const  pageSubheading = 'Lorem ipsum dolor sit amet consectetur adipisicing elit
 const  pageParagraph1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae recusandae laudantium laborum autem atque a necessitatibus, asperiores, eos velit explicabo deserunt ea. Eum, distinctio. Dicta odio quasi laboriosam! Provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae recusandae laudantium laborum autem atque a necessitatibus, asperiores, eos velit explicabo deserunt ea. Eum, distinctio. Dicta odio quasi laboriosam! Provident?'
 //SectionTwo
 const  imgPlacement = 'right'
-const  sectionTwoParagraph1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+const  sectionTwoParagraph1 = ' Hitta din etolog här. Använd sökfunktioner eller skrolla för att hitta en etolog som passar dig.'
 const  sectionTwoParagraph2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae recusandae laudantium laborum autem atque a necessitatibus, asperiores, eos velit explicabo deserunt ea. Eum, distinctio. Dicta odio quasi laboriosam! Provident?'
 
 const lectures = [

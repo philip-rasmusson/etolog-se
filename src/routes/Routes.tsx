@@ -18,6 +18,7 @@ export const Routes = (props: { children?: React.ReactChild }) => {
       {props.children}
       <Header />
       <Switch>
+        <Route exact path={RoutingPath.root} component={HomeView} />
         <Route exact path={RoutingPath.forelasningView} component={ForelasningarView} />
         <Route exact path={RoutingPath.homeView} component={HomeView} />
         <Route exact path={RoutingPath.konsultuppdragView} component={KonsultuppdragView} />
