@@ -1,8 +1,8 @@
 {
-  "homepage": "https://philip-rasmusson.github.io/etolog-se",
+  "homepage": "https://philip-rasmusson.github.io/etolog-se/",
   "name": "etolog-se",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
