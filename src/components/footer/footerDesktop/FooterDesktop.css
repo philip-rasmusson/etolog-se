@@ -38,7 +38,7 @@
     text-align: center;
 }
 
-.footer-desktop-container-right-boka {
+.footer-desktop-container-right-boka, .footer-desktop-container-right-boka a {
     font-size: 3.5rem;
     background-color: #f1f1f1;
     color: #2c3741;
@@ -46,6 +46,7 @@
     margin: auto;
     padding: 0 3vw;
     border-radius: 7vw;
+    text-decoration: none;
 }
 
 .footer-desktop-container-right-social-media {

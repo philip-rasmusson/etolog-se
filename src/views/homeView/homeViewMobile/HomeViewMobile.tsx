@@ -27,7 +27,7 @@ export const HomeViewMobile = () => {
             <div className="homeview-mobile-intro-text">
                 <p>{HomeViewData.introText}</p>
             </div>
-            <img
+            {/* <img
                 src={homeviewImg}
                 alt=""
                 className="homeview-mobile-img"
@@ -39,7 +39,7 @@ export const HomeViewMobile = () => {
                     btn={HomeViewData.sectionTwoBtn01}
                     path={RoutingPath.homeView}
                 />
-            </div>
+            </div> */}
             <img
                 src={homeviewImg2}
                 alt=""

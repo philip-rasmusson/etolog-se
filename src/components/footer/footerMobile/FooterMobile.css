@@ -33,7 +33,7 @@
     text-align: center;
 }
 
-.footer-mobile-container-right-boka {
+.footer-mobile-container-right-boka, .footer-mobile-container-right-boka a {
     font-size: 15vw;
     letter-spacing: 3vw;
     background-color: #f1f1f1;
@@ -42,6 +42,7 @@
     margin: 2rem auto;
     padding: 0 3vw;
     border-radius: 7vw;
+    text-decoration: none;
 }
 
 .footer-mobile-container-right-social-media {

@@ -21,9 +21,10 @@ export const DesktopNavbar = () => {
           {NavbarData.radgivning}
         </p>
         <p
-          onClick={() => history.push(RoutingPath.webkurser)}
-        >
-          {NavbarData.webkurser}
+        ><a href="https://etologse.teachable.com/" target="_blank" rel="noopener noreferrer" className="link-nav">
+
+            {NavbarData.webkurser}
+          </a>
         </p>
         <p
           onClick={() => history.push(RoutingPath.forelasningView)}

@@ -17,13 +17,13 @@ export const HeaderMobile = () => {
       </div>
       <div className="header-mobile-social-media">
         <div>
-          <FontAwesomeIcon icon={faFacebook} />
+          <a href="http://www.facebook.com/etolog.se" target="blank"><FontAwesomeIcon icon={faFacebook} className="links" /></a>
         </div>
         <div>
-          <FontAwesomeIcon icon={faInstagram} />
+          <a href="http://www.instagram.com/etolog.se" target="blank"><FontAwesomeIcon icon={faInstagram} className="links" /></a>
         </div>
         <div>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a href="http://www.linkedin.com/company/etolog-se/" target="blank"><FontAwesomeIcon icon={faLinkedin} className="links" /></a>
         </div>
       </div>
     </div>

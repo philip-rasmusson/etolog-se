@@ -103,13 +103,13 @@ export const HomeViewDesktop = () => {
                 alt=""
                 className="homeview-desktop-img"
             ></img>
-            <HomeViewSection
+            {/* <HomeViewSection
                 img={sectionTwoImg}
                 headline={HomeViewData.sectionTwoHeadline01}
                 paragraph={HomeViewData.sectionTwoParagraph01}
                 btn={HomeViewData.sectionTwoBtn01}
                 path={RoutingPath.webkurser}
-            />
+            /> */}
 
             <HomeViewSection
                 mirror="yes"

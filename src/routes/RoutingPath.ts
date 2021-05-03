@@ -3,7 +3,7 @@ const homeView = '/'
 const konsultuppdragView = '/konsultuppdrag'
 const radgivningView = '/radgivning'
 const varaEtologerView = '/vara-etologer'
-const webkurser = '/'
+const webkurser = 'https://etologse.teachable.com/'
 const root = '/etolog-se'
 
 const signinView = '/signin'

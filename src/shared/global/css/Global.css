@@ -5,6 +5,15 @@
   padding: 0;
 }
 
+.links {
+  color: rgb(218, 211, 127);
+}
+
+.link-nav {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
 button, .vara-etologer-select-box {
   border-radius: 2rem;
   background-color: #36536d;

@@ -96,7 +96,7 @@ export const ForelasningarViewMobile = () => {
         <div className="forelasningar-mobile-etolog-box-wrapper background-white">
           {ShowEtologer}
         </div>
-        <button onClick={() => setFilterCategory('')} >Visa alla etologer</button>
+        {/* <button onClick={() => setFilterCategory('')} >Visa alla etologer</button> */}
       </div>
     </>
   )
