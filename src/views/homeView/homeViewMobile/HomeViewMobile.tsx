@@ -13,12 +13,17 @@ import RoutingPath from '../../../routes/RoutingPath'
 export const HomeViewMobile = () => {
     const history = useHistory()
 
-    const HomeViewSection = (props: { mirror?: string, headline?: string, paragraph?: string, btn?: string, img?: string, path?: any }) => {
+    const HomeViewSection = (props: { mirror?: string, headline?: string, paragraph?: string, btn?: string, img?: string, path?: any, hasExternalLink: boolean }) => {
+        const externalOrLocalLink = () => {
+            return props.hasExternalLink
+                ? <button onClick={() => window.open(props.path)}>{props.btn}</button>
+                : <button onClick={() => history.push(props.path)}>{props.btn}</button>
+        }
         return (
             <div className="homeview-mobile-section-wrapper">
                 <h3>{props.headline}</h3>
                 <p>{props.paragraph}</p>
-                <button onClick={() => history.push(props.path)}>{props.btn}</button>
+                {externalOrLocalLink()}
             </div>
         )
     }
@@ -27,7 +32,7 @@ export const HomeViewMobile = () => {
             <div className="homeview-mobile-intro-text">
                 <p>{HomeViewData.introText}</p>
             </div>
-            {/* <img
+            <img
                 src={homeviewImg}
                 alt=""
                 className="homeview-mobile-img"
@@ -37,9 +42,10 @@ export const HomeViewMobile = () => {
                     headline={HomeViewData.sectionTwoHeadline01}
                     paragraph={HomeViewData.sectionTwoParagraph01}
                     btn={HomeViewData.sectionTwoBtn01}
-                    path={RoutingPath.homeView}
+                    path={RoutingPath.webkurser}
+                    hasExternalLink={true}
                 />
-            </div> */}
+            </div>
             <img
                 src={homeviewImg2}
                 alt=""
@@ -51,6 +57,8 @@ export const HomeViewMobile = () => {
                     paragraph={HomeViewData.sectionTwoParagraph02}
                     btn={HomeViewData.sectionTwoBtn02}
                     path={RoutingPath.varaEtologerView}
+                    hasExternalLink={false}
+
                 />
             </div>
             <img
@@ -64,6 +72,8 @@ export const HomeViewMobile = () => {
                     paragraph={HomeViewData.sectionTwoParagraph03}
                     btn={HomeViewData.sectionTwoBtn03}
                     path={RoutingPath.forelasningView}
+                    hasExternalLink={false}
+
                 />
             </div>
         </div>

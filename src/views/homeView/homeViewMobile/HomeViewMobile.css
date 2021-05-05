@@ -70,4 +70,5 @@
 .homeview-mobile-section-wrapper button {
   margin: auto;
   display: flex;
+  margin-top: 2rem;
 }

@@ -13,6 +13,7 @@ import { Header } from "../components/header/Header"
 import RoutingPath from './RoutingPath'
 
 export const Routes = (props: { children?: React.ReactChild }) => {
+
   return (
     <Router>
       {props.children}

@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { useHistory } from "react-router-dom"
 
 import './HomeViewDesktop.css'
@@ -14,7 +15,8 @@ import RoutingPath from '../../../routes/RoutingPath'
 
 export const HomeViewDesktop = () => {
     const history = useHistory()
-    const HomeViewSectionOneBox = (props: { img?: string, img2?: string, headline?: string, paragraph?: string, display?: string, btn?: string, path?: any }) => {
+
+    const HomeViewSectionOneBox = (props: { img?: string, img2?: string, headline?: string, paragraph?: string, btn?: string, path?: any }) => {
         return (
             <>
                 <div className="homeview-desktop-section-one-box">
@@ -29,7 +31,13 @@ export const HomeViewDesktop = () => {
             </>
         )
     }
-    const HomeViewSection = (props: { mirror?: string, headline?: string, paragraph?: string, btn?: string, img?: string, path?: any }) => {
+    const HomeViewSection = (props: { mirror?: string, headline?: string, paragraph?: string, btn?: string, img?: string, path?: any, hasExternalLink: boolean }) => {
+
+        const externalOrLocalLink = () => {
+            return props.hasExternalLink
+                ? <button onClick={() => window.open(props.path)}>{props.btn}</button>
+                : <button onClick={() => history.push(props.path)}>{props.btn}</button>
+        }
         return (
             <div>
                 {props.mirror === 'yes' ? (
@@ -37,7 +45,7 @@ export const HomeViewDesktop = () => {
                         <div className="homeview-desktop-section-right">
                             <h3>{props.headline}</h3>
                             <p>{props.paragraph}</p>
-                            <button onClick={() => history.push(props.path)}>{props.btn}</button>
+                            {externalOrLocalLink()}
                         </div>
                         <div className="homeview-desktop-section-left">
                             <img src={props.img} alt="" />
@@ -52,7 +60,7 @@ export const HomeViewDesktop = () => {
                             <div className="homeview-desktop-section-right">
                                 <h3>{props.headline}</h3>
                                 <p>{props.paragraph}</p>
-                                <button onClick={() => history.push(props.path)}>{props.btn}</button>
+                                {externalOrLocalLink()}
                             </div>
                         </div>
                     </div>
@@ -60,9 +68,7 @@ export const HomeViewDesktop = () => {
             </div>
         )
     }
-    // const LinkToPath = (xx: string) => {
-    //     history.push(xx)
-    // }
+
     return (
         <div className="homeview-desktop-wrapper">
             <div className="homeview-desktop-intro-text">
@@ -71,7 +77,6 @@ export const HomeViewDesktop = () => {
             <div className="homeview-desktop-section-one">
                 <div>
                     <HomeViewSectionOneBox
-                        display="hidden"
                         img={djuragare}
                         headline={HomeViewData.sectionOneHeadline01}
                         paragraph={HomeViewData.sectionOneParagraph01}
@@ -103,14 +108,16 @@ export const HomeViewDesktop = () => {
                 alt=""
                 className="homeview-desktop-img"
             ></img>
-            {/* <HomeViewSection
+            <HomeViewSection
+                mirror="no"
                 img={sectionTwoImg}
                 headline={HomeViewData.sectionTwoHeadline01}
                 paragraph={HomeViewData.sectionTwoParagraph01}
                 btn={HomeViewData.sectionTwoBtn01}
                 path={RoutingPath.webkurser}
-            /> */}
+                hasExternalLink={true}
 
+            />
             <HomeViewSection
                 mirror="yes"
                 img={sectionThreeImg}
@@ -118,6 +125,8 @@ export const HomeViewDesktop = () => {
                 paragraph={HomeViewData.sectionTwoParagraph02}
                 btn={HomeViewData.sectionTwoBtn02}
                 path={RoutingPath.varaEtologerView}
+                hasExternalLink={false}
+
             />
             <HomeViewSection
                 img={sectionFourImg}
@@ -125,6 +134,8 @@ export const HomeViewDesktop = () => {
                 paragraph={HomeViewData.sectionTwoParagraph03}
                 btn={HomeViewData.sectionTwoBtn03}
                 path={RoutingPath.forelasningView}
+                hasExternalLink={false}
+
             />
         </div>
     )
