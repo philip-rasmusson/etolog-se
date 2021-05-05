@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/etolog-se/static/css/main.0d43e6c7.chunk.css",
-    "main.js": "/etolog-se/static/js/main.9cc80066.chunk.js",
-    "main.js.map": "/etolog-se/static/js/main.9cc80066.chunk.js.map",
-    "runtime-main.js": "/etolog-se/static/js/runtime-main.17460e13.js",
-    "runtime-main.js.map": "/etolog-se/static/js/runtime-main.17460e13.js.map",
-    "static/js/2.de8f5a9b.chunk.js": "/etolog-se/static/js/2.de8f5a9b.chunk.js",
-    "static/js/2.de8f5a9b.chunk.js.map": "/etolog-se/static/js/2.de8f5a9b.chunk.js.map",
-    "static/js/3.48066b25.chunk.js": "/etolog-se/static/js/3.48066b25.chunk.js",
-    "static/js/3.48066b25.chunk.js.map": "/etolog-se/static/js/3.48066b25.chunk.js.map",
+    "main.css": "/etolog-se/static/css/main.656ba3a5.chunk.css",
+    "main.js": "/etolog-se/static/js/main.dfb7d7a3.chunk.js",
+    "main.js.map": "/etolog-se/static/js/main.dfb7d7a3.chunk.js.map",
+    "runtime-main.js": "/etolog-se/static/js/runtime-main.751b3591.js",
+    "runtime-main.js.map": "/etolog-se/static/js/runtime-main.751b3591.js.map",
+    "static/js/2.d8925190.chunk.js": "/etolog-se/static/js/2.d8925190.chunk.js",
+    "static/js/2.d8925190.chunk.js.map": "/etolog-se/static/js/2.d8925190.chunk.js.map",
+    "static/js/3.66c3b157.chunk.js": "/etolog-se/static/js/3.66c3b157.chunk.js",
+    "static/js/3.66c3b157.chunk.js.map": "/etolog-se/static/js/3.66c3b157.chunk.js.map",
     "index.html": "/etolog-se/index.html",
-    "static/css/main.0d43e6c7.chunk.css.map": "/etolog-se/static/css/main.0d43e6c7.chunk.css.map",
-    "static/js/2.de8f5a9b.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.de8f5a9b.chunk.js.LICENSE.txt",
+    "static/css/main.656ba3a5.chunk.css.map": "/etolog-se/static/css/main.656ba3a5.chunk.css.map",
+    "static/js/2.d8925190.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.d8925190.chunk.js.LICENSE.txt",
     "static/media/cat.99610e07.jpg": "/etolog-se/static/media/cat.99610e07.jpg",
     "static/media/cat4.9f9c87dc.jpg": "/etolog-se/static/media/cat4.9f9c87dc.jpg",
     "static/media/catMobile4.8180b722.jpg": "/etolog-se/static/media/catMobile4.8180b722.jpg",
@@ -27,6 +27,7 @@
     "static/media/category-rovdjur.ff5a8c0a.jpg": "/etolog-se/static/media/category-rovdjur.ff5a8c0a.jpg",
     "static/media/category-smadjur.8c2b1beb.jpg": "/etolog-se/static/media/category-smadjur.8c2b1beb.jpg",
     "static/media/djuragare.c5b32bfc.png": "/etolog-se/static/media/djuragare.c5b32bfc.png",
+    "static/media/dog-2983021_1920.a880ba3d.jpg": "/etolog-se/static/media/dog-2983021_1920.a880ba3d.jpg",
     "static/media/etolog-Johanna-Strandner.626092fb.jpg": "/etolog-se/static/media/etolog-Johanna-Strandner.626092fb.jpg",
     "static/media/etologer.b001fdb0.png": "/etolog-se/static/media/etologer.b001fdb0.png",
     "static/media/etologerMobile.ea146447.png": "/etolog-se/static/media/etologerMobile.ea146447.png",
@@ -44,9 +45,9 @@
     "static/media/verksamheter.4033ff88.png": "/etolog-se/static/media/verksamheter.4033ff88.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.17460e13.js",
-    "static/js/2.de8f5a9b.chunk.js",
-    "static/css/main.0d43e6c7.chunk.css",
-    "static/js/main.9cc80066.chunk.js"
+    "static/js/runtime-main.751b3591.js",
+    "static/js/2.d8925190.chunk.js",
+    "static/css/main.656ba3a5.chunk.css",
+    "static/js/main.dfb7d7a3.chunk.js"
   ]
 }
