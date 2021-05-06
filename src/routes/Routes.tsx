@@ -17,7 +17,7 @@ export const Routes = (props: { children?: React.ReactChild }) => {
   return (
     <Router>
       {props.children}
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route exact path={RoutingPath.root} component={HomeView} />
         <Route exact path={RoutingPath.forelasningView} component={ForelasningarView} />

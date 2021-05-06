@@ -1,4 +1,5 @@
-
+//Header
+const headerSlogan = 'KUNSKAP, KÄRLEK, KOMMUNIKATION - För alla djur'
 //Intro text
 const introText = 'En etolog kan göra underverk i relationer mellan djur och människor. Genom att analysera djurets beteende och undersöka orsakerna bakom det kan vi tillsammans skapa nya förutsättningar för att ändra, forma, ta bort eller skapa beteenden. Etolog.se erbjuder etologer till privatpersoner, verksamheter, kliniker, skolor, djurparker och har även onlineföreläsningar och webkurser. Boka din etolog här hos oss!'
 
@@ -25,6 +26,8 @@ const sectionTwoParagraph03 = 'Vi skräddarsyr föreläsningen för dig! Alla v�
 const sectionTwoBtn03 = 'till föreläsningar'
 
 export default {
+  //Header Slogan
+  headerSlogan,
   //Intro text
   introText,
   //Section one

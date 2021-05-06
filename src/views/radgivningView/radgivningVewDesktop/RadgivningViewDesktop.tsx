@@ -5,6 +5,8 @@ import './RadgivningViewDesktop.css'
 import RadgivningViewData from '../data/RadgivningViewData'
 import cat from '../img/cat4.jpg'
 import radgivning from '../img/radgivning.png'
+import headerImg from "../img/headerRadgivning.jpg"
+
 
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
@@ -20,6 +22,7 @@ export const RadgivningViewDesktop = () => {
         pageParagraph2={RadgivningViewData.pageParagraph2}
         imgPlacement={RadgivningViewData.imgPlacement}
         img={cat}
+        headerImg={headerImg}
         sectionTwoParagraph1={RadgivningViewData.sectionTwoParagraph1}
       />
       <div className="radgivning-dekstop-section-three-wrapper background-white">

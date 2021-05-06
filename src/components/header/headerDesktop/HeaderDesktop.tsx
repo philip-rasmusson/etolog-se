@@ -2,12 +2,12 @@ import './HeaderDesktop.css'
 import HeaderImg from '../img/headerDesktop.jpg'
 import { SocialMediaIcons } from "../../../components/socialMediaIcons/SocialMediaIcons"
 
-export const HeaderDesktop = () => {
+export const HeaderDesktop = (props: { slogan?: string, headerImg?: any }) => {
   return (
     <div className="header-desktop-body">
-      <img src={HeaderImg} alt="Header image" className="header-desktop-img"></img>
+      <img src={props.headerImg} alt="Header image" className="header-desktop-img"></img>
       <div className="header-desktop-slogan">
-        <h3>KUNSKAP, KÄRLEK, KOMMUNIKATION - För alla djur</h3>
+        <h3>{props.slogan}</h3>
       </div>
       <div className="header-desktop-social-media-icons-wrapper">
         <SocialMediaIcons />

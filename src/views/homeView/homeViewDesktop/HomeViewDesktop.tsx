@@ -1,6 +1,9 @@
 import { useState } from "react"
 import { useHistory } from "react-router-dom"
 
+import HeaderImg from '../../../components/header/img/headerDesktop.jpg'
+import { HeaderDesktop } from "../../../components/header/headerDesktop/HeaderDesktop"
+
 import './HomeViewDesktop.css'
 import djuragare from '../img/djuragare.png'
 import kliniker from '../img/kliniker.png'
@@ -70,73 +73,76 @@ export const HomeViewDesktop = () => {
     }
 
     return (
-        <div className="homeview-desktop-wrapper">
-            <div className="homeview-desktop-intro-text">
-                <h4>{HomeViewData.introText}</h4>
+        <>
+            <HeaderDesktop slogan={HomeViewData.headerSlogan} headerImg={HeaderImg} />
+            <div className="homeview-desktop-wrapper">
+                <div className="homeview-desktop-intro-text">
+                    <h4>{HomeViewData.introText}</h4>
+                </div>
+                <div className="homeview-desktop-section-one">
+                    <div>
+                        <HomeViewSectionOneBox
+                            img={djuragare}
+                            headline={HomeViewData.sectionOneHeadline01}
+                            paragraph={HomeViewData.sectionOneParagraph01}
+                            btn={HomeViewData.sectionOneBtn01}
+                            path={RoutingPath.konsultuppdragView}
+                        />
+                    </div>
+                    <div>
+                        <HomeViewSectionOneBox
+                            img={kliniker}
+                            headline={HomeViewData.sectionOneHeadline02}
+                            paragraph={HomeViewData.sectionOneParagraph02}
+                            btn={HomeViewData.sectionOneBtn02}
+                            path={RoutingPath.konsultuppdragView}
+                        />
+                    </div>
+                    <div>
+                        <HomeViewSectionOneBox
+                            img={verksamheter}
+                            headline={HomeViewData.sectionOneHeadline03}
+                            paragraph={HomeViewData.sectionOneParagraph03}
+                            btn={HomeViewData.sectionOneBtn03}
+                            path={RoutingPath.konsultuppdragView}
+                        />
+                    </div>
+                </div>
+                <img
+                    src={homeviewImg}
+                    alt=""
+                    className="homeview-desktop-img"
+                ></img>
+                <HomeViewSection
+                    mirror="no"
+                    img={sectionTwoImg}
+                    headline={HomeViewData.sectionTwoHeadline01}
+                    paragraph={HomeViewData.sectionTwoParagraph01}
+                    btn={HomeViewData.sectionTwoBtn01}
+                    path={RoutingPath.webkurser}
+                    hasExternalLink={true}
+
+                />
+                <HomeViewSection
+                    mirror="yes"
+                    img={sectionThreeImg}
+                    headline={HomeViewData.sectionTwoHeadline02}
+                    paragraph={HomeViewData.sectionTwoParagraph02}
+                    btn={HomeViewData.sectionTwoBtn02}
+                    path={RoutingPath.varaEtologerView}
+                    hasExternalLink={false}
+
+                />
+                <HomeViewSection
+                    img={sectionFourImg}
+                    headline={HomeViewData.sectionTwoHeadline03}
+                    paragraph={HomeViewData.sectionTwoParagraph03}
+                    btn={HomeViewData.sectionTwoBtn03}
+                    path={RoutingPath.forelasningView}
+                    hasExternalLink={false}
+
+                />
             </div>
-            <div className="homeview-desktop-section-one">
-                <div>
-                    <HomeViewSectionOneBox
-                        img={djuragare}
-                        headline={HomeViewData.sectionOneHeadline01}
-                        paragraph={HomeViewData.sectionOneParagraph01}
-                        btn={HomeViewData.sectionOneBtn01}
-                        path={RoutingPath.konsultuppdragView}
-                    />
-                </div>
-                <div>
-                    <HomeViewSectionOneBox
-                        img={kliniker}
-                        headline={HomeViewData.sectionOneHeadline02}
-                        paragraph={HomeViewData.sectionOneParagraph02}
-                        btn={HomeViewData.sectionOneBtn02}
-                        path={RoutingPath.konsultuppdragView}
-                    />
-                </div>
-                <div>
-                    <HomeViewSectionOneBox
-                        img={verksamheter}
-                        headline={HomeViewData.sectionOneHeadline03}
-                        paragraph={HomeViewData.sectionOneParagraph03}
-                        btn={HomeViewData.sectionOneBtn03}
-                        path={RoutingPath.konsultuppdragView}
-                    />
-                </div>
-            </div>
-            <img
-                src={homeviewImg}
-                alt=""
-                className="homeview-desktop-img"
-            ></img>
-            <HomeViewSection
-                mirror="no"
-                img={sectionTwoImg}
-                headline={HomeViewData.sectionTwoHeadline01}
-                paragraph={HomeViewData.sectionTwoParagraph01}
-                btn={HomeViewData.sectionTwoBtn01}
-                path={RoutingPath.webkurser}
-                hasExternalLink={true}
-
-            />
-            <HomeViewSection
-                mirror="yes"
-                img={sectionThreeImg}
-                headline={HomeViewData.sectionTwoHeadline02}
-                paragraph={HomeViewData.sectionTwoParagraph02}
-                btn={HomeViewData.sectionTwoBtn02}
-                path={RoutingPath.varaEtologerView}
-                hasExternalLink={false}
-
-            />
-            <HomeViewSection
-                img={sectionFourImg}
-                headline={HomeViewData.sectionTwoHeadline03}
-                paragraph={HomeViewData.sectionTwoParagraph03}
-                btn={HomeViewData.sectionTwoBtn03}
-                path={RoutingPath.forelasningView}
-                hasExternalLink={false}
-
-            />
-        </div>
+        </>
     )
 }

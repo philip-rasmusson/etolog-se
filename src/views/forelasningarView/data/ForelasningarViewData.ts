@@ -1,7 +1,7 @@
 //Default page layout
 const  backgroundColor = { backgroundColor: '#958183' }
 const  pageTitle = 'föreläsningar'
-const  pageSubheading = 'Vill du boka föreläsning? Våra etologer har bred kunskap om djur och olika djurslag.'
+const  pageSubheading = 'Vill du boka föreläsning? Våra etologer har bred kunskap om djur och olika djurslag. Många av våra etologer erbjuder digitala föreläsningar och rådgivning online. '
 const  pageParagraph1 = 'Föreläsning bokar du genom att ta kontakt med etologen direkt eller maila din förfrågan till oss på info@etolog.se.'
 const  imgPlacement = 'right'
 //Section Two
@@ -23,6 +23,7 @@ const category08 = 'exotiska djur'
 const category09 = 'lantbrukets djur'
 const category10 = 'fåglar'
 const category11 = 'rovdjur'
+const category12 = 'djurskydd'
 
 //CategoryIndex
 const categoryIndexHeadline = 'Hitta den perfekta Etologen här'
@@ -47,6 +48,7 @@ export default {
   category09,
   category10,
   category11,
+  category12,
   categoryIndexHeadline,
   categoryIndexHParagraph,
 }

@@ -31,13 +31,13 @@
   height: 8rem;
 }
 
-.etolog-desktop-box-phone, .etolog-desktop-box-email, .etolog-desktop-box-city {
+.etolog-desktop-box-homepage, .etolog-desktop-box-email, .etolog-desktop-box-city {
   display: flex;
-  text-align: center;
-  font-size: 0.8rem;
+  text-align: left;
+  font-size: 1rem;
 }
 
-.etolog-desktop-box-city-phone, .etolog-desktop-box-city-email, .etolog-desktop-box-city-icon {
+.etolog-desktop-box-city-homepage, .etolog-desktop-box-city-email, .etolog-desktop-box-city-icon {
   padding-right: 2rem;
 }
 
@@ -45,4 +45,11 @@
   color: initial;
   cursor: pointer;
   text-decoration: none;
+}
+
+.etolog-desktop-box-contact-wrapper {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

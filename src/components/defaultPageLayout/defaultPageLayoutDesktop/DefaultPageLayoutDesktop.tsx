@@ -1,6 +1,8 @@
 import './DefaultPageLayoutDesktop.css'
 
-export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubheading?: string, pageParagraph1?: string, pageParagraph2?: string, imgPlacement?: string, backgroundColor?: any, img?: string, sectionTwoParagraph1?: string, sectionTwoParagraph2?: string, imgAlt?: string }) => {
+import { HeaderDesktop } from "../../header/headerDesktop/HeaderDesktop"
+
+export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubheading?: string, pageParagraph1?: string, pageParagraph2?: string, imgPlacement?: string, backgroundColor?: any, img?: string, headerImg?: any, sectionTwoParagraph1?: string, sectionTwoParagraph2?: string, imgAlt?: string }) => {
 
   const SectionOne = (props: { pageTitle?: string, pageSubheading?: string, pageParagraph1?: string, pageParagraph2?: string }) => {
     return (
@@ -53,20 +55,22 @@ export const DefaulPageLayoutDesktop = (props: { pageTitle?: string, pageSubhead
     )
   }
   return (
-    <div className="default-page-desktop-wrapper background-white">
-      <SectionOne
-        pageTitle={props.pageTitle}
-        pageSubheading={props.pageSubheading}
-        pageParagraph1={props.pageParagraph1}
-        pageParagraph2={props.pageParagraph2}
-      />
-      <SectionTwo
-        backgroundColor={props.backgroundColor}
-        imgPlacement={props.imgPlacement}
-        img={props.img}
-        sectionTwoParagraph1={props.sectionTwoParagraph1}
-        sectionTwoParagraph2={props.sectionTwoParagraph2}
-      />
-    </div>
+    <>
+      <HeaderDesktop headerImg={props.headerImg} />
+      <div className="default-page-desktop-wrapper background-white">
+        <SectionOne
+          pageTitle={props.pageTitle}
+          pageSubheading={props.pageSubheading}
+          pageParagraph1={props.pageParagraph1}
+          pageParagraph2={props.pageParagraph2}
+        />
+        <SectionTwo
+          backgroundColor={props.backgroundColor}
+          imgPlacement={props.imgPlacement}
+          img={props.img}
+          sectionTwoParagraph1={props.sectionTwoParagraph1}
+          sectionTwoParagraph2={props.sectionTwoParagraph2}
+        />
+      </div></>
   )
 }

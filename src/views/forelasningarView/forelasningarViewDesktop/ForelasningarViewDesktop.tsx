@@ -6,6 +6,7 @@ import etologErikJohansson from '../../../components/etologBox/img/etologer/etol
 
 import etologer from '../../../data/data-etologer.json'
 
+import headerImg from "../img/headerForelasningar.jpg"
 import forelasningar from '../img/forelasningar.jpg'
 import categoryGris from "../img/CategoryBox/category-gris.jpg"
 import categoryHund from "../img/CategoryBox/category-hund.jpg"
@@ -18,6 +19,7 @@ import categoryReptil from "../img/CategoryBox/category-reptil.jpg"
 import categoryExotiska from "../img/CategoryBox/category-exotiska.jpg"
 import categoryRovdjur from "../img/CategoryBox/category-rovdjur.jpg"
 import categoryFaglar from "../img/CategoryBox/category-faglar.jpg"
+import categoryDjurskydd from "../img/CategoryBox/category-djurskydd.jpg"
 
 import categories from '../../../data/data-categories.json'
 
@@ -26,7 +28,7 @@ import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/d
 
 export const ForelasningarViewDesktop = () => {
 
-  const [filterCategory, setFilterCategory] = useState('')
+  const [filterCategory, setFilterCategory] = useState('star')
 
   const selectCategory = (event: any) => {
     setFilterCategory(event)
@@ -50,6 +52,7 @@ export const ForelasningarViewDesktop = () => {
             <CategoryInnerBox title={ForelasningarViewData.category09} img={categoryGris} />
             <CategoryInnerBox title={ForelasningarViewData.category11} img={categoryRovdjur} />
             <CategoryInnerBox title={ForelasningarViewData.category10} img={categoryFaglar} />
+            <CategoryInnerBox title={ForelasningarViewData.category12} img={categoryDjurskydd} />
           </div>
         </div>
       </div>
@@ -74,9 +77,9 @@ export const ForelasningarViewDesktop = () => {
             name={etologer.first_name + ' ' + etologer.last_name}
             img={etologErikJohansson}
             description={etologer.desc}
-            phone={etologer.phone}
             email={etologer.email}
             city={etologer.city}
+            star={etologer.star}
           />
         </div>
       )
@@ -91,6 +94,7 @@ export const ForelasningarViewDesktop = () => {
         pageParagraph1={ForelasningarViewData.pageParagraph1}
         imgPlacement={ForelasningarViewData.imgPlacement}
         img={forelasningar}
+        headerImg={headerImg}
         sectionTwoParagraph1={ForelasningarViewData.sectionTwoParagraph1}
       />
       <div className="forelasningar-desktop-wrapper background-white">

@@ -4,12 +4,11 @@ import EtologBoxData from '../data/EtologBoxData'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faPhone,
   faEnvelope,
   faHome,
 } from '@fortawesome/free-solid-svg-icons'
 
-export const EtologBoxMobile = (props: { id?: number, name?: string, img?: string, description?: string, phone?: string, email?: string, city?: string }) => {
+export const EtologBoxMobile = (props: { id?: number, name?: string, img?: string, description?: string, email?: string, city?: string }) => {
   return (
     <div className="etolog-mobile-box">
       <div className="etolog-mobile-box-headline">{props.name}</div>
@@ -17,10 +16,7 @@ export const EtologBoxMobile = (props: { id?: number, name?: string, img?: strin
       <div className="etolog-mobile-box-paragraph">{props.description}</div>
       <div>
         <div className="etolog-mobile-box-phone">
-          <div className="etolog-mobile-box-city-phone">
-            <FontAwesomeIcon icon={faPhone} />
-          </div>
-          <div>{props.phone}</div>
+
         </div>
         <div className="etolog-mobile-box-email">
           <div className="etolog-mobile-box-city-email">

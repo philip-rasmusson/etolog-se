@@ -1,4 +1,6 @@
 import './KonsultuppdragViewDesktop.css'
+import headerImg from "../img/headerKonsultuppdrag.jpg"
+
 import konsultuppdrag from '../img/konsultuppdrag.jpg'
 
 import KonsultuppdragViewData from '../data/KonsultuppdragViewData'
@@ -16,6 +18,7 @@ export const KonsultuppdragViewDesktop = () => {
                 pageParagraph1={KonsultuppdragViewData.pageParagraph1}
                 imgPlacement={KonsultuppdragViewData.imgPlacement}
                 img={konsultuppdrag}
+                headerImg={headerImg}
                 sectionTwoParagraph1={KonsultuppdragViewData.sectionTwoParagraph1}
             />
         </div>

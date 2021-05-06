@@ -63,7 +63,6 @@ export const VaraEtologerViewMobile = () => {
                         name={etologer.first_name + ' ' + etologer.last_name}
                         img={etologErikJohansson}
                         description={etologer.desc}
-                        phone={etologer.phone}
                         email={etologer.email}
                         city={etologer.city}
                     />
@@ -75,8 +74,8 @@ export const VaraEtologerViewMobile = () => {
         <div className="vara-etologer-mobile-wrapper" id="vara-etologer-mobile-id">
             <DefaulPageLayoutMobile
                 pageTitle={VaraEtologerViewData.pageTitle}
-                // pageSubheading={VaraEtologerViewData.pageSubheading}
-                // pageParagraph1={VaraEtologerViewData.pageParagraph1}
+                pageSubheading={VaraEtologerViewData.pageSubheading}
+                pageParagraph1={VaraEtologerViewData.pageParagraph1}
                 imgMobile={etologerMobile}
                 sectionTwoParagraph1={VaraEtologerViewData.sectionTwoParagraph1}
             // paragraphTwo={VaraEtologerViewData.paragraphTwo}

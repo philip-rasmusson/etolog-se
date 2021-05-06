@@ -72,7 +72,6 @@ export const ForelasningarViewMobile = () => {
             name={etologer.first_name + ' ' + etologer.last_name}
             img={etologErikJohansson}
             description={etologer.desc}
-            phone={etologer.phone}
             email={etologer.email}
             city={etologer.city}
           />

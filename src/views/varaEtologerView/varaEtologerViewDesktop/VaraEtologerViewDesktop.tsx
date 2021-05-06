@@ -3,7 +3,9 @@ import { useState } from "react"
 import './VaraEtologerViewDesktop.css'
 
 import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
-import varaEtologer from '../img/etologer.png'
+import varaEtologer from '../img/etologer.jpg'
+import headerImg from "../img/headerVaraEtologer.jpg"
+
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
 import etologer from '../../../data/data-etologer.json'
@@ -65,9 +67,9 @@ export const VaraEtologerViewDesktop = () => {
                         name={etologer.first_name + ' ' + etologer.last_name}
                         img={etologErikJohansson}
                         description={etologer.desc}
-                        phone={etologer.phone}
                         email={etologer.email}
                         city={etologer.city}
+                        star={etologer.star}
                     />
                 </div>
             )
@@ -78,10 +80,11 @@ export const VaraEtologerViewDesktop = () => {
             <DefaulPageLayoutDesktop
                 backgroundColor={VaraEtologerViewData.backgroundColor}
                 pageTitle={VaraEtologerViewData.pageTitle}
-                // pageSubheading={VaraEtologerViewData.pageSubheading}
-                // pageParagraph1={VaraEtologerViewData.pageParagraph1}
+                pageSubheading={VaraEtologerViewData.pageSubheading}
+                pageParagraph1={VaraEtologerViewData.pageParagraph1}
                 imgPlacement={VaraEtologerViewData.imgPlacement}
                 img={varaEtologer}
+                headerImg={headerImg}
                 sectionTwoParagraph1={VaraEtologerViewData.sectionTwoParagraph1}
             />
             <div className="vara-etologer-desktop-search-box-wrapper">
