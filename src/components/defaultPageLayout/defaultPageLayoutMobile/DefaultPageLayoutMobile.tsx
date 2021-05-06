@@ -1,6 +1,9 @@
 import './DefaultPageLayoutMobile.css'
 
-export const DefaulPageLayoutMobile = (props: { pageTitle?: string, pageSubheading?: string, pageParagraph1?: string, imgPlacement?: string, backgroundColor?: any, sectionTwoParagraph1?: string, imgMobile?: string, imgMobileAlt?: string }) => {
+import { HeaderMobile } from "../../header/headerMobile/HeaderMobile"
+
+
+export const DefaulPageLayoutMobile = (props: { pageTitle?: string, pageSubheading?: string, pageParagraph1?: string, imgPlacement?: string, backgroundColor?: any, sectionTwoParagraph1?: string, imgMobile?: string, imgMobileAlt?: string, headerImg?: any }) => {
   const SectionOne = (props: { pageTitle?: string, pageSubheading?: string, pageParagraph1?: string }) => {
     return (
       <div className="default-page-mobile-section-one">

@@ -1,7 +1,7 @@
 .default-page-layout-mobile-wrapper {
-  background-color: #f1f1f1;
+  background-color: #fff;
   color: #454545;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
 }
 
 .default-page-mobile-section-one {

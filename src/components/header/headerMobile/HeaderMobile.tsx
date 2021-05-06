@@ -1,12 +1,12 @@
 import './HeaderMobile.css'
 import HeaderMobileImg from '../img/headerMobile.jpg'
 
-export const HeaderMobile = () => {
+export const HeaderMobile = (props: { slogan?: string, headerImg?: any }) => {
   return (
     <div className="header-mobile-body">
-      <img src={HeaderMobileImg} alt="" className="header-mobile-mobile-img"></img>
+      <img src={props.headerImg} alt="Header image" className="header-mobile-img"></img>
       <div className="header-mobile-slogan">
-        <h3>KUNSKAP, KÄRLEK, KOMMUNIKATION - För alla djur</h3>
+        <h3>{props.slogan}</h3>
       </div>
 
     </div>

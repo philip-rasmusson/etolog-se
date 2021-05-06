@@ -19,6 +19,8 @@ import categoryReptil from "../img/CategoryBox/category-reptil.jpg"
 import categoryExotiska from "../img/CategoryBox/category-exotiska.jpg"
 import categoryRovdjur from "../img/CategoryBox/category-rovdjur.jpg"
 import categoryFaglar from "../img/CategoryBox/category-faglar.jpg"
+import categoryDjurskydd from "../img/CategoryBox/category-djurskydd.jpg"
+
 
 import { EtologBoxMobile } from "../../../components/etologBox/etologBoxMobile/EtologBoxMobile"
 import { DefaulPageLayoutMobile } from "../../../components/defaultPageLayout/defaultPageLayoutMobile/DefaultPageLayoutMobile"
@@ -48,6 +50,7 @@ export const ForelasningarViewMobile = () => {
             <CategoryInnerBox title={ForelasningarViewData.category09} img={categoryGris} />
             <CategoryInnerBox title={ForelasningarViewData.category11} img={categoryRovdjur} />
             <CategoryInnerBox title={ForelasningarViewData.category10} img={categoryFaglar} />
+            <CategoryInnerBox title={ForelasningarViewData.category12} img={categoryDjurskydd} />
           </div>
         </div>
       </div>
@@ -56,7 +59,7 @@ export const ForelasningarViewMobile = () => {
   const CategoryInnerBox = (props: { title: string, img: string, }) => {
     return (
       <div className="forelasningar-mobile-category-inner-box">
-        <h4 className="font-upper text-shadow">
+        <h4 className="font-upper text-shadow" onClick={(event) => selectCategory(props.title)}>
           {props.title}
         </h4>
         <img src={props.img} className="box-shadow" alt={props.title} onClick={(event) => selectCategory(props.title)} />
