@@ -8,7 +8,9 @@
     "email": "info@hundlaroverket.se",
     "city": "Nynäshamn",
     "homepage": "https://hundlaroverket.se/",
-    "lecture": ["hund"]
+    "lecture": ["hund"],
+    "VIP": false,
+    "county": ""
   },
   
   {
@@ -20,7 +22,9 @@
     "email": "Info@djurkonsultenzed.se",
     "city": "Frövi",
     "homepage": "https://djurkonsultenzed.se/",
-    "lecture": ["hund", "katt", "fjäderfä","kanin","marsvin","enligt önskemål"]
+    "lecture": ["hund", "katt", "fjäderfä","kanin","marsvin","enligt önskemål"],
+    "VIP": false,
+    "county": ""
   },
   
   {
@@ -32,7 +36,9 @@
     "email": "paulina.emilia.lundberg@gmail.com",
     "city": "Linköping",
     "homepage": "http://paulina-etolog.se/",
-    "lecture": ["häst", "hund", "katt", "inlärning", "flockdynamik","relation djur - människa"]
+    "lectureKey": ["häst", "hund", "katt", "etologi"],
+    "VIP": false,
+    "county": ""
   },
   
   {
@@ -44,7 +50,9 @@
     "email": "jannice@duochdjur.se",
     "city": "Sundsvall",
     "homepage": "http://www.duochdjur.se/",
-    "lecture": ["hund", "ljudrädsla", "dogparkour","hantering","vänligen vård","enligt önskemål"]
+    "lecture": ["hund", "ljudrädsla", "dogparkour","hantering","vänlig vård","enligt önskemål"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -57,7 +65,9 @@
     "email": "Anna-maria@etologica.se",
     "city": "Härnösand",
     "homepage": "http://etologica.se/",
-    "lecture": ["hund","katt","vattensköldpaddor","stress hos hund","berikning för hund","reaktiva hundar","kattens beteendebehov och problemlösning"]
+    "lecture": ["hund","katt","vattensköldpaddor","stress hos hund","berikning för hund","reaktiva hundar","kattens beteendebehov och problemlösning"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -70,7 +80,9 @@
     "email": "info@djurkompassen.se ",
     "city": "Näshulta",
     "homepage": "https://www.djurkompassen.se/ ",
-    "lecture": ["hund", "katt", "häst","sällskapsdjur","klickerträning"]
+    "lecture": ["hund", "katt", "häst","sällskapsdjur","klickerträning"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -83,7 +95,9 @@
     "email": "lifewadog@gmail.com",
     "city": "Göteborg",
     "homepage": "https://lifewithadog.org/",
-    "lecture": ["hundbeteende"]
+    "lecture": ["hundbeteende"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -96,7 +110,9 @@
     "email": "emelie@kognitionsetologerna.se",
     "city": "Borås",
     "homepage": "https://kognitionsetologerna.se/",
-    "lecture": ["hundens beteende och kognition", "hästens beteende och kognition", "övriga sällskapsdjur"]
+    "lecture": ["hundens beteende och kognition", "hästens beteende och kognition", "övriga sällskapsdjur"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -109,7 +125,9 @@
     "email": "nathalie@hundiagavle.se",
     "city": "Gävle",
     "homepage": "https://hundiagavle.se/",
-    "lecture": ["hund"]
+    "lecture": ["hund"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -119,10 +137,12 @@
     "last_name": "Wennman",
     "desc": "Katt",
     "phone": "073 935 3699",
-    "email": "eva.w@hotmail.com",
+    "email": "evawennman@etolog.se",
     "city": "Uppsala",
     "homepage": "https://catcomplete.se/",
-    "lecture": ["katter – problembeteenden (etologi)", "kost och näring (nutriotion)", "relationen mellan katt och människa (antrozoologi)"]
+    "lecture": ["katter – problembeteenden (etologi)", "kost och näring (nutriotion)", "relationen mellan katt och människa (antrozoologi)"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -135,7 +155,9 @@
     "email": "Anna.harenius@gmail.com",
     "city": "Uppsala",
     "homepage": "https://skvf.se/",
-    "lecture": ["kanin", "djurskydd/djurvälfärd/djuretik"]
+    "lecture": ["kanin", "djurskydd/djurvälfärd/djuretik"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -148,7 +170,9 @@
     "email": "Linn.km.larsson@gmail.com",
     "city": "Orsa",
     "homepage": "linkedin.com/in/linn-larsson-b2a31314a",
-    "lecture": ["djurparksdjur", "berikning", "träning", "djurvälfärd", "rovdjur"]
+    "lecture": ["djurparksdjur", "berikning", "träning", "djurvälfärd", "rovdjur"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -161,7 +185,9 @@
     "email": " renate.larssen@hotmail.com",
     "city": " Linköping",
     "homepage": " https://hippologiskt.com/",
-    "lecture": ["hästar", "hästars beteende och träning", "vetenskapsbaserad hästhållning", "enligt önskemål"]
+    "lecture": ["hästar", "hästars beteende och träning", "vetenskapsbaserad hästhållning", "enligt önskemål"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -174,7 +200,9 @@
     "email": "emilie_wass@hotmail.se",
     "city": "Uppsala",
     "homepage": "ingen hemsida",
-    "lecture": ["inga föreläsningar"]
+    "lecture": ["inga föreläsningar"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -187,7 +215,9 @@
     "email": "Sprollan97@live.se",
     "city": "Stockholm",
     "homepage": ". ingen hemsida",
-    "lecture": ["hund"]
+    "lecture": ["hund"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -200,7 +230,9 @@
     "email": "Moa@nygren.ch",
     "city": "Norrtälje",
     "homepage": "ingen hemsida",
-    "lecture": ["inga föreläsningar"]
+    "lecture": ["inga föreläsningar"],
+    "VIP": false,
+    "county": ""
   },
   {
     "id": 17,
@@ -211,7 +243,9 @@
     "email": "ulricaahlrot@etolog.se",
     "city": "Göteborg",
     "homepage": "ingen hemsida",
-    "lecture": ["katt", "vilda kattdjur", "djurparksdjur"]
+    "lecture": ["katt", "vilda kattdjur", "djurparksdjur"],
+    "VIP": false,
+    "county": ""
   },
   
   {
@@ -223,7 +257,9 @@
     "email": "emmaalmquist@etolog.se",
     "city": "Lund",
     "homepage": "https://djurvetologen.se/",
-    "lecture": ["hund", "kanin", "smågnagare", "berikning"]
+    "lecture": ["hund", "kanin", "smågnagare", "berikning"],
+    "VIP": false,
+    "county": ""
   },
   
   {
@@ -235,7 +271,9 @@
     "email": "johannastrandner@etolog.se",
     "city": "Göteborg",
     "homepage": "https://www.facebook.com/fotografjohannastrandner",
-    "lecture": ["hund", "hundträning", "djurfotografering"]
+    "lecture": ["hund", "hundträning", "djurfotografering"],
+    "VIP": false,
+    "county": ""
   },
   
   {
@@ -247,7 +285,9 @@
     "email": "astridsoderqvist@etolog.se",
     "city": "Linköping",
     "homepage": "https://emotionsetologen.se/",
-    "lecture": ["hund", "katt", "gris"]
+    "lecture": ["hund", "katt", "gris"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -260,7 +300,9 @@
     "email": "victoriakallstrom@etolog.se",
     "city": "Göteborg",
     "homepage": "https://www.facebook.com/EtoWise-Victoria-K%C3%A4llstr%C3%B6m-114610217041132",
-    "lecture": ["hund","kanin","gnagare"]
+    "lecture": ["hund","kanin","gnagare"],
+    "VIP": false,
+    "county": ""
   },
   
   
@@ -273,6 +315,8 @@
     "email": "info@etolog.se ",
     "city": "Göteborg",
     "homepage": "etolog.se ",
-    "lecture": ["häst"]
+    "lecture": ["häst"],
+    "VIP": false,
+    "county": ""
   }
 ]
