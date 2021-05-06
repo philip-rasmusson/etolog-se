@@ -14,7 +14,8 @@ import {
 export const EtologBoxDesktop = (props: { id?: number, name?: string, img?: string, description?: string, email?: string, homepage?: string, city?: string, star?: boolean }) => {
   return props.star
     ? ( //Stjärnetolog, har varit med sedan starten
-      <div className="etolog-desktop-box font-grey " style={{ backgroundColor: "#fffde0" }}>
+      <div className="etolog-desktop-box font-grey " >
+        {/* <div className="etolog-desktop-box font-grey " style={{ backgroundColor: "#fffde0" }}> */}
         <div className="etolog-desktop-box-headline">{props.name}</div>
         <img src={props.img} alt="" className="box-shadow etolog-desktop-box-img" />
         <div className="etolog-desktop-box-paragraph">{props.description}</div>
