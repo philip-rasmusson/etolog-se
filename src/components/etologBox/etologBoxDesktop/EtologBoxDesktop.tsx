@@ -1,12 +1,15 @@
 import './EtologBoxDesktop.css'
 import EtologBoxData from '../data/EtologBoxData'
 
+import LisaLundin from "../img/etologer/Lisa-Lundin.jpg"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
   faHome,
   faStar
 } from '../../../../node_modules/@fortawesome/free-solid-svg-icons'
+
 
 export const EtologBoxDesktop = (props: { id?: number, name?: string, img?: string, description?: string, email?: string, homepage?: string, city?: string, star?: boolean }) => {
   return props.star

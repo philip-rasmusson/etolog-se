@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import imgEtologer from "../../../data/imgEtologer"
+
 import './ForelasningarViewDesktop.css'
 import ForelasningarViewData from '../data/ForelasningarViewData'
 import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
