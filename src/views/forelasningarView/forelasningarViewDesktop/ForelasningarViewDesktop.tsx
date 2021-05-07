@@ -77,7 +77,7 @@ export const ForelasningarViewDesktop = () => {
           <EtologBoxDesktop
             id={etologer.id}
             name={etologer.first_name + ' ' + etologer.last_name}
-            img={etologErikJohansson}
+            img={etologer.id}
             description={etologer.desc}
             email={etologer.email}
             city={etologer.city}

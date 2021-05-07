@@ -349,7 +349,20 @@
   "lecture": ["exotiska djur", "etologi"],
   "star": false,
   "county": "Uppsala län"
-  }
+  },
+  {
+    "id": 25,
+    "first_name": "Elke",
+    "last_name": "Hartmann",
+    "desc": "Häst",
+    "phone": "",
+    "email": "elke.hartmann@slu.se",
+    "city": "Uppsala",
+    "homepage": "",
+    "lecture": ["häst", "djurträning"],
+    "VIP": false,
+    "county": "Uppsala län"
+    }
 
   ]
   

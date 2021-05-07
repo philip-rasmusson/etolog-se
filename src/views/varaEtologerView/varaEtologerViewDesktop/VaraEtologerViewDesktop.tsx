@@ -2,7 +2,6 @@ import { useState } from "react"
 
 import './VaraEtologerViewDesktop.css'
 
-import etologErikJohansson from '../../../components/etologBox/img/etologerOld/etolog-Erik-Johansson.png'
 import varaEtologer from '../img/etologer.jpg'
 import headerImg from "../img/headerVaraEtologer.jpg"
 

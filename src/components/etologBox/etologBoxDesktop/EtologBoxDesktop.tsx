@@ -17,8 +17,7 @@ export const EtologBoxDesktop = (props: { id: number, name?: string, img?: any, 
       <div className="etolog-desktop-box font-grey " >
         {/* <div className="etolog-desktop-box font-grey " style={{ backgroundColor: "#fffde0" }}> */}
         <div className="etolog-desktop-box-headline">{props.name}</div>
-        {/* <img src={props.img} alt="" className="box-shadow etolog-desktop-box-img" /> */}
-        <img src={imgEtologer[2].img} alt="" className="box-shadow etolog-desktop-box-img" />
+        <img src={imgEtologer[props.img].img} alt="" className="box-shadow etolog-desktop-box-img" />
         <div className="etolog-desktop-box-paragraph">{props.description}</div>
         <div className="etolog-desktop-box-contact-wrapper">
           <div className="etolog-desktop-box-homepage">
@@ -48,7 +47,7 @@ export const EtologBoxDesktop = (props: { id: number, name?: string, img?: any, 
     ) : (
       <div className="etolog-desktop-box font-grey">
         <div className="etolog-desktop-box-headline">{props.name}</div>
-        <img src={imgEtologer[1].img} alt="" className="box-shadow etolog-desktop-box-img" />
+        <img src={imgEtologer[props.img].img} alt="" className="box-shadow etolog-desktop-box-img" />
         <div className="etolog-desktop-box-paragraph">{props.description}</div>
         <div className="etolog-desktop-box-contact-wrapper">
           <div className="etolog-desktop-box-email">

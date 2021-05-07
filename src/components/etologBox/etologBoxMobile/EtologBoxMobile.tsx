@@ -1,6 +1,7 @@
 import './EtologBoxMobile.css'
 import EtologBoxData from '../data/EtologBoxData'
 
+import { imgEtologer } from "../../../data/imgEtologer"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -8,11 +9,11 @@ import {
   faHome,
 } from '@fortawesome/free-solid-svg-icons'
 
-export const EtologBoxMobile = (props: { id?: number, name?: string, img?: string, description?: string, email?: string, city?: string }) => {
+export const EtologBoxMobile = (props: { id?: number, name?: string, img?: any, description?: string, email?: string, city?: string }) => {
   return (
     <div className="etolog-mobile-box">
       <div className="etolog-mobile-box-headline">{props.name}</div>
-      <img src={props.img} alt="" className="box-shadow etolog-mobile-box-img"></img>
+      <img src={imgEtologer[props.img].img} alt="" className="box-shadow etolog-mobile-box-img"></img>
       <div className="etolog-mobile-box-paragraph">{props.description}</div>
       <div>
         <div className="etolog-mobile-box-phone">

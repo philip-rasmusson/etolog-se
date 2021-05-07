@@ -4,7 +4,6 @@ import { useState } from "react"
 import './ForelasningarViewMobile.css'
 import forelasningarMobile from '../img/forelasningarMobile.jpg'
 import ForelasningarViewData from "../data/ForelasningarViewData"
-import etologErikJohansson from '../../../components/etologBox/img/etologerOld/etolog-Erik-Johansson.png'
 
 import etologer from '../../../data/data-etologer.json'
 
@@ -73,7 +72,7 @@ export const ForelasningarViewMobile = () => {
           <EtologBoxMobile
             id={etologer.id}
             name={etologer.first_name + ' ' + etologer.last_name}
-            img={etologErikJohansson}
+            img={etologer.id}
             description={etologer.desc}
             email={etologer.email}
             city={etologer.city}
