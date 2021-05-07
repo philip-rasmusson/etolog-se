@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import './VaraEtologerViewMobile.css'
-import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
+import etologErikJohansson from '../../../components/etologBox/img/etologerOld/etolog-Erik-Johansson.png'
 import etologerMobile from '../img/etologerMobile.png'
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 

@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import './VaraEtologerViewDesktop.css'
 
-import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
+import etologErikJohansson from '../../../components/etologBox/img/etologerOld/etolog-Erik-Johansson.png'
 import varaEtologer from '../img/etologer.jpg'
 import headerImg from "../img/headerVaraEtologer.jpg"
 
@@ -14,6 +14,9 @@ import categories from '../../../data/data-categories.json'
 
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 import { EtologBoxDesktop } from '../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop'
+
+import AnnaHarenius from '../../../components/etologBox/img/etologer/Anna-Harenius.jpg'
+import AnnaRoos from '../../../components/etologBox/img/etologer/Anna-Roos.jpg'
 
 
 
@@ -65,7 +68,7 @@ export const VaraEtologerViewDesktop = () => {
                     <EtologBoxDesktop
                         id={etologer.id}
                         name={etologer.first_name + ' ' + etologer.last_name}
-                        img={etologErikJohansson}
+                        img={etologer.id}
                         description={etologer.desc}
                         email={etologer.email}
                         city={etologer.city}

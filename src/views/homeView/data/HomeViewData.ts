@@ -6,13 +6,13 @@ const introText = 'En etolog kan göra underverk i relationer mellan djur och m�
 //Section one
 const sectionOneHeadline01 = 'djurägare'
 const sectionOneParagraph01 = 'Vi kan hjälpa dig med ditt husdjur! Oavsett om du behöver hjälp med vardagsträning, beteendeproblematik eller förebyggande träning.'
-const sectionOneBtn01 = 'Boka en konsultation'
+const sectionOneBtn01 = 'Hitta en etolog'
 const sectionOneHeadline02 = 'kliniker'
 const sectionOneParagraph02 = 'För ett holistiskt perspektiv bör beteenderådgivning hålla samma evidensbaserad och kvalitativ som veterinärmedicinen. Erbjud professionell hjälp på din klinik.'
-const sectionOneBtn02 = 'Boka en konsultation'
+const sectionOneBtn02 = 'Kontakta oss'
 const sectionOneHeadline03 = 'verksamheter'
 const sectionOneParagraph03 = 'Våra etologer är bland annat utbildade i etologi, djurhållning, djurhälsa, djurskydd, försöksdesign och smittskydd. Vi har en konsult som passar din verksamhet.'
-const sectionOneBtn03 = 'Boka en konsultation'
+const sectionOneBtn03 = 'Boka ett möte'
 
 //Section two
 const sectionTwoHeadline01 = 'webkurser'

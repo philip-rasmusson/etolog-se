@@ -1,7 +1,7 @@
 import './EtologBoxDesktop.css'
 import EtologBoxData from '../data/EtologBoxData'
 
-import LisaLundin from "../img/etologer/Lisa-Lundin.jpg"
+import { imgEtologer } from "../../../data/imgEtologer"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -11,13 +11,14 @@ import {
 } from '../../../../node_modules/@fortawesome/free-solid-svg-icons'
 
 
-export const EtologBoxDesktop = (props: { id?: number, name?: string, img?: string, description?: string, email?: string, homepage?: string, city?: string, star?: boolean }) => {
+export const EtologBoxDesktop = (props: { id: number, name?: string, img?: any, description?: string, email?: string, homepage?: string, city?: string, star?: boolean }) => {
   return props.star
     ? ( //Stjärnetolog, har varit med sedan starten
       <div className="etolog-desktop-box font-grey " >
         {/* <div className="etolog-desktop-box font-grey " style={{ backgroundColor: "#fffde0" }}> */}
         <div className="etolog-desktop-box-headline">{props.name}</div>
-        <img src={props.img} alt="" className="box-shadow etolog-desktop-box-img" />
+        {/* <img src={props.img} alt="" className="box-shadow etolog-desktop-box-img" /> */}
+        <img src={imgEtologer[2].img} alt="" className="box-shadow etolog-desktop-box-img" />
         <div className="etolog-desktop-box-paragraph">{props.description}</div>
         <div className="etolog-desktop-box-contact-wrapper">
           <div className="etolog-desktop-box-homepage">
@@ -47,7 +48,7 @@ export const EtologBoxDesktop = (props: { id?: number, name?: string, img?: stri
     ) : (
       <div className="etolog-desktop-box font-grey">
         <div className="etolog-desktop-box-headline">{props.name}</div>
-        <img src={props.img} alt="" className="box-shadow etolog-desktop-box-img"></img>
+        <img src={imgEtologer[1].img} alt="" className="box-shadow etolog-desktop-box-img" />
         <div className="etolog-desktop-box-paragraph">{props.description}</div>
         <div className="etolog-desktop-box-contact-wrapper">
           <div className="etolog-desktop-box-email">

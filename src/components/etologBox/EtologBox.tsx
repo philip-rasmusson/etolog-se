@@ -5,10 +5,10 @@ import DesktopMobileBreakpoint from "../../shared/global/DesktopMobileBreakpoint
 export const EtologBox = () => {
   const { width } = useWindowDimensions()
 
-  const toggleDesktopOrMobileViewForNavbar = () => {
-    return width <= DesktopMobileBreakpoint.width ? <EtologBoxDesktop /> : <EtologBoxDesktop />
-  }
+  // const toggleDesktopOrMobileViewForNavbar = () => {
+  //   return width <= DesktopMobileBreakpoint.width ? <EtologBoxMobile /> : <EtologBoxDesktop />
+  // }
 
-  return <div>{toggleDesktopOrMobileViewForNavbar()}</div>
+  // return <div>{toggleDesktopOrMobileViewForNavbar()}</div>
 }
 

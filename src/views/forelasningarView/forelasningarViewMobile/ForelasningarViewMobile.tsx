@@ -4,7 +4,7 @@ import { useState } from "react"
 import './ForelasningarViewMobile.css'
 import forelasningarMobile from '../img/forelasningarMobile.jpg'
 import ForelasningarViewData from "../data/ForelasningarViewData"
-import etologErikJohansson from '../../../components/etologBox/img/etologer/etolog-Erik-Johansson.png'
+import etologErikJohansson from '../../../components/etologBox/img/etologerOld/etolog-Erik-Johansson.png'
 
 import etologer from '../../../data/data-etologer.json'
 

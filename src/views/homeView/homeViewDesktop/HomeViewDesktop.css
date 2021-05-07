@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   color: #707070;
-  background-color: #f1f1f1;
+  background-color: #fff;
 }
 
 .homeview-desktop-img {
@@ -85,7 +85,8 @@
 }
 
 .homeview-desktop-button {
-  align-content: flex-end;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*Section*/
