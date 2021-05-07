@@ -6,11 +6,11 @@ import LindaStrohmaier from "../components/etologBox/img/etologer/LindaStrohmaie
 import PaulinaLundberg from "../components/etologBox/img/etologer/unknown.jpg";
 import JanniceKindsjo from "../components/etologBox/img/etologer/JanniceKindsjo.jpg";
 import AnnaMariaSvedberg from "../components/etologBox/img/etologer/AnnaMariaSvedberg.jpg";
-import AnnSofieSandell from "../components/etologBox/img/etologer/unknown.jpg";
+import AnnSofieSandell from "../components/etologBox/img/etologer/AnnSofieSandell.jpg";
 import CharlotteFriis from "../components/etologBox/img/etologer/CharlotteFriis.jpg";
 import EmelieDeBoussard from "../components/etologBox/img/etologer/EmelieDeBoussard.jpg";
 import NathalieNilsson from "../components/etologBox/img/etologer/NathalieNilsson.jpg";
-import EvaWennman from "../components/etologBox/img/etologer/unknown.jpg";
+import EvaWennman from "../components/etologBox/img/etologer/EvaWennman.jpg";
 import LinnLarsson from "../components/etologBox/img/etologer/unknown.jpg";
 import RenateLarssen from "../components/etologBox/img/etologer/unknown.jpg";
 import EmilieWassGrunander from "../components/etologBox/img/etologer/EmilieWassGrunander.jpg";
