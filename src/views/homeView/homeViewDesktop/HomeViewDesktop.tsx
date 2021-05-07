@@ -86,7 +86,7 @@ export const HomeViewDesktop = () => {
                             headline={HomeViewData.sectionOneHeadline01}
                             paragraph={HomeViewData.sectionOneParagraph01}
                             btn={HomeViewData.sectionOneBtn01}
-                            path={RoutingPath.konsultuppdragView}
+                            path={RoutingPath.varaEtologerView}
                         />
                     </div>
                     <div>

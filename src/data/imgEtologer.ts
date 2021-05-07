@@ -5,21 +5,21 @@ import IreneWesterholm from "../components/etologBox/img/etologer/unknown.jpg";
 import LindaStrohmaier from "../components/etologBox/img/etologer/LindaStrohmaier.jpg";
 import PaulinaLundberg from "../components/etologBox/img/etologer/unknown.jpg";
 import JanniceKindsjo from "../components/etologBox/img/etologer/JanniceKindsjo.jpg";
-import AnnaMariaSvedberg from "../components/etologBox/img/etologer/unknown.jpg";
+import AnnaMariaSvedberg from "../components/etologBox/img/etologer/AnnaMariaSvedberg.jpg";
 import AnnSofieSandell from "../components/etologBox/img/etologer/unknown.jpg";
 import CharlotteFriis from "../components/etologBox/img/etologer/CharlotteFriis.jpg";
-import EmelieDeBoussard from "../components/etologBox/img/etologer/unknown.jpg";
+import EmelieDeBoussard from "../components/etologBox/img/etologer/EmelieDeBoussard.jpg";
 import NathalieNilsson from "../components/etologBox/img/etologer/NathalieNilsson.jpg";
 import EvaWennman from "../components/etologBox/img/etologer/unknown.jpg";
 import LinnLarsson from "../components/etologBox/img/etologer/unknown.jpg";
 import RenateLarssen from "../components/etologBox/img/etologer/unknown.jpg";
 import EmilieWassGrunander from "../components/etologBox/img/etologer/EmilieWassGrunander.jpg";
 import MoaNygren from "../components/etologBox/img/etologer/unknown.jpg";
-import UlricaAhlrot from "../components/etologBox/img/etologer/unknown.jpg";
-import JohannaStrander from "../components/etologBox/img/etologer/unknown.jpg";
+import UlricaAhlrot from "../components/etologBox/img/etologer/UlricaAhlrot.jpg";
+import JohannaStrandner from "../components/etologBox/img/etologer/JohannaStrandner.jpg";
 import AstridSoderqvist from "../components/etologBox/img/etologer/AstridSoderqvist.jpg";
 import VictoriaKallstrom from "../components/etologBox/img/etologer/VictoriaKallstrom.jpg";
-import EllenKilander from "../components/etologBox/img/etologer/unknown.jpg";
+import EllenKilander from "../components/etologBox/img/etologer/EllenKilander.jpg";
 import DesireeSjostrom from "../components/etologBox/img/etologer/unknown.jpg";
 import LisaLundin from "../components/etologBox/img/etologer/LisaLundin.jpg";
 import ElkeHartmann from "../components/etologBox/img/etologer/unknown.jpg";
@@ -104,7 +104,7 @@ export const imgEtologer = [
 },
   {
   id: 19,
-  img: JohannaStrander
+  img: JohannaStrandner
 },
   {
   id: 20,
