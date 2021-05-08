@@ -16,11 +16,13 @@
   border: rgba(0, 0, 0, 0.315) solid 1px;
   border-radius: 2rem;
   margin: auto;
-  width: 22rem;
+  padding-bottom: 1rem;
+  width: 23rem;
 }
 
 .radgivning-dekstop-section-three-text p {
-  margin: 1rem auto;
+  font-weight: 200;
+  margin: 2rem auto;
   text-align: center;
   width: 20rem;
 }

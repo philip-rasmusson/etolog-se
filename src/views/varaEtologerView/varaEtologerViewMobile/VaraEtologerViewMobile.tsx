@@ -64,6 +64,7 @@ export const VaraEtologerViewMobile = () => {
                         description={etologer.desc}
                         email={etologer.email}
                         city={etologer.city}
+                        star={etologer.star}
                     />
                 </div>
             )

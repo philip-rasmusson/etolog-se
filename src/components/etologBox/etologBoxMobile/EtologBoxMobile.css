@@ -1,7 +1,6 @@
 .etolog-mobile-box {
   align-items: center;
   border-top: rgb(167, 167, 167) solid 1px;
-  color: #454545;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,30 +10,32 @@
 }
 
 .etolog-mobile-box-headline {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 400;
   letter-spacing: 2px;
+  text-transform: uppercase;
   text-align: center;
   width: 100%;
 }
 
 .etolog-mobile-box-img {
-  width: 100%;
-  border-radius: 2rem;
+  width: 70%;
+  border-radius: 1rem;
   margin-top: 2rem;
 }
 
 .etolog-mobile-box-paragraph {
-  width: 100%;
+  font-size: 4vw;
+  font-weight: 200;
   padding: 5vw 0;
   text-align: center;
-  font-size: 5vw;
+  width: 100%;
 }
 
 .etolog-mobile-box-phone, .etolog-mobile-box-email, .etolog-mobile-box-city {
   display: flex;
   text-align: center;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .etolog-mobile-box-city-phone, .etolog-mobile-box-city-email, .etolog-mobile-box-city-icon {
@@ -42,7 +43,8 @@
 }
 
 .etolog-mobile-box-email-link {
-  color: initial;
   cursor: pointer;
   text-decoration: none;
 }
+
+.etolog-desktop-box-contact-wrapper {}
