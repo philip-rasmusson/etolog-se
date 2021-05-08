@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/etolog-se/static/css/main.9ce150aa.chunk.css",
-    "main.js": "/etolog-se/static/js/main.75e0abc1.chunk.js",
-    "main.js.map": "/etolog-se/static/js/main.75e0abc1.chunk.js.map",
+    "main.css": "/etolog-se/static/css/main.f0e2beda.chunk.css",
+    "main.js": "/etolog-se/static/js/main.1e3f81da.chunk.js",
+    "main.js.map": "/etolog-se/static/js/main.1e3f81da.chunk.js.map",
     "runtime-main.js": "/etolog-se/static/js/runtime-main.751b3591.js",
     "runtime-main.js.map": "/etolog-se/static/js/runtime-main.751b3591.js.map",
-    "static/js/2.448375bb.chunk.js": "/etolog-se/static/js/2.448375bb.chunk.js",
-    "static/js/2.448375bb.chunk.js.map": "/etolog-se/static/js/2.448375bb.chunk.js.map",
+    "static/js/2.6e7fad14.chunk.js": "/etolog-se/static/js/2.6e7fad14.chunk.js",
+    "static/js/2.6e7fad14.chunk.js.map": "/etolog-se/static/js/2.6e7fad14.chunk.js.map",
     "static/js/3.66c3b157.chunk.js": "/etolog-se/static/js/3.66c3b157.chunk.js",
     "static/js/3.66c3b157.chunk.js.map": "/etolog-se/static/js/3.66c3b157.chunk.js.map",
     "index.html": "/etolog-se/index.html",
-    "static/css/main.9ce150aa.chunk.css.map": "/etolog-se/static/css/main.9ce150aa.chunk.css.map",
-    "static/js/2.448375bb.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.448375bb.chunk.js.LICENSE.txt",
+    "static/css/main.f0e2beda.chunk.css.map": "/etolog-se/static/css/main.f0e2beda.chunk.css.map",
+    "static/js/2.6e7fad14.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.6e7fad14.chunk.js.LICENSE.txt",
+    "static/media/AnnSofieSandell.fbb69992.jpg": "/etolog-se/static/media/AnnSofieSandell.fbb69992.jpg",
     "static/media/AnnaHarenius.74d3c788.jpg": "/etolog-se/static/media/AnnaHarenius.74d3c788.jpg",
     "static/media/AnnaMariaSvedberg.b0369d57.jpg": "/etolog-se/static/media/AnnaMariaSvedberg.b0369d57.jpg",
     "static/media/AnnaRoos.4c0f6dfa.jpg": "/etolog-se/static/media/AnnaRoos.4c0f6dfa.jpg",
@@ -21,6 +22,7 @@
     "static/media/EmelieDeBoussard.9e9426ee.jpg": "/etolog-se/static/media/EmelieDeBoussard.9e9426ee.jpg",
     "static/media/EmilieWassGrunander.0436bcd6.jpg": "/etolog-se/static/media/EmilieWassGrunander.0436bcd6.jpg",
     "static/media/EmmaAlmquist.efbf62d8.jpg": "/etolog-se/static/media/EmmaAlmquist.efbf62d8.jpg",
+    "static/media/EvaWennman.2261aca5.jpg": "/etolog-se/static/media/EvaWennman.2261aca5.jpg",
     "static/media/JanniceKindsjo.1f203f2e.jpg": "/etolog-se/static/media/JanniceKindsjo.1f203f2e.jpg",
     "static/media/JohannaStrandner.626092fb.jpg": "/etolog-se/static/media/JohannaStrandner.626092fb.jpg",
     "static/media/LindaStrohmaier.e13cee12.jpg": "/etolog-se/static/media/LindaStrohmaier.e13cee12.jpg",
@@ -68,8 +70,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.751b3591.js",
-    "static/js/2.448375bb.chunk.js",
-    "static/css/main.9ce150aa.chunk.css",
-    "static/js/main.75e0abc1.chunk.js"
+    "static/js/2.6e7fad14.chunk.js",
+    "static/css/main.f0e2beda.chunk.css",
+    "static/js/main.1e3f81da.chunk.js"
   ]
 }
