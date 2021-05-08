@@ -14,8 +14,7 @@ import categories from '../../../data/data-categories.json'
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 import { EtologBoxDesktop } from '../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop'
 
-import AnnaHarenius from '../../../components/etologBox/img/etologer/Anna-Harenius.jpg'
-import AnnaRoos from '../../../components/etologBox/img/etologer/Anna-Roos.jpg'
+import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 
 
 
@@ -106,6 +105,7 @@ export const VaraEtologerViewDesktop = () => {
             <div className="vara-etologer-desktop-etologer-wrapper">
                 {EtologArray}
             </div>
+            <p className="star-disclaimer-desktop">{EtologBoxData.starDesclaimer}</p>
         </div>
     )
 }

@@ -17,6 +17,11 @@
     font-weight: 300;
     margin: auto 0 auto 7vw;
     padding: 0 0;
+    text-decoration: none;
+}
+
+.navbar-desktop a {
+    text-decoration: none;
 }
 
 .navbar-desktop-menu {

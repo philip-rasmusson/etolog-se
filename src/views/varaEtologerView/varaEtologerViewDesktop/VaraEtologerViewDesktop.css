@@ -5,11 +5,11 @@
 .vara-etologer-desktop-etologer-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 755px;
+  justify-content: center;
   margin: auto;
+  max-width: 1000px;
   padding-top: 5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 8rem;
 }
 
 .vara-etologer-desktop-search-box-wrapper {

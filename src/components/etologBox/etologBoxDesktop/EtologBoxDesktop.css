@@ -1,6 +1,5 @@
 .etolog-desktop-box {
   align-items: center;
-  /* background-color: rgb(225, 240, 255); */
   border-radius: 1rem;
   border: rgba(128, 128, 128, 0.507) solid 1px;
   display: flex;
@@ -19,24 +18,12 @@
 
 .etolog-desktop-box-img {
   border-radius: 2rem;
-  margin-top: 0rem;
   max-width: 10rem;
   width: 30vw;
 }
 
-.etolog-desktop-box-img-star-wrapper {
-  display: grid;
-}
-
 .etolog-desktop-box-star, .etolog-desktop-box-nostar {
   height: 2.5rem;
-}
-
-.etolog-desktop-box-img-star-wrapper h4, .etolog-desktop-box-img-star-wrapper img {
-  grid-row: 1/1;
-  grid-column: 1/1;
-  align-self: center;
-  justify-content: center;
 }
 
 .etolog-desktop-box-paragraph {
@@ -47,18 +34,21 @@
   height: 6rem;
 }
 
+.etolog-desktop-box-img-star-wrapper {
+  display: flex;
+}
+
 .etolog-desktop-box-homepage, .etolog-desktop-box-email, .etolog-desktop-box-city {
   display: flex;
   text-align: left;
   font-size: 1rem;
 }
 
-.etolog-desktop-box-city-homepage, .etolog-desktop-box-city-email, .etolog-desktop-box-city-icon {
-  padding-right: 2rem;
+.etolog-desktop-box-icon-homepage, .etolog-desktop-box-icon-email, .etolog-desktop-box-icon-city {
+  padding-right: 1rem;
 }
 
 .etolog-desktop-box-email-link {
-  color: initial;
   cursor: pointer;
   text-decoration: none;
 }

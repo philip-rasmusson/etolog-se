@@ -6,6 +6,8 @@ import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
 import etologer from '../../../data/data-etologer.json'
 import categories from '../../../data/data-categories.json'
+import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
+
 
 
 import { DefaulPageLayoutMobile } from "../../../components/defaultPageLayout/defaultPageLayoutMobile/DefaultPageLayoutMobile"
@@ -100,6 +102,8 @@ export const VaraEtologerViewMobile = () => {
             <div className="vara-etologer-mobile-button">
                 <button onClick={() => scrollToTop()}>Till toppen</button>
             </div>
+            <p className="star-disclaimer-mobile">{EtologBoxData.starDesclaimer}</p>
+
         </div>
     )
 }

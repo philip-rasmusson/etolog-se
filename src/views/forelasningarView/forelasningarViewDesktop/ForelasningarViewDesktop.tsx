@@ -4,9 +4,10 @@ import { imgEtologer } from "../../../data/imgEtologer"
 
 import './ForelasningarViewDesktop.css'
 import ForelasningarViewData from '../data/ForelasningarViewData'
-import etologErikJohansson from '../../../components/etologBox/img/etologerOld/etolog-Erik-Johansson.png'
+
 
 import etologer from '../../../data/data-etologer.json'
+import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 
 import headerImg from "../img/headerForelasningar.jpg"
 import forelasningar from '../img/forelasningar.jpg'
@@ -108,6 +109,8 @@ export const ForelasningarViewDesktop = () => {
         <div className="forelasningar-desktop-etolog-box-wrapper background-white">
           {ShowEtologer}
         </div>
+        <p className="star-disclaimer-desktop">{EtologBoxData.starDesclaimer}</p>
+
       </div>
     </>
   )

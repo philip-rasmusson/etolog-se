@@ -6,6 +6,8 @@ import forelasningarMobile from '../img/forelasningarMobile.jpg'
 import ForelasningarViewData from "../data/ForelasningarViewData"
 
 import etologer from '../../../data/data-etologer.json'
+import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
+
 
 import categoryGris from "../img/CategoryBox/category-gris.jpg"
 import categoryHund from "../img/CategoryBox/category-hund.jpg"
@@ -97,6 +99,8 @@ export const ForelasningarViewMobile = () => {
         <div className="forelasningar-mobile-etolog-box-wrapper background-white">
           {ShowEtologer}
         </div>
+        <p className="star-disclaimer-mobile">{EtologBoxData.starDesclaimer}</p>
+
         {/* <button onClick={() => setFilterCategory('')} >Visa alla etologer</button> */}
       </div>
     </>

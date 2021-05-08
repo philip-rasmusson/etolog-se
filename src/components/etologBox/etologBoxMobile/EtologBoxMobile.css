@@ -32,13 +32,13 @@
   width: 100%;
 }
 
-.etolog-mobile-box-phone, .etolog-mobile-box-email, .etolog-mobile-box-city {
+.etolog-mobile-box-homepage, .etolog-mobile-box-email, .etolog-mobile-box-city {
   display: flex;
   text-align: center;
   font-size: 4vw;
 }
 
-.etolog-mobile-box-city-phone, .etolog-mobile-box-city-email, .etolog-mobile-box-city-icon {
+.etolog-mobile-box-homepage-icon, .etolog-mobile-box-email-icon, .etolog-mobile-box-city-icon {
   padding-right: 8vw;
 }
 
@@ -47,4 +47,6 @@
   text-decoration: none;
 }
 
-.etolog-desktop-box-contact-wrapper {}
+.etolog-mobile-box-star, .etolog-mobile-box-nostar {
+  height: 2.5rem;
+}
