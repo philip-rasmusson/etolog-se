@@ -35,7 +35,7 @@
 }
 
 .etolog-desktop-box-img-star-wrapper {
-  display: flex;
+  display: grid;
 }
 
 .etolog-desktop-box-homepage, .etolog-desktop-box-email, .etolog-desktop-box-city {

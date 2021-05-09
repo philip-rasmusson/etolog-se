@@ -17,6 +17,8 @@ export const VaraEtologerViewMobile = () => {
 
     const [filterCategory, setFilterCategory] = useState('')
 
+
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -88,7 +90,7 @@ export const VaraEtologerViewMobile = () => {
                     {showEtologer}
                 </select> */}
                 <select className="vara-etologer-select-box box-shadow" onChange={(event) => selectCategory(event.target.value)}>
-                    <option value="">Välj kategori...</option>
+                    <option value="0">Välj kategori...</option>
                     {showCategory}
                 </select>
                 {/* <select className="vara-etologer-select-box box-shadow">

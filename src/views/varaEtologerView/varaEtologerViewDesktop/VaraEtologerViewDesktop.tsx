@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import './VaraEtologerViewDesktop.css'
 
@@ -8,7 +8,7 @@ import headerImg from "../img/headerVaraEtologer.jpg"
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
 import etologer from '../../../data/data-etologer.json'
-import cities from '../../../data/data-city.json'
+import county from '../../../data/data-county.json'
 import categories from '../../../data/data-categories.json'
 
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
@@ -20,26 +20,33 @@ import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 
 export const VaraEtologerViewDesktop = () => {
 
-    const [filterName, setFilterName] = useState('')
+    // const [filterName, setFilterName] = useState('')
     const [filterCategory, setFilterCategory] = useState('')
-    const [filterCity, setFilterCity] = useState('')
+    const [filterCounty, setFilterCounty] = useState('')
 
-
-    const selectName = (event: any) => {
-        setFilterName(event)
+    const ShowAllEtologer = () => {
+        setFilterCategory('')
+        setFilterCounty('')
     }
+
+    // const selectName = (event: any) => {
+    //     setFilterCategory('')
+    //     setFilterCounty('')
+    //     setFilterName(event)
+    // }
     const selectCategory = (event: any) => {
         setFilterCategory(event)
     }
-    const selectCity = (event: any) => {
-        setFilterCity(event)
+    const selectCounty = (event: any) => {
+        setFilterCounty(event)
     }
 
 
-    // const showName = etologer.map((etologer) => {
+
+    // const showName = etologer.map((name) => {
     //     return (
-    //         <option value={etologer.id}>
-    //             {etologer.first_name} {etologer.last_name}
+    //         <option value={name.id}>
+    //             {name.first_name} {name.last_name}
     //         </option>
     //     )
     // })
@@ -49,18 +56,35 @@ export const VaraEtologerViewDesktop = () => {
         return (
             <option value={category.category}>
                 {category.category}
+
             </option>
         )
     })
-    // const showCity = cities.map((city) => {
-    //     return (
-    //         <option value={city.city}>
-    //             {city.city}
-    //         </option>
-    //     )
-    // })
+    const showCounty = county.map((county) => {
+        return (
+            <option value={county.county}>
+                {county.county}
+            </option>
+        )
+    })
+
     const EtologArray = etologer.map((etologer) => {
-        if (etologer.desc.includes(filterCategory)) {
+        if (etologer.desc.
+            toLowerCase().includes(filterCategory) && etologer.county.includes(filterCounty)) {
+            if (etologer.star)
+                return (
+                    <div className="vara-etologer-etolog-box">
+                        <EtologBoxDesktop
+                            id={etologer.id}
+                            name={etologer.first_name + ' ' + etologer.last_name}
+                            img={etologer.id}
+                            description={etologer.desc}
+                            email={etologer.email}
+                            city={etologer.city}
+                            star={etologer.star}
+                        />
+                    </div>
+                )
             return (
                 <div className="vara-etologer-etolog-box">
                     <EtologBoxDesktop
@@ -93,14 +117,17 @@ export const VaraEtologerViewDesktop = () => {
                     <option value="0">Välj etolog...</option>
                     {showName}
                 </select> */}
-                <select id="vara-etologer-select-box" className="vara-etologer-select-box box-shadow" onChange={(event) => selectCategory(event.target.value)}>
-                    <option value=" ">Välj kategori...</option>
+                <button onClick={() => ShowAllEtologer()}>
+                    Visa alla etologer
+                </button>
+                <select id="vara-etologer-select-box" className="vara-etologer-select-box" onChange={(event) => selectCategory(event.target.value)}>
+                    <option value="0">Välj kategori...</option>
                     {showCategory}
                 </select>
-                {/* <select className="vara-etologer-select-box box-shadow" onChange={(event) => selectCity(event.target.value)}>
-                    <option value="0">Välj stad...</option>
-                    {showCity}
-                </select> */}
+                <select className="vara-etologer-select-box" onChange={(event) => selectCounty(event.target.value)}>
+                    <option value="län">Välj län...</option>
+                    {showCounty}
+                </select>
             </div>
             <div className="vara-etologer-desktop-etologer-wrapper">
                 {EtologArray}

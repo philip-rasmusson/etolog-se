@@ -14,7 +14,7 @@
   text-decoration: none;
 }
 
-button, .vara-etologer-select-box {
+button, select {
   border-radius: 2rem;
   background-color: #36536d;
   color: #f1f1f1;
@@ -23,6 +23,12 @@ button, .vara-etologer-select-box {
   font-weight: 400;
   padding: 8px;
   text-transform: uppercase;
+}
+
+select {
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-style: outset;
+  border-width: 2px;
 }
 
 .box-shadow {
