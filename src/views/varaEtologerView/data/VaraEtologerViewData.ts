@@ -6,6 +6,9 @@ const  pageParagraph1 = 'Många av våra etologer erbjuder digitala föreläsnin
 const  imgPlacement = 'right'
 const  sectionTwoParagraph1 = ' Hitta din etolog här. Använd sökfunktioner eller skrolla för att hitta en etolog som passar dig.'
 const  sectionTwoParagraph2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae recusandae laudantium laborum autem atque a necessitatibus, asperiores, eos velit explicabo deserunt ea. Eum, distinctio. Dicta odio quasi laboriosam! Provident?'
+//Section Three
+const selectCategory = 'visa alla kategorier'
+const selectCounty = 'visa alla län'
 
 // const lectures = [
 //   "djurskydd",
@@ -43,5 +46,7 @@ export default {
   imgPlacement,
   sectionTwoParagraph1, 
   sectionTwoParagraph2, 
+  selectCategory,
+  selectCounty
   // lectures,
 }
