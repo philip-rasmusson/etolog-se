@@ -44,6 +44,10 @@
   font-size: 1rem;
 }
 
+.etolog-desktop-box-homepage a {
+  text-decoration: none;
+}
+
 .etolog-desktop-box-icon-homepage, .etolog-desktop-box-icon-email, .etolog-desktop-box-icon-city {
   padding-right: 1rem;
 }

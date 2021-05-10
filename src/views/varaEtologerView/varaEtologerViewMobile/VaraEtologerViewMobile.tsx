@@ -1,23 +1,21 @@
 import { useState } from "react"
 
 import './VaraEtologerViewMobile.css'
+
 import etologerMobile from '../img/etologerMobile.png'
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
 import etologer from '../../../data/data-etologer.json'
+import county from '../../../data/data-county.json'
 import categories from '../../../data/data-categories.json'
-import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
-
-
 
 import { DefaulPageLayoutMobile } from "../../../components/defaultPageLayout/defaultPageLayoutMobile/DefaultPageLayoutMobile"
 import { EtologBoxMobile } from '../../../components/etologBox/etologBoxMobile/EtologBoxMobile'
 
+import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
+
+
 export const VaraEtologerViewMobile = () => {
-
-    const [filterCategory, setFilterCategory] = useState('')
-
-
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -25,54 +23,66 @@ export const VaraEtologerViewMobile = () => {
             behavior: "smooth"
         })
     }
+    const [filterCategory, setFilterCategory] = useState('showAll')
+    const [filterCounty, setFilterCounty] = useState('län')
+
     const selectCategory = (event: any) => {
         setFilterCategory(event)
     }
-    const showEtologer = etologer.map((etologer) => {
-        return (
-            <option value={etologer.id}>
-                {etologer.first_name} {etologer.last_name}
-            </option>
-        )
-    })
+    const selectCounty = (event: any) => {
+        setFilterCounty(event)
+    }
     const showCategory = categories.map((category) => {
-
         return (
             <option value={category.category}>
                 {category.category}
+
             </option>
         )
     })
-    // const showCity = etologer.map((etologer) => {
-    //     return (
-    //         <option value={etologer.city}>
-    //             {etologer.city}
-    //         </option>
-    //     )
-    // })
-    // const ShowEtologer = etologer.map((etologer) => {
-    //     return (
-    //         <option value={etologer.id}>
-    //             {etologer.first_name} {etologer.last_name}
-    //         </option>
-    //     )
-    // })
-    const EtologArray = etologer.map((etologer) => {
-        if (etologer.desc.includes(filterCategory)) {
-            return (
-                <div className="vara-etologer-etolog-box">
-                    <EtologBoxMobile
-                        id={etologer.id}
-                        name={etologer.first_name + ' ' + etologer.last_name}
-                        img={etologer.id}
-                        description={etologer.desc}
-                        email={etologer.email}
-                        city={etologer.city}
-                        star={etologer.star}
-                    />
-                </div>
-            )
-        }
+    const showCounty = county.map((county) => {
+        return (
+            <option value={county.county}>
+                {county.county}
+            </option>
+        )
+    })
+    const EtologArrayStar = etologer.map((etologer) => {
+        if (etologer.star)
+            if (etologer.categoryFilter.includes(filterCategory) && etologer.county.includes(filterCounty)) {
+                return (
+                    <div className="vara-etologer-etolog-box">
+                        <EtologBoxMobile
+                            id={etologer.id}
+                            name={etologer.first_name + ' ' + etologer.last_name}
+                            img={etologer.id}
+                            description={etologer.desc}
+                            email={etologer.email}
+                            city={etologer.city}
+                            star={etologer.star}
+                            homepage={etologer.homepage}
+                        />
+                    </div>
+                )
+            }
+    })
+    const EtologArrayNoStar = etologer.map((etologer) => {
+        if (!etologer.star)
+            if (etologer.categoryFilter.includes(filterCategory) && etologer.county.includes(filterCounty)) {
+                return (
+                    <div className="vara-etologer-etolog-box">
+                        <EtologBoxMobile
+                            id={etologer.id}
+                            name={etologer.first_name + ' ' + etologer.last_name}
+                            img={etologer.id}
+                            description={etologer.desc}
+                            email={etologer.email}
+                            city={etologer.city}
+                            star={etologer.star}
+                        />
+                    </div>
+                )
+            }
     })
     return (
         <div className="vara-etologer-mobile-wrapper" id="vara-etologer-mobile-id">
@@ -85,21 +95,18 @@ export const VaraEtologerViewMobile = () => {
             // paragraphTwo={VaraEtologerViewData.paragraphTwo}
             />
             <div className="vara-etologer-mobile-search-box-wrapper">
-                {/* <select className="vara-etologer-select-box box-shadow">
-                    <option value="0">Välj etolog...</option>
-                    {showEtologer}
-                </select> */}
-                <select className="vara-etologer-select-box box-shadow" onChange={(event) => selectCategory(event.target.value)}>
-                    <option value="0">Välj kategori...</option>
+                <select className="vara-etologer-select-box" onChange={(event) => selectCategory(event.target.value)}>
+                    <option value="showAll">{VaraEtologerViewData.selectCategory}</option>
                     {showCategory}
                 </select>
-                {/* <select className="vara-etologer-select-box box-shadow">
-                    <option value="0">Välj stad...</option>
-                    {showCity}
-                </select> */}
+                <select className="vara-etologer-select-box" onChange={(event) => selectCounty(event.target.value)}>
+                    <option value="län">{VaraEtologerViewData.selectCounty}</option>
+                    {showCounty}
+                </select>
             </div>
             <div className="vara-etologer-mobile-etologbox-wrapper">
-                {EtologArray}
+                {EtologArrayStar}
+                {EtologArrayNoStar}
             </div>
             <div className="vara-etologer-mobile-button">
                 <button onClick={() => scrollToTop()}>Till toppen</button>

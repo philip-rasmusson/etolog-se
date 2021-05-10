@@ -38,6 +38,10 @@
   font-size: 4vw;
 }
 
+.etolog-mobile-box-homepage a {
+  text-decoration: none;
+}
+
 .etolog-mobile-box-homepage-icon, .etolog-mobile-box-email-icon, .etolog-mobile-box-city-icon {
   padding-right: 8vw;
 }

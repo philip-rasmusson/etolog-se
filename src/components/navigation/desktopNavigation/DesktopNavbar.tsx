@@ -1,4 +1,5 @@
 import './DesktopNavbar.css'
+
 import NavbarData from '../data/NavbarData'
 import RoutingPath from '../../../routes/RoutingPath'
 
@@ -22,7 +23,6 @@ export const DesktopNavbar = () => {
         </p>
         <p onClick={() => window.open(RoutingPath.webkurser)}
         >
-
           {NavbarData.webkurser}
         </p>
         <p

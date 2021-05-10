@@ -11,21 +11,23 @@
   "homepage": "https://hundlaroverket.se/",
   "lecture": ["hund"],
   "star": false,
-  "county": "Södermanlands län"
+  "county": "Södermanlands län",
+  "categoryFilter": ["showAll", "hund"]
   },
   
   {
   "id": 1,
   "first_name": "Linda",
   "last_name": "Strohmaier",
-  "desc": "Katt, hund, kanin, marsvinoch fjäderfä",
+  "desc": "Katt, hund, kanin, marsvin och fjäderfä",
   "phone": "072 337 9800",
   "email": "Info@djurkonsultenzed.se",
   "city": "Frövi",
   "homepage": "https://djurkonsultenzed.se/",
   "lecture": ["hund", "katt", "fåglar","kanin & smågnagare","etologi"],
   "star": false,
-  "county": "Örebro län"
+  "county": "Örebro län",
+  "categoryFilter": ["showAll", "katt", "hund", "kanin", "gnagare", "fåglar"]
   },
   
   {
@@ -39,7 +41,8 @@
   "homepage": "http://paulina-etolog.se/",
   "lectureKey": ["häst", "hund", "katt", "etologi"],
   "star": false,
-  "county": "Östergötlands län"
+  "county": "Östergötlands län",
+  "categoryFilter": ["showAll", "häst", "hund", "katt"]
   },
   
   {
@@ -53,7 +56,8 @@
   "homepage": "http://www.duochdjur.se/",
   "lecture": ["hund", "djurträning", "etologi", "star"],
   "star": true,
-  "county": "Västernorrlands län"
+  "county": "Västernorrlands län",
+  "categoryFilter": ["showAll", "hund", "djursjukvård"]
   },
   
   
@@ -68,7 +72,8 @@
   "homepage": "http://etologica.se/",
   "lecture": ["hund","katt","reptil","djurträning","etologi", "star"],
   "star": true,
-  "county": "Västernorrlands län"
+  "county": "Västernorrlands län",
+  "categoryFilter": ["showAll", "hund", "katt", "reptiler"]
   },
   
   
@@ -83,7 +88,8 @@
   "homepage": "https://www.djurkompassen.se/ ",
   "lecture": ["hund", "katt", "häst","djurträning"],
   "star": false,
-  "county": "Södermanlands län"
+  "county": "Södermanlands län",
+  "categoryFilter": ["showAll", "häst", "hund", "katt", "sällskapsdjur"]
   },
   
   
@@ -98,7 +104,8 @@
   "homepage": "https://lifewithadog.org/",
   "lecture": ["hund"],
   "star": false,
-  "county": "Västra Götalandslän"
+  "county": "Västra Götalandslän",
+  "categoryFilter": ["showAll", "hund"]
   },
   
   
@@ -113,7 +120,8 @@
   "homepage": "https://kognitionsetologerna.se/",
   "lecture": ["hund", "häst", "etologi", "star"],
   "star": true,
-  "county": "Västra Götalands län"
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "häst", "hund", "smådjur"]
   },
   
   
@@ -128,7 +136,8 @@
   "homepage": "https://hundiagavle.se/",
   "lecture": ["hund"],
   "star": false,
-  "county": "Gävleborgs län"
+  "county": "Gävleborgs län",
+  "categoryFilter": ["showAll", "hund"]
   },
   
   
@@ -143,7 +152,8 @@
   "homepage": "https://catcomplete.se/",
   "lecture": ["katt", "etologi", "star"],
   "star": true,
-  "county": "Uppsala län"
+  "county": "Uppsala län",
+  "categoryFilter": ["showAll", "katt"]
   },
   
   
@@ -158,7 +168,8 @@
   "homepage": "https://skvf.se/",
   "lecture": ["kanin", "Djurskydd"],
   "star": false,
-  "county": "Uppsala län"
+  "county": "Uppsala län",
+  "categoryFilter": ["showAll", "kanin", "djurvälfärd"]
   },
   
   
@@ -173,7 +184,8 @@
   "homepage": "linkedin.com/in/linn-larsson-b2a31314a",
   "lecture": ["exotiska djur", "djurträning", "etologi", "rovdjur"],
   "star": false,
-  "county": "Dalarnas län"
+  "county": "Dalarnas län",
+  "categoryFilter": ["showAll", "hund", "rovdjur", "djurpark"]
   },
   
   
@@ -188,7 +200,8 @@
   "homepage": " https://hippologiskt.com/",
   "lecture": ["hästar", "etologi", "djurträning"],
   "star": false,
-  "county": "Östergötlands län"
+  "county": "Östergötlands län",
+  "categoryFilter": ["showAll", "häst"]
   },
   
   
@@ -203,7 +216,8 @@
   "homepage": "ingen hemsida",
   "lecture": ["inga föreläsningar"],
   "star": false,
-  "county": "Uppsala län"
+  "county": "Uppsala län",
+  "categoryFilter": ["showAll", "häst", "katt"]
   },
   
   
@@ -218,7 +232,8 @@
   "homepage": ". ingen hemsida",
   "lecture": ["hund"],
   "star": false,
-  "county": "Stockholms län"
+  "county": "Stockholms län",
+  "categoryFilter": ["showAll", "hund"]
   },
   
   
@@ -233,7 +248,8 @@
   "homepage": "ingen hemsida",
   "lecture": ["inga föreläsningar"],
   "star": false,
-  "county": "Stockholms län"
+  "county": "Stockholms län",
+  "categoryFilter": ["showAll", "katt"]
   },
   {
   "id": 16,
@@ -245,8 +261,9 @@
   "city": "Göteborg",
   "homepage": "ingen hemsida",
   "lecture": ["katt", "exotiska djur", "etologi"],
-  "star": false,
-  "county": "Västra Götalands län"
+  "star": true,
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "katt", "djurpark"]
   },
   
   {
@@ -260,21 +277,23 @@
   "homepage": "https://djurvetologen.se/",
   "lecture": ["hund", "kanin & smågnagare", "djurträning", "star"],
   "star": true,
-  "county": "Skåne län"
+  "county": "Skåne län",
+  "categoryFilter": ["showAll", "hund", "kanin", "gnagare"]
   },
   
   {
   "id": 18,
   "first_name": "Johanna",
   "last_name": "Strander",
-  "desc": "Hund, och nöt",
+  "desc": "Hund och nöt",
   "phone": "inget nummer",
   "email": "johannastrandner@etolog.se",
   "city": "Göteborg",
   "homepage": "https://www.facebook.com/fotografjohannastrandner",
   "lecture": ["hund", "etologi", "djurträning", "star"],
   "star": true,
-  "county": "Västra Götalands län"
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "hund", "lantbrukets djur"]
   },
   
   {
@@ -288,7 +307,8 @@
   "homepage": "https://emotionsetologen.se/",
   "lecture": ["hund", "katt", "lantbrukets djur", "star"],
   "star": true,
-  "county": "Östergötlands län"
+  "county": "Östergötlands län",
+  "categoryFilter": ["showAll", "hund", "lantbrukets djur", "katt"]
   },
   
   
@@ -303,7 +323,8 @@
   "homepage": "https://www.facebook.com/EtoWise-Victoria-K%C3%A4llstr%C3%B6m-114610217041132",
   "lecture": ["hund","kanin & smågnagare", "star"],
   "star": true,
-  "county": "Västra Götalands län"
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "hund", "gnagare", "kanin"]
   },
   
   
@@ -318,7 +339,8 @@
   "homepage": "etolog.se ",
   "lecture": ["häst", "star"],
   "star": true,
-  "county": "Västra Götalands län"
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "häst"]
   },
   
   
@@ -333,7 +355,8 @@
   "homepage": " ",
   "lecture": ["exotiska djur", " lantbrukets djur", "katt", "fåglar", "etologi"],
   "star": false,
-  "county": "Kalmar län"
+  "county": "Kalmar län",
+  "categoryFilter": ["showAll", "lantbrukets djur", "zoologi", "vilt"]
   },
   
   
@@ -348,7 +371,8 @@
   "homepage": " ",
   "lecture": ["exotiska djur", "etologi"],
   "star": false,
-  "county": "Uppsala län"
+  "county": "Uppsala län",
+  "categoryFilter": ["showAll", "djurpark", "utbildning"]
   },
   {
     "id": 24,
@@ -361,7 +385,8 @@
     "homepage": "",
     "lecture": ["häst", "djurträning"],
     "VIP": false,
-    "county": "Uppsala län"
+    "county": "Uppsala län",
+    "categoryFilter": ["showAll", "häst"]
     }
 
   ]

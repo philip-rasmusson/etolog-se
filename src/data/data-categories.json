@@ -1,42 +1,54 @@
 [
-  {    
-    "category": "kamphundar"
-  },
   {
-    "category": "djurparksdjur"
-  },
-  {
-    "category": "hund"
-  },
-  {
-    "category": "kanin"
-  },
-  {
-    "category": "marsvin"
-  },
-  {
-    "category": "fjäderfä"
-  },
-  {
-    "category": "häst"
+    "category": "djurpark"
   },
   {
     "category": "djursjukvård"
   },
   {
+    "category": "djurvälfärd"
+  },
+  {
+    "category": "fåglar"
+  },
+  {
+    "category": "gnagare"
+  },
+  {    
+    "category": "hund"
+  },
+  {
+    "category": "häst"
+  },
+  {
+    "category": "kanin"
+  },
+  {
     "category": "katt"
   },
   {
-    "category": "sällskapsdjur"
+    "category": "lantbrukets djur"
+  },
+  {
+    "category": "reptiler"
+  },
+  {
+    "category": "rovdjur"
   },
   {
     "category": "smådjur"
   },
   {
-    "category": "djurvälfärd"
+    "category": "sällskapsdjur"
   },
   {
-    "category": "djurpark"
+    "category": "utbildning"
+  },
+  {
+    "category": "vilt"
+  },
+  {
+    "category": "zoologi"
   }
 
 ]

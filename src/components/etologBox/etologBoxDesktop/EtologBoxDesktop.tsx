@@ -30,7 +30,7 @@ export const EtologBoxDesktop = (props: { id: number, name?: string, img?: any, 
               <FontAwesomeIcon icon={faDesktop} />
             </div>
             <div>
-              <a className="etolog-desktop-box-homepage-link" href={props.homepage} target="blank" >{EtologBoxData.homepageLink}</a>
+              <a href={props.homepage} target="blank" className="etolog-desktop-box-homepage-link font-grey">{EtologBoxData.homepageLink}</a>
             </div>
           </div>
           <div className="etolog-desktop-box-email">

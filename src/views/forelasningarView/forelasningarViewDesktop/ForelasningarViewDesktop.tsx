@@ -83,6 +83,7 @@ export const ForelasningarViewDesktop = () => {
             email={etologer.email}
             city={etologer.city}
             star={etologer.star}
+            homepage={etologer.homepage}
           />
         </div>
       )

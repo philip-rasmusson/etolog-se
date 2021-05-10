@@ -1,6 +1,7 @@
 import './MobileNavbar.css'
 import NavbarData from '../data/NavbarData'
 import RoutingPath from '../../../routes/RoutingPath'
+import GlobalData from "../../../data/GlobalData"
 
 import { useHistory } from 'react-router-dom'
 import { useState } from "react"
@@ -47,7 +48,7 @@ export const MobileNavbar = () => {
                     {NavbarData.radgivning}
                 </p>
                 <p
-                ><a href="https://etologse.teachable.com/" target="_blank" rel="noopener noreferrer" className="link-nav">
+                ><a href={GlobalData.webkurserLink} target="_blank" rel="noopener noreferrer" className="link-nav">
 
                         {NavbarData.webkurser}
                     </a>

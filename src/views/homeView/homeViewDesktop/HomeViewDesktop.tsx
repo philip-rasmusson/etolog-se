@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { useHistory } from "react-router-dom"
 
 import HeaderImg from '../../../components/header/img/headerDesktop.jpg'
@@ -15,11 +14,18 @@ import sectionFourImg from '../img/cat.jpg'
 
 import HomeViewData from '../data/HomeViewData'
 import RoutingPath from '../../../routes/RoutingPath'
+import GlobalData from "../../../data/GlobalData"
 
 export const HomeViewDesktop = () => {
     const history = useHistory()
 
-    const HomeViewSectionOneBox = (props: { img?: string, img2?: string, headline?: string, paragraph?: string, btn?: string, path?: any }) => {
+    const HomeViewSectionOneBox = (props: { img?: string, img2?: string, headline?: string, paragraph?: string, btn?: string, path?: any, mailto?: boolean }) => {
+
+        const linkToViewOrMail = () => {
+            return props.mailto
+                ? <a href={GlobalData.infoMail} style={{ textDecoration: 'none' }}><button className="homeview-desktop-button">{props.btn}</button></a>
+                : <button className="homeview-desktop-button" onClick={() => history.push(props.path)}>{props.btn}</button>
+        }
         return (
             <>
                 <div className="homeview-desktop-section-one-box">
@@ -28,14 +34,13 @@ export const HomeViewDesktop = () => {
                     <span className="homeview-desktop-section-one-span">
 
                         <p>{props.paragraph}</p>
-                        <button className="homeview-desktop-button" onClick={() => history.push(props.path)}>{props.btn}</button>
+                        {linkToViewOrMail()}
                     </span>
                 </div>
             </>
         )
     }
     const HomeViewSection = (props: { mirror?: string, headline?: string, paragraph?: string, btn?: string, img?: string, path?: any, hasExternalLink: boolean }) => {
-
         const externalOrLocalLink = () => {
             return props.hasExternalLink
                 ? <button onClick={() => window.open(props.path)}>{props.btn}</button>
@@ -96,6 +101,7 @@ export const HomeViewDesktop = () => {
                             paragraph={HomeViewData.sectionOneParagraph02}
                             btn={HomeViewData.sectionOneBtn02}
                             path={RoutingPath.konsultuppdragView}
+                            mailto={true}
                         />
                     </div>
                     <div>

@@ -10,7 +10,7 @@ const  sectionTwoParagraph2 = 'Lorem ipsum dolor sit amet consectetur adipisicin
 const selectCategory = 'visa alla kategorier'
 const selectCounty = 'visa alla län'
 
-// const lectures = [
+// const categories = [
 //   "djurskydd",
 //   "djurparksdjur",
 //   "djurvälfärd",

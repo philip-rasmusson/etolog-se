@@ -1,7 +1,7 @@
 .radgivning-dekstop-section-three-wrapper {
   display: flex;
   max-width: 1200PX;
-  margin: auto;
+  margin: 6rem auto 0 auto;
 }
 
 .radgivning-dekstop-section-three-text-wrapper {
@@ -22,7 +22,7 @@
 
 .radgivning-dekstop-section-three-text p {
   font-weight: 200;
-  margin: 2rem auto;
+  margin: 3rem auto;
   text-align: center;
   width: 20rem;
 }
@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 10rem auto 0 0;
+  margin: 15rem auto 0 0;
   padding: 0;
   /* background-color: hotpink; */
 }

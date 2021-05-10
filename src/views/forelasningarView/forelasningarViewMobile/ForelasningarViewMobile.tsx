@@ -78,6 +78,7 @@ export const ForelasningarViewMobile = () => {
             description={etologer.desc}
             email={etologer.email}
             city={etologer.city}
+            homepage={etologer.homepage}
           />
         </div>
       )
