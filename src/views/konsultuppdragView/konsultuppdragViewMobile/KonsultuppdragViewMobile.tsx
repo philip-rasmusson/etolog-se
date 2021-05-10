@@ -1,6 +1,8 @@
 
 import './KonsultuppdragViewMobile.css'
 import konsultuppdragMobile from '../img/konsultuppdragMobile.jpg'
+import djurvardag from "../img/samarbetspartners/djurvardag.jpg"
+
 
 import KonsultuppdragViewData from "../data/KonsultuppdragViewData"
 import { DefaulPageLayoutMobile } from "../../../components/defaultPageLayout/defaultPageLayoutMobile/DefaultPageLayoutMobile"
@@ -16,7 +18,12 @@ export const KonsultuppdragViewMobile = () => {
                 imgMobile={konsultuppdragMobile}
                 sectionTwoParagraph1={KonsultuppdragViewData.sectionTwoParagraph1}
             />
-            <div className="forelasning-mobile-white-space"></div>
+            <div className="konsultuppdrag-mobile-samarbetspartners-wrapper">
+                <h2>{KonsultuppdragViewData.sectionTitle}</h2>
+                <div className="konsultuppdrag-mobile-samarbetspartners-img-wrapper">
+                    <a href={KonsultuppdragViewData.linkOne} target="blank"><img src={djurvardag} alt={KonsultuppdragViewData.linkOne} className="konsultuppdrag-mobile-samarbetspartners-img" /></a>
+                </div>
+            </div>
         </div>
     )
 }

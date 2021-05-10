@@ -1,0 +1,23 @@
+.konsultuppdrag-desktop-samarbetspartners-wrapper {
+  margin: 0 auto 0 auto;
+  padding-top: 3rem;
+  width: 700px;
+}
+
+.konsultuppdrag-desktop-samarbetspartners-wrapper h2 {
+  text-transform: uppercase;
+  margin: 2rem auto;
+  font-weight: 500;
+}
+
+.konsultuppdrag-desktop-samarbetspartners-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.konsultuppdrag-desktop-samarbetspartners-img-wrapper a {
+  width: fit-content;
+  margin: auto;
+  padding: 3rem 0;
+}

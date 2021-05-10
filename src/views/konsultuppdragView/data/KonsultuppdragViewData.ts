@@ -6,6 +6,10 @@ const  pageParagraph1 = 'Våra konsulter kan hjälpa din verksamhet att utveckla
 const  imgPlacement = 'left'
 const  sectionTwoParagraph1 = 'Lyft din verksamhet med en etolog!'
 const  sectionTwoParagraph2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae recusandae laudantium laborum autem atque a necessitatibus, asperiores, eos velit explicabo deserunt ea. Eum, distinctio. Dicta odio quasi laboriosam! Provident?'
+//Samarbetspartners
+const sectionTitle = 'samarbetspartners'
+const linkOne = 'http://www.djurvardag.se'
+const altLinkOne = 'http://www.djurvardag.se'
 
 export default {
   backgroundColor, 
@@ -15,4 +19,6 @@ export default {
   imgPlacement,
   sectionTwoParagraph1, 
   sectionTwoParagraph2, 
+  sectionTitle,
+  linkOne,
 }
