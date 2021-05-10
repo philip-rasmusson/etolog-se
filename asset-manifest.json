@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/etolog-se/static/css/main.8db6a02f.chunk.css",
-    "main.js": "/etolog-se/static/js/main.a4048b80.chunk.js",
-    "main.js.map": "/etolog-se/static/js/main.a4048b80.chunk.js.map",
+    "main.css": "/etolog-se/static/css/main.98b6237b.chunk.css",
+    "main.js": "/etolog-se/static/js/main.02ef1281.chunk.js",
+    "main.js.map": "/etolog-se/static/js/main.02ef1281.chunk.js.map",
     "runtime-main.js": "/etolog-se/static/js/runtime-main.65087f8a.js",
     "runtime-main.js.map": "/etolog-se/static/js/runtime-main.65087f8a.js.map",
-    "static/js/2.ca1d9695.chunk.js": "/etolog-se/static/js/2.ca1d9695.chunk.js",
-    "static/js/2.ca1d9695.chunk.js.map": "/etolog-se/static/js/2.ca1d9695.chunk.js.map",
+    "static/js/2.80fb0077.chunk.js": "/etolog-se/static/js/2.80fb0077.chunk.js",
+    "static/js/2.80fb0077.chunk.js.map": "/etolog-se/static/js/2.80fb0077.chunk.js.map",
     "static/js/3.e853da74.chunk.js": "/etolog-se/static/js/3.e853da74.chunk.js",
     "static/js/3.e853da74.chunk.js.map": "/etolog-se/static/js/3.e853da74.chunk.js.map",
     "index.html": "/etolog-se/index.html",
-    "static/css/main.8db6a02f.chunk.css.map": "/etolog-se/static/css/main.8db6a02f.chunk.css.map",
-    "static/js/2.ca1d9695.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.ca1d9695.chunk.js.LICENSE.txt",
+    "static/css/main.98b6237b.chunk.css.map": "/etolog-se/static/css/main.98b6237b.chunk.css.map",
+    "static/js/2.80fb0077.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.80fb0077.chunk.js.LICENSE.txt",
     "static/media/AnnSofieSandell.fbb69992.jpg": "/etolog-se/static/media/AnnSofieSandell.fbb69992.jpg",
     "static/media/AnnaHarenius.74d3c788.jpg": "/etolog-se/static/media/AnnaHarenius.74d3c788.jpg",
     "static/media/AnnaMariaSvedberg.b0369d57.jpg": "/etolog-se/static/media/AnnaMariaSvedberg.b0369d57.jpg",
@@ -46,6 +46,7 @@
     "static/media/category-rovdjur.ff5a8c0a.jpg": "/etolog-se/static/media/category-rovdjur.ff5a8c0a.jpg",
     "static/media/category-smadjur.8c2b1beb.jpg": "/etolog-se/static/media/category-smadjur.8c2b1beb.jpg",
     "static/media/djuragare.c5b32bfc.png": "/etolog-se/static/media/djuragare.c5b32bfc.png",
+    "static/media/djurvardag.22d88014.jpg": "/etolog-se/static/media/djurvardag.22d88014.jpg",
     "static/media/dog-2983021_1920.a880ba3d.jpg": "/etolog-se/static/media/dog-2983021_1920.a880ba3d.jpg",
     "static/media/etolog-Johanna-Strandner.626092fb.jpg": "/etolog-se/static/media/etolog-Johanna-Strandner.626092fb.jpg",
     "static/media/etologer.319aa08f.jpg": "/etolog-se/static/media/etologer.319aa08f.jpg",
@@ -70,8 +71,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.65087f8a.js",
-    "static/js/2.ca1d9695.chunk.js",
-    "static/css/main.8db6a02f.chunk.css",
-    "static/js/main.a4048b80.chunk.js"
+    "static/js/2.80fb0077.chunk.js",
+    "static/css/main.98b6237b.chunk.css",
+    "static/js/main.02ef1281.chunk.js"
   ]
 }
