@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/etolog-se/static/css/main.faa58146.chunk.css",
-    "main.js": "/etolog-se/static/js/main.4776f795.chunk.js",
-    "main.js.map": "/etolog-se/static/js/main.4776f795.chunk.js.map",
+    "main.css": "/etolog-se/static/css/main.8db6a02f.chunk.css",
+    "main.js": "/etolog-se/static/js/main.465e3488.chunk.js",
+    "main.js.map": "/etolog-se/static/js/main.465e3488.chunk.js.map",
     "runtime-main.js": "/etolog-se/static/js/runtime-main.65087f8a.js",
     "runtime-main.js.map": "/etolog-se/static/js/runtime-main.65087f8a.js.map",
     "static/js/2.ca1d9695.chunk.js": "/etolog-se/static/js/2.ca1d9695.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e853da74.chunk.js": "/etolog-se/static/js/3.e853da74.chunk.js",
     "static/js/3.e853da74.chunk.js.map": "/etolog-se/static/js/3.e853da74.chunk.js.map",
     "index.html": "/etolog-se/index.html",
-    "static/css/main.faa58146.chunk.css.map": "/etolog-se/static/css/main.faa58146.chunk.css.map",
+    "static/css/main.8db6a02f.chunk.css.map": "/etolog-se/static/css/main.8db6a02f.chunk.css.map",
     "static/js/2.ca1d9695.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.ca1d9695.chunk.js.LICENSE.txt",
     "static/media/AnnSofieSandell.fbb69992.jpg": "/etolog-se/static/media/AnnSofieSandell.fbb69992.jpg",
     "static/media/AnnaHarenius.74d3c788.jpg": "/etolog-se/static/media/AnnaHarenius.74d3c788.jpg",
@@ -71,7 +71,7 @@
   "entrypoints": [
     "static/js/runtime-main.65087f8a.js",
     "static/js/2.ca1d9695.chunk.js",
-    "static/css/main.faa58146.chunk.css",
-    "static/js/main.4776f795.chunk.js"
+    "static/css/main.8db6a02f.chunk.css",
+    "static/js/main.465e3488.chunk.js"
   ]
 }
