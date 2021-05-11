@@ -16,7 +16,6 @@ import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 
 
 export const VaraEtologerViewMobile = () => {
-
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -47,40 +46,37 @@ export const VaraEtologerViewMobile = () => {
             </option>
         )
     })
-    const EtologArrayStar = etologer.map((etologer) => {
-        if (etologer.star)
-            if (etologer.categoryFilter.includes(filterCategory) && etologer.county.includes(filterCounty)) {
+    const etologOuput = (etolog: any) => {
+        return (<div className="vara-etolog-etolog-box">
+            <EtologBoxMobile
+                id={etolog.id}
+                name={etolog.first_name + ' ' + etolog.last_name}
+                img={etolog.id}
+                description={etolog.desc}
+                email={etolog.email}
+                city={etolog.city}
+                star={etolog.star}
+                homepage={etolog.homepage}
+            />
+        </div>)
+    }
+    const etologArrayWithStar = etologer.map((etolog) => {
+        if (etolog.star)
+            if (etolog.categoryFilter.includes(filterCategory) && etolog.county.includes(filterCounty)) {
                 return (
-                    <div className="vara-etologer-etolog-box">
-                        <EtologBoxMobile
-                            id={etologer.id}
-                            name={etologer.first_name + ' ' + etologer.last_name}
-                            img={etologer.id}
-                            description={etologer.desc}
-                            email={etologer.email}
-                            city={etologer.city}
-                            star={etologer.star}
-                            homepage={etologer.homepage}
-                        />
-                    </div>
+                    <>
+                        {etologOuput(etolog)}
+                    </>
                 )
             }
     })
-    const EtologArrayNoStar = etologer.map((etologer) => {
-        if (!etologer.star)
-            if (etologer.categoryFilter.includes(filterCategory) && etologer.county.includes(filterCounty)) {
+    const etologArrayNoStar = etologer.map((etolog) => {
+        if (!etolog.star)
+            if (etolog.categoryFilter.includes(filterCategory) && etolog.county.includes(filterCounty)) {
                 return (
-                    <div className="vara-etologer-etolog-box">
-                        <EtologBoxMobile
-                            id={etologer.id}
-                            name={etologer.first_name + ' ' + etologer.last_name}
-                            img={etologer.id}
-                            description={etologer.desc}
-                            email={etologer.email}
-                            city={etologer.city}
-                            star={etologer.star}
-                        />
-                    </div>
+                    <>
+                        {etologOuput(etolog)}
+                    </>
                 )
             }
     })
@@ -105,8 +101,8 @@ export const VaraEtologerViewMobile = () => {
                 </select>
             </div>
             <div className="vara-etologer-mobile-etologbox-wrapper">
-                {EtologArrayStar}
-                {EtologArrayNoStar}
+                {etologArrayWithStar}
+                {etologArrayNoStar}
             </div>
             <div className="vara-etologer-mobile-button">
                 <button onClick={() => scrollToTop()}>Till toppen</button>

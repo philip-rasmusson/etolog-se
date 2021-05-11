@@ -17,7 +17,6 @@ import { EtologBoxDesktop } from '../../../components/etologBox/etologBoxDesktop
 import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 
 export const VaraEtologerViewDesktop = () => {
-
     const [filterCategory, setFilterCategory] = useState('showAll')
     const [filterCounty, setFilterCounty] = useState('län')
 
@@ -41,42 +40,26 @@ export const VaraEtologerViewDesktop = () => {
             </option>
         )
     })
-    const EtologArrayStar = etologer.map((etologer) => {
-        if (etologer.star)
-            if (etologer.categoryFilter.includes(filterCategory) && etologer.county.includes(filterCounty)) {
-                return (
-                    <div className="vara-etologer-etolog-box">
-                        <EtologBoxDesktop
-                            id={etologer.id}
-                            name={etologer.first_name + ' ' + etologer.last_name}
-                            img={etologer.id}
-                            description={etologer.desc}
-                            email={etologer.email}
-                            city={etologer.city}
-                            star={etologer.star}
-                            homepage={etologer.homepage}
-                        />
-                    </div>
-                )
-            }
+    const etologOuput = (etolog: any) => {
+        if (etolog.categoryFilter.includes(filterCategory) && etolog.county.includes(filterCounty))
+            return (<div className="vara-etolog-etolog-box">
+                <EtologBoxDesktop
+                    id={etolog.id}
+                    name={etolog.first_name + ' ' + etolog.last_name}
+                    img={etolog.id}
+                    description={etolog.desc}
+                    email={etolog.email}
+                    city={etolog.city}
+                    star={etolog.star}
+                    homepage={etolog.homepage}
+                />
+            </div>)
+    }
+    const EtologArrayStar = etologer.map((etolog) => {
+        if (etolog.star) return <>{etologOuput(etolog)}</>
     })
-    const EtologArrayNoStar = etologer.map((etologer) => {
-        if (!etologer.star)
-            if (etologer.categoryFilter.includes(filterCategory) && etologer.county.includes(filterCounty)) {
-                return (
-                    <div className="vara-etologer-etolog-box">
-                        <EtologBoxDesktop
-                            id={etologer.id}
-                            name={etologer.first_name + ' ' + etologer.last_name}
-                            img={etologer.id}
-                            description={etologer.desc}
-                            email={etologer.email}
-                            city={etologer.city}
-                            star={etologer.star}
-                        />
-                    </div>
-                )
-            }
+    const EtologArrayNoStar = etologer.map((etolog) => {
+        if (!etolog.star) return <>{etologOuput(etolog)}</>
     })
     return (
         <div className="vara-etologer-desktop-wrapper">

@@ -1,6 +1,6 @@
 import { useState } from "react"
+import { animateScroll as scroll } from 'react-scroll'
 
-import { imgEtologer } from "../../../data/imgEtologer"
 
 import './ForelasningarViewDesktop.css'
 import ForelasningarViewData from '../data/ForelasningarViewData'
@@ -24,8 +24,6 @@ import categoryRovdjur from "../img/CategoryBox/category-rovdjur.jpg"
 import categoryFaglar from "../img/CategoryBox/category-faglar.jpg"
 import categoryDjurskydd from "../img/CategoryBox/category-djurskydd.jpg"
 
-import categories from '../../../data/data-categories.json'
-
 import { EtologBoxDesktop } from "../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop"
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
@@ -35,6 +33,11 @@ export const ForelasningarViewDesktop = () => {
 
   const selectCategory = (event: any) => {
     setFilterCategory(event)
+  }
+
+  const scrollEventHandler = (category: string) => {
+    selectCategory(category)
+    scroll.scrollTo(3000)
   }
 
   const CategoryIndex = (props: { headline?: string, paragraph: string }) => {
@@ -67,27 +70,30 @@ export const ForelasningarViewDesktop = () => {
         <h4 className="font-upper text-shadow">
           {props.title}
         </h4>
-        <img src={props.img} className="box-shadow" alt={props.title} onClick={(event) => selectCategory(props.title)} />
+        <img src={props.img} className="box-shadow" alt={props.title} onClick={() => scrollEventHandler(props.title)} />
       </div>
     )
   }
-  const ShowEtologer = etologer.map((etologer) => {
-    if (etologer.lecture?.includes(filterCategory)) {
-      return (
-        <div className="forelasningar-desktop-etolog-box">
-          <EtologBoxDesktop
-            id={etologer.id}
-            name={etologer.first_name + ' ' + etologer.last_name}
-            img={etologer.id}
-            description={etologer.desc}
-            email={etologer.email}
-            city={etologer.city}
-            star={etologer.star}
-            homepage={etologer.homepage}
-          />
-        </div>
-      )
-    }
+  const etologOuput = (etolog: any) => {
+    if (etolog.lecture?.includes(filterCategory))
+      return (<div className="vara-etolog-etolog-box">
+        <EtologBoxDesktop
+          id={etolog.id}
+          name={etolog.first_name + ' ' + etolog.last_name}
+          img={etolog.id}
+          description={etolog.desc}
+          email={etolog.email}
+          city={etolog.city}
+          star={etolog.star}
+          homepage={etolog.homepage}
+        />
+      </div>)
+  }
+  const EtologArrayStar = etologer.map((etolog) => {
+    if (etolog.star) return <>{etologOuput(etolog)}</>
+  })
+  const EtologArrayNoStar = etologer.map((etolog) => {
+    if (!etolog.star) return <>{etologOuput(etolog)}</>
   })
   return (
     <>
@@ -107,8 +113,10 @@ export const ForelasningarViewDesktop = () => {
         />
         <div className="forelasningar-desktop-selectbox-wrapper">
         </div>
-        <div className="forelasningar-desktop-etolog-box-wrapper background-white">
-          {ShowEtologer}
+        {/* <Element name="etolog-box-wrapper" /> */}
+        <div id="etolog-box-wrapper" className="forelasningar-desktop-etolog-box-wrapper background-white">
+          {EtologArrayStar}
+          {EtologArrayNoStar}
         </div>
         <p className="star-disclaimer-desktop">{EtologBoxData.starDesclaimer}</p>
 

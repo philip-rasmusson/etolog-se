@@ -1,7 +1,7 @@
 import './EtologBoxMobile.css'
 import EtologBoxData from '../data/EtologBoxData'
 
-import { imgEtologer } from "../../../data/imgEtologer"
+import { imgEtologer } from "../../../data/ImgEtologer"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {

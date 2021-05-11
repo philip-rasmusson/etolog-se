@@ -1,107 +1,28 @@
 [
-  {
-    "id": 1,
-    "lecture": "djurskydd"
-  },
-  {
-    "id": 2,
-    "lecture": "djurparksdjur"
-  },
-  {
-    "id": 3,
-    "lecture": "djurvälfärd"
-  },
-  {
-    "id": 4,
-    "lecture": "enligt önskemål"
-  },
-  {
-    "id": 5,
-    "lecture": "fjäderfä"
-  },
-  {
-    "id": 6,
-    "lecture": "flockdynamik"
-  },
-  {
-    "id": 7,
-    "lecture": "hantering"
-  },
-  {
-    "id": 8,
-    "lecture": "hund"
-  },
-  {
-    "id": 9,
-    "lecture": "hundbeteende"
-  },
-  {
-    "id": 10,
-    "lecture": "häst"
-  },
-  {
-    "id": 11,
-    "lecture": "inlärning"
-  },
-  {
-    "id": 12,
-    "lecture": "ljudrädsla"
-  },
-  {
-    "id": 13,
-    "lecture": "kanin"
-  },
-  {
-    "id": 14,
-    "lecture": "katt"
-  },
-  {
-    "id": 15,
-    "lecture": "klickerträning"
-  },
-  {
-    "id": 16,
-    "lecture": "kost och näring"
-  },
-  {
-    "id": 17,
-    "lecture": "marsvin"
-  },
-  {
-    "id": 18,
-    "lecture": "eaktiva hundar"
-  },
-  {
-    "id": 19,
-    "lecture": "relation djur - människa"
-  },
-  {
-    "id": 20,
-    "lecture": "rovdjur"
-  },
-  {
-    "id": 21,
-    "lecture": "stress hos hund"
-  },
-  {
-    "id": 22,
-    "lecture": "sällskapsdjur"
-  },
-  {
-    "id": 23,
-    "lecture": "träning"
-  },
-  {
-    "id": 24,
-    "lecture": "vänligen vård"
-  },
-  {
-    "id": 25,
-    "lecture": "vattensköldpaddor"
-  },
-  {
-    "id": 26,
-    "lecture": "djurskydd"
-  }
-
+  { "lecture": "djurskydd"},
+  { "lecture": "djurparksdjur"},
+  { "lecture": "djurvälfärd"},
+  { "lecture": "enligt önskemål"},
+  { "lecture": "fjäderfä"},
+  { "lecture": "flockdynamik"},
+  { "lecture": "hantering"},
+  { "lecture": "hund"},
+  { "lecture": "hundbeteende"},
+  { "lecture": "häst" },
+  { "lecture": "inlärning" },
+  { "lecture": "ljudrädsla" },
+  { "lecture": "kanin" },
+  { "lecture": "katt" },
+  { "lecture": "klickerträning" },
+  { "lecture": "kost och näring" },
+  { "lecture": "marsvin" },
+  { "lecture": "eaktiva hundar" },
+  { "lecture": "relation djur - människa" },
+  { "lecture": "rovdjur" },
+  { "lecture": "stress hos hund" },
+  { "lecture": "sällskapsdjur" },
+  { "lecture": "träning" },
+  { "lecture": "vänligen vård" },
+  { "lecture": "vattensköldpaddor" },
+  { "lecture": "djurskydd" }
 ]
