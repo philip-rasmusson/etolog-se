@@ -1,0 +1,394 @@
+
+[
+  {
+  "id": 0,
+  "first_name": "Irene",
+  "last_name": "Westerholm",
+  "desc": "Kamphundar",
+  "phone": "070 460 6740",
+  "email": "info@hundlaroverket.se",
+  "city": "Nynäshamn",
+  "homepage": "https://hundlaroverket.se/",
+  "lecture": ["hund"],
+  "star": false,
+  "county": "Södermanlands län",
+  "categoryFilter": ["showAll", "hund"]
+  },
+  
+  {
+  "id": 1,
+  "first_name": "Linda",
+  "last_name": "Strohmaier",
+  "desc": "Katt, hund, kanin, marsvin och fjäderfä",
+  "phone": "072 337 9800",
+  "email": "Info@djurkonsultenzed.se",
+  "city": "Frövi",
+  "homepage": "https://djurkonsultenzed.se/",
+  "lecture": ["hund", "katt", "fåglar","kanin & smågnagare","etologi"],
+  "star": false,
+  "county": "Örebro län",
+  "categoryFilter": ["showAll", "katt", "hund", "kanin", "gnagare", "fåglar"]
+  },
+  
+  {
+  "id": 2,
+  "first_name": "Paulina",
+  "last_name": "Lundberg",
+  "desc": "Häst, hund och katt",
+  "phone": "073 836 2534",
+  "email": "paulina.emilia.lundberg@gmail.com",
+  "city": "Linköping",
+  "homepage": "http://paulina-etolog.se/",
+  "lectureKey": ["häst", "hund", "katt", "etologi"],
+  "star": false,
+  "county": "Östergötlands län",
+  "categoryFilter": ["showAll", "häst", "hund", "katt"]
+  },
+  
+  {
+  "id": 3,
+  "first_name": "Jannice",
+  "last_name": "Kindsjö",
+  "desc": "Hund och djursjukvård",
+  "phone": "070 222 9557",
+  "email": "jannicekinsjo@etolog.se",
+  "city": "Sundsvall",
+  "homepage": "http://www.duochdjur.se/",
+  "lecture": ["hund", "djurträning", "etologi", "star"],
+  "star": true,
+  "county": "Västernorrlands län",
+  "categoryFilter": ["showAll", "hund", "djursjukvård"]
+  },
+  
+  
+  {
+  "id": 4,
+  "first_name": "Anna-Maria",
+  "last_name": "Svedberg",
+  "desc": "Hund, katt och vattensköldpaddor",
+  "phone": "070 175 7387",
+  "email": "Anna-mariasvedberg@etolog.se",
+  "city": "Härnösand",
+  "homepage": "http://etologica.se/",
+  "lecture": ["hund","katt","reptil","djurträning","etologi", "star"],
+  "star": true,
+  "county": "Västernorrlands län",
+  "categoryFilter": ["showAll", "hund", "katt", "reptiler"]
+  },
+  
+  
+  {
+  "id": 5,
+  "first_name": "Ann-Sofie",
+  "last_name": "Sandell",
+  "desc": "Häst, hund, katt och sällskapsdjur",
+  "phone": "070 686 3872",
+  "email": "info@djurkompassen.se ",
+  "city": "Näshulta",
+  "homepage": "https://www.djurkompassen.se/ ",
+  "lecture": ["hund", "katt", "häst","djurträning"],
+  "star": false,
+  "county": "Södermanlands län",
+  "categoryFilter": ["showAll", "häst", "hund", "katt", "sällskapsdjur"]
+  },
+  
+  
+  {
+  "id": 6,
+  "first_name": "Charlotte",
+  "last_name": "Friis",
+  "desc": "Hund",
+  "phone": "+45 505 94 835",
+  "email": "lifewadog@gmail.com",
+  "city": "Göteborg",
+  "homepage": "https://lifewithadog.org/",
+  "lecture": ["hund"],
+  "star": false,
+  "county": "Västra Götalandslän",
+  "categoryFilter": ["showAll", "hund"]
+  },
+  
+  
+  {
+  "id": 7,
+  "first_name": "Emelie",
+  "last_name": "De Boussard",
+  "desc": "Häst, hund och smådjur",
+  "phone": "070 989 2459",
+  "email": "emeliedeboussard@etolog.se",
+  "city": "Borås",
+  "homepage": "https://kognitionsetologerna.se/",
+  "lecture": ["hund", "häst", "etologi", "star"],
+  "star": true,
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "häst", "hund", "smådjur"]
+  },
+  
+  
+  {
+  "id": 8,
+  "first_name": "Nathalie",
+  "last_name": "Nilsson",
+  "desc": "Hund",
+  "phone": "073 627 6599",
+  "email": "nathalie@hundiagavle.se",
+  "city": "Gävle",
+  "homepage": "https://hundiagavle.se/",
+  "lecture": ["hund"],
+  "star": false,
+  "county": "Gävleborgs län",
+  "categoryFilter": ["showAll", "hund"]
+  },
+  
+  
+  {
+  "id": 9,
+  "first_name": "Eva",
+  "last_name": "Wennman",
+  "desc": "Katt",
+  "phone": "073 935 3699",
+  "email": "evawennman@etolog.se",
+  "city": "Uppsala",
+  "homepage": "https://catcomplete.se/",
+  "lecture": ["katt", "etologi", "star"],
+  "star": true,
+  "county": "Uppsala län",
+  "categoryFilter": ["showAll", "katt"]
+  },
+  
+  
+  {
+  "id": 10,
+  "first_name": "Anna",
+  "last_name": "Harenius",
+  "desc": "Kanin och djurvälfärd",
+  "phone": "070 768 0559",
+  "email": "Anna.harenius@gmail.com",
+  "city": "Uppsala",
+  "homepage": "https://skvf.se/",
+  "lecture": ["kanin", "Djurskydd"],
+  "star": false,
+  "county": "Uppsala län",
+  "categoryFilter": ["showAll", "kanin", "djurvälfärd"]
+  },
+  
+  
+  {
+  "id": 11,
+  "first_name": "Linn",
+  "last_name": "Larsson",
+  "desc": "Hund, rovdjur och djurpark",
+  "phone": "070 473 6176",
+  "email": "Linn.km.larsson@gmail.com",
+  "city": "Orsa",
+  "homepage": "linkedin.com/in/linn-larsson-b2a31314a",
+  "lecture": ["exotiska djur", "djurträning", "etologi", "rovdjur"],
+  "star": false,
+  "county": "Dalarnas län",
+  "categoryFilter": ["showAll", "hund", "rovdjur", "djurpark"]
+  },
+  
+  
+  {
+  "id": 12,
+  "first_name": "Renate",
+  "last_name": " Larssen",
+  "desc": "Häst",
+  "phone": "072 565 3438",
+  "email": " renate.larssen@hotmail.com",
+  "city": " Linköping",
+  "homepage": " https://hippologiskt.com/",
+  "lecture": ["hästar", "etologi", "djurträning"],
+  "star": false,
+  "county": "Östergötlands län",
+  "categoryFilter": ["showAll", "häst"]
+  },
+  
+  
+  {
+  "id": 13,
+  "first_name": "Emilie",
+  "last_name": "Wass Grunander",
+  "desc": "Häst och katt",
+  "phone": "073 780 2592",
+  "email": "emilie_wass@hotmail.se",
+  "city": "Uppsala",
+  "homepage": "ingen hemsida",
+  "lecture": ["inga föreläsningar"],
+  "star": false,
+  "county": "Uppsala län",
+  "categoryFilter": ["showAll", "häst", "katt"]
+  },
+  
+  
+  {
+  "id": 14,
+  "first_name": "Anna",
+  "last_name": "Roos",
+  "desc": "Hund",
+  "phone": "070 768 7131",
+  "email": "Sprollan97@live.se",
+  "city": "Stockholm",
+  "homepage": ". ingen hemsida",
+  "lecture": ["hund"],
+  "star": false,
+  "county": "Stockholms län",
+  "categoryFilter": ["showAll", "hund"]
+  },
+  
+  
+  {
+  "id": 15,
+  "first_name": "Moa",
+  "last_name": "Nygren",
+  "desc": "Katt",
+  "phone": "070 274 5848",
+  "email": "Moa@nygren.ch",
+  "city": "Norrtälje",
+  "homepage": "ingen hemsida",
+  "lecture": ["inga föreläsningar"],
+  "star": false,
+  "county": "Stockholms län",
+  "categoryFilter": ["showAll", "katt"]
+  },
+  {
+  "id": 16,
+  "first_name": "Ulrica",
+  "last_name": "Ahlrot",
+  "desc": "Katt och djurparksdjur",
+  "phone": "inget nummer",
+  "email": "ulricaahlrot@etolog.se",
+  "city": "Göteborg",
+  "homepage": "http://www.etolog.se",
+  "lecture": ["katt", "exotiska djur", "etologi"],
+  "star": true,
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "katt", "djurpark"]
+  },
+  
+  {
+  "id": 17,
+  "first_name": "Emma",
+  "last_name": "Almquist",
+  "desc": "Hund, kanin och smågnagare",
+  "phone": "inget nummer",
+  "email": "emmaalmquist@etolog.se",
+  "city": "Lund",
+  "homepage": "https://djurvetologen.se/",
+  "lecture": ["hund", "kanin & smågnagare", "djurträning", "star"],
+  "star": true,
+  "county": "Skåne län",
+  "categoryFilter": ["showAll", "hund", "kanin", "gnagare"]
+  },
+  
+  {
+  "id": 18,
+  "first_name": "Johanna",
+  "last_name": "Strander",
+  "desc": "Hund och nöt",
+  "phone": "inget nummer",
+  "email": "johannastrandner@etolog.se",
+  "city": "Göteborg",
+  "homepage": "https://www.facebook.com/fotografjohannastrandner",
+  "lecture": ["hund", "etologi", "djurträning", "star"],
+  "star": true,
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "hund", "lantbrukets djur"]
+  },
+  
+  {
+  "id": 19,
+  "first_name": "Astrid",
+  "last_name": "Söderqvist",
+  "desc": "Hund, katt och gris",
+  "phone": "inget nummer",
+  "email": "astridsoderqvist@etolog.se",
+  "city": "Linköping",
+  "homepage": "https://emotionsetologen.se/",
+  "lecture": ["hund", "katt", "lantbrukets djur", "star"],
+  "star": true,
+  "county": "Östergötlands län",
+  "categoryFilter": ["showAll", "hund", "lantbrukets djur", "katt"]
+  },
+  
+  
+  {
+  "id": 20,
+  "first_name": "Victoria",
+  "last_name": "Källström",
+  "desc": "Hund, kanin och gnagare",
+  "phone": "inget nummer",
+  "email": "victoriakallstrom@etolog.se",
+  "city": "Göteborg",
+  "homepage": "https://www.facebook.com/EtoWise-Victoria-K%C3%A4llstr%C3%B6m-114610217041132",
+  "lecture": ["hund","kanin & smågnagare", "star"],
+  "star": true,
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "hund", "gnagare", "kanin"]
+  },
+  
+  
+  {
+  "id": 21,
+  "first_name": "Ellen",
+  "last_name": "Kilander",
+  "desc": "Häst",
+  "phone": "inget nummer",
+  "email": "info@etolog.se ",
+  "city": "Göteborg",
+  "homepage": "etolog.se ",
+  "lecture": ["häst", "star"],
+  "star": true,
+  "county": "Västra Götalands län",
+  "categoryFilter": ["showAll", "häst"]
+  },
+  
+  
+  {
+  "id": 22,
+  "first_name": "Desirée",
+  "last_name": "Sjöström",
+  "desc": "Klövvilt, lantbrukets djur och zoolog",
+  "phone": "0762092851",
+  "email": "olandsetologen@gmail.com",
+  "city": "Borgholm",
+  "homepage": " ",
+  "lecture": ["exotiska djur", " lantbrukets djur", "katt", "fåglar", "etologi"],
+  "star": false,
+  "county": "Kalmar län",
+  "categoryFilter": ["showAll", "lantbrukets djur", "zoologi", "vilt"]
+  },
+  
+  
+  {
+  "id": 23,
+  "first_name": "Lisa",
+  "last_name": "Lundin",
+  "desc": "Djurpark, utbildning och undervisning",
+  "phone": "0709641452",
+  "email": "lisa.lundin@slu.se",
+  "city": "Uppsala",
+  "homepage": " ",
+  "lecture": ["exotiska djur", "etologi"],
+  "star": false,
+  "county": "Uppsala län",
+  "categoryFilter": ["showAll", "djurpark", "utbildning"]
+  },
+  {
+    "id": 24,
+    "first_name": "Elke",
+    "last_name": "Hartmann",
+    "desc": "Häst",
+    "phone": "",
+    "email": "elke.hartmann@slu.se",
+    "city": "Uppsala",
+    "homepage": "",
+    "lecture": ["häst", "djurträning"],
+    "VIP": false,
+    "county": "Uppsala län",
+    "categoryFilter": ["showAll", "häst"]
+    }
+
+  ]
+  
+  

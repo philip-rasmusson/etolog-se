@@ -1,0 +1,23 @@
+[
+  { "county": "Blekinge län" },
+  { "county": "Dalarnas län" },
+  { "county": "Gotlands län" },
+  { "county": "Gävleborgs län" },
+  { "county": "Hallands län" },
+  { "county": "Jämtlands län" },
+  { "county": "Jönköpings län" },
+  { "county": "Kalmars län" },
+  {"county": "Kronobergs län" },
+  { "county": "Norrbottens län" },
+  { "county": "Skåne län" },
+  { "county": "Stockholms län" },
+  { "county": "Södermanlands län" },
+  { "county": "Uppsala län" },
+  { "county": "Värmlands län" },
+  { "county": "Västerbottens län" },
+  { "county": "Västernorrlands län" },
+  { "county": "Västmanlands län" },
+  { "county": "Västra Götalands län" },
+  { "county": "Örebro län" },
+  { "county": "Östergötlands län" }
+]

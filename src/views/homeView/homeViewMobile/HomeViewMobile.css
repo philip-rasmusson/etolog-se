@@ -1,0 +1,74 @@
+.homeview-mobile-wrapper {
+  margin: 0;
+  background-color: #fff;
+}
+
+/* Intro text */
+
+.homeview-mobile-intro-text {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10vw;
+}
+
+.homeview-mobile-intro-text p, .homeview-mobile-section-wrapper p {
+  font-size: 4vw;
+  font-weight: 300;
+  padding: 0;
+  text-align: justify;
+}
+
+/* Section One */
+
+.homeview-mobile-section-one {
+  flex-direction: column;
+  margin: 0;
+}
+
+.homeview-mobile-section-one div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.homeview-mobile-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 10vw;
+  width: 80%;
+}
+
+.homeview-mobile-img, .homeview-mobile-img2 {
+  box-shadow: #777 0 0.4rem 0.4rem;
+  display: flex;
+  margin: 15vw 0;
+  width: 100%;
+}
+
+.homeview-mobile-img2 {
+  opacity: 0.8;
+}
+
+.homeview-mobile-section-wrapper h3, .homeview-mobile-section-wrapper p, .homeview-mobile-section-wrapper button {
+  margin: 1rem 0;
+}
+
+.homeview-mobile-section-wrapper h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.homeview-mobile-section-wrapper button {
+  margin: auto;
+  display: flex;
+  margin-top: 2rem;
+}

@@ -1,0 +1,33 @@
+.header-mobile-body {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.header-mobile-img {
+  box-shadow: #454545 0 0.5rem 1rem;
+  display: flex;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.header-mobile-slogan {
+  background: none;
+  color: #f1f1f1;
+  position: absolute;
+  top: 145vw;
+  width: 100%;
+}
+
+.header-mobile-slogan h3 {
+  font-weight: 500;
+  margin: 0 12vw;
+  text-align: center;
+  font-size: 4vw;
+  text-shadow: #000 0.5rem 0.5rem 0.5rem;
+}
+
+.header-mobile-social-media {
+  display: none;
+}

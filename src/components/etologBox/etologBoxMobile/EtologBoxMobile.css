@@ -1,0 +1,56 @@
+.etolog-mobile-box {
+  align-items: center;
+  border-top: rgb(167, 167, 167) solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 3rem 0 0 0;
+  width: 70%;
+}
+
+.etolog-mobile-box-headline {
+  font-size: 4vw;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.etolog-mobile-box-img {
+  width: 70%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.etolog-mobile-box-paragraph {
+  font-size: 4vw;
+  font-weight: 200;
+  padding: 5vw 0;
+  text-align: center;
+  width: 100%;
+}
+
+.etolog-mobile-box-homepage, .etolog-mobile-box-email, .etolog-mobile-box-city {
+  display: flex;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.etolog-mobile-box-homepage a {
+  text-decoration: none;
+}
+
+.etolog-mobile-box-homepage-icon, .etolog-mobile-box-email-icon, .etolog-mobile-box-city-icon {
+  padding-right: 8vw;
+}
+
+.etolog-mobile-box-email-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.etolog-mobile-box-star, .etolog-mobile-box-nostar {
+  height: 2.5rem;
+}

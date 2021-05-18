@@ -1,0 +1,89 @@
+.forelasningar-desktop-wrapper {
+  margin: 0 auto;
+}
+
+.forelasningar-desktop-section-two {
+  margin: 0 auto;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.forelasningar-desktop-section-two p {
+  /* max-width: 36rem; */
+  width: 700px;
+  margin: 1rem auto 6rem auto;
+  text-align: justify;
+}
+
+.forelasningar-desktop-category-select {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.forelasningar-desktop-category-select-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 60rem;
+  padding-bottom: 5rem;
+  border-bottom: black solid 1px;
+}
+
+.forelasningar-desktop-category-inner-box {
+  display: grid;
+}
+
+.forelasningar-desktop-category-inner-box img {
+  border-radius: 2rem;
+  opacity: 0.6;
+  margin: 2rem;
+  width: 25vw;
+  max-width: 15rem;
+  height: 25vw;
+  max-height: 15rem;
+}
+
+.forelasningar-desktop-category-inner-box:hover img {
+  opacity: 1;
+}
+
+.forelasningar-desktop-category-inner-box h4 {
+  color: #f1f1f1;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.651) 3px 5px 7px;
+  max-width: 16rem;
+  width: 25vw;
+  z-index: 100;
+}
+
+.forelasningar-desktop-category-inner-box img, .forelasningar-desktop-category-inner-box h4 {
+  align-self: center;
+  cursor: pointer;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  justify-self: center;
+}
+
+.forelasningar-desktop-etolog-box-backgroud {
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.forelasningar-desktop-etolog-box-backgroud h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.forelasningar-desktop-etolog-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 800px;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}

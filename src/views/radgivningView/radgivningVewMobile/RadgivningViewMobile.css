@@ -1,0 +1,27 @@
+.radgivning-mobile-section-three-wrapper {
+  background-color: #fff;
+}
+
+.radgivning-mobile-section-three-wrapper img {
+  width: 50vw;
+  margin: auto 1rem 0 auto;
+  ;
+}
+
+.radgivning-mobile-section-three-text, .radgivning-mobile-section-three-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.radgivning-mobile-section-three-text p {
+  width: 80%;
+  font-weight: 300;
+  font-size: 4vw;
+  margin: auto;
+  text-align: justify;
+}
+
+.radgivning-mobile-section-three-text button {
+  width: fit-content;
+  margin: 4rem auto;
+}

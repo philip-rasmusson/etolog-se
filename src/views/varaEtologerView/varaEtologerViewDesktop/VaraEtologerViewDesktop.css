@@ -1,0 +1,20 @@
+.vara-etologer-desktop-wrapper {
+  background-color: #fff;
+}
+
+.vara-etologer-desktop-etologer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 800px;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.vara-etologer-desktop-search-box-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 700px;
+  margin: 5rem auto 0 auto;
+}

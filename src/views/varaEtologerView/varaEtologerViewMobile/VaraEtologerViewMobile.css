@@ -1,0 +1,23 @@
+.vara-etologer-mobile-wrapper {
+  background-color: #fff;
+}
+
+.vara-etologer-mobile-button {
+  padding: 3rem 0 2rem 0;
+}
+
+.vara-etologer-mobile-button button {
+  margin: auto;
+}
+
+.vara-etologer-mobile-etologbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.vara-etologer-mobile-search-box-wrapper select {
+  width: 80%;
+  margin: 1rem auto;
+}
