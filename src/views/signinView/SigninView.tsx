@@ -11,5 +11,5 @@ export const SigninView = () => {
     return width <= DesktopMobileBreakpoint.width ? <SigninViewDesktop /> : <SigninViewDesktop />
   }
 
-  return <div>{SigninViewDesktop}</div>
+  return <div>{toggleDesktopOrMobileViewForNavbar()}</div>
 }
