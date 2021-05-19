@@ -5,7 +5,6 @@ import { Routes } from "./routes/Routes"
 import { Navbar } from "./components/navigation/Navbar"
 import { UserProvider } from './shared/provider/UserProvider'
 
-
 export const App = () => {
   return (
     <UserProvider>

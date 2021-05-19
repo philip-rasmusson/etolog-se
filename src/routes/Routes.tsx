@@ -13,15 +13,13 @@ import { AdminView } from "../views/signinView/authenticatedViews/adminView/Admi
 import { Footer } from "../components/footer/Footer"
 
 import RoutingPath from './RoutingPath'
-import { AdminViewDesktop } from '../views/signinView/authenticatedViews/adminView/adminViewDesktop/AdminViewDesktop'
 
 export const Routes = (props: { children?: React.ReactChild }) => {
   const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 
-
+  console.log(authenticatedUser.admin)
   const adminRequired = () => {
     return authenticatedUser.admin ? AdminView : HomeView
-
   }
 
   return (

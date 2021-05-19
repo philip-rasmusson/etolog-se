@@ -5,32 +5,35 @@ import SigninHeader600 from '../img/sigingHeader600.jpg'
 import { HeaderDesktop } from '../../../components/header/headerDesktop/HeaderDesktop'
 import { UserContext } from '../../../shared/provider/UserProvider'
 import RoutingPath from '../../../routes/RoutingPath'
+import dotenv from 'dotenv'
 
 
 
 export const SigninViewDesktop = () => {
+
+  dotenv.config()
 
   const [username, setUsername] = useState<string>('User')
   const [password, setPassword] = useState<string>('')
   const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
   const history = useHistory()
 
-  const secretUser = 'admin'
-  const secretPassword = 'admin'
+
+  const USER = process.env.USER
+  const PASSWORD = process.env.PASSWORD
+
+  console.log(USER)
+  console.log(PASSWORD)
+  console.log(process.env.REACT_APP_USER)
+  console.log(process.env.PASSWORD)
 
   const adminLogin = () => {
-    if (password === secretPassword && username === secretUser) {
+    if (password === PASSWORD && username === USER) {
       setAuthenticatedUser({ username, admin: true })
-      console.log(authenticatedUser.admin)
       history.push(RoutingPath.adminView)
     } else {
       alert('Access denied')
     }
-  }
-
-  const login = () => {
-    setAuthenticatedUser(username)
-    console.log(username)
   }
 
   return (
