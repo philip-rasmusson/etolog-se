@@ -1,3 +1,11 @@
-.signin-desktop-wrapper {
-  height: 100vh;
+.signin-desktop-wrapper {}
+
+.signin-desktop-form-wrapper {
+  display: flex;
+  padding: 10rem 2rem;
+  width: 100%;
+}
+
+.signin-desktop-form {
+  margin: auto;
 }
