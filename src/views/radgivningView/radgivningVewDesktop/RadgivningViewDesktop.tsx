@@ -5,7 +5,7 @@ import './RadgivningViewDesktop.css'
 import RadgivningViewData from '../data/RadgivningViewData'
 import cat from '../img/cat4.jpg'
 import radgivning from '../img/radgivning.png'
-import headerImg from "../img/headerRadgivningHeight700.jpg"
+import headerImg from "../img/headerRadgivningHeight700b.jpg"
 
 
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"

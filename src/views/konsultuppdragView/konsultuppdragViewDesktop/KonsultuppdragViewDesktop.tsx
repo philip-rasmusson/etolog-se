@@ -1,5 +1,5 @@
 import './KonsultuppdragViewDesktop.css'
-import headerImg from "../img/headerKonsultuppdragHeight700.jpg"
+import headerImg from "../img/headerKonsultuppdragHeight700b.jpg"
 import djurvardag from "../img/samarbetspartners/djurvardag.jpg"
 
 import konsultuppdrag from '../img/konsultuppdrag.jpg'
