@@ -9,7 +9,8 @@ import ForelasningarViewData from '../data/ForelasningarViewData'
 import etologer from '../../../data/data-etologer.json'
 import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 
-import headerImg from "../img/headerForelasningar.jpg"
+import headerImg from "../img/headerForelasningarHeight700.jpg"
+
 import forelasningar from '../img/forelasningar.jpg'
 import categoryGris from "../img/CategoryBox/category-gris.jpg"
 import categoryHund from "../img/CategoryBox/category-hund.jpg"

@@ -3,7 +3,7 @@ import AnnaHarenius from "../components/etologBox/img/etologer/AnnaHarenius.jpg"
 import AnnaRoos from "../components/etologBox/img/etologer/AnnaRoos.jpg";
 import IreneWesterholm from "../components/etologBox/img/etologer/unknown.jpg";
 import LindaStrohmaier from "../components/etologBox/img/etologer/LindaStrohmaier.jpg";
-import PaulinaLundberg from "../components/etologBox/img/etologer/unknown.jpg";
+import PaulinaLundberg from "../components/etologBox/img/etologer/PaulinaLundberg.jpg";
 import JanniceKindsjo from "../components/etologBox/img/etologer/JanniceKindsjo.jpg";
 import AnnaMariaSvedberg from "../components/etologBox/img/etologer/AnnaMariaSvedberg.jpg";
 import AnnSofieSandell from "../components/etologBox/img/etologer/AnnSofieSandell.jpg";

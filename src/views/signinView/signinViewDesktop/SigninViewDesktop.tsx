@@ -1,11 +1,11 @@
 import './SigninViewDesktop.css'
-import SigninHeader from '../img/sigingHeader.jpg'
+import SigninHeader600 from '../img/sigingHeader600.jpg'
 import { HeaderDesktop } from '../../../components/header/headerDesktop/HeaderDesktop'
 
 export const SigninViewDesktop = () => {
   return (
     <>
-      <HeaderDesktop headerImg={SigninHeader} />
+      <HeaderDesktop headerImg={SigninHeader600} />
       <div className="signin-desktop-wrapper">
         <div className="signin-desktop-form-wrapper">
 

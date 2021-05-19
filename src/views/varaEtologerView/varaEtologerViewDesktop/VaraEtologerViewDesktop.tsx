@@ -3,7 +3,7 @@ import { useState, } from "react"
 import './VaraEtologerViewDesktop.css'
 
 import varaEtologer from '../img/etologer.jpg'
-import headerImg from "../img/headerVaraEtologer.jpg"
+import headerImg from "../img/headerVaraEtologerHeight700.jpg"
 
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 

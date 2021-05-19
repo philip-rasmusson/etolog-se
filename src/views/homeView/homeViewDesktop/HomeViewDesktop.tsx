@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom"
 
-import HeaderImg from '../../../components/header/img/headerDesktop.jpg'
+import HeaderImg from '../../../components/header/img/headerDesktopHeight700.jpg'
 import { HeaderDesktop } from "../../../components/header/headerDesktop/HeaderDesktop"
 
 import './HomeViewDesktop.css'

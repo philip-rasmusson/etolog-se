@@ -14,7 +14,7 @@
   background: none;
   color: #fff;
   position: absolute;
-  top: 37.5vw;
+  top: 30vw;
   width: 100%;
 }
 
@@ -29,7 +29,7 @@
 .header-desktop-social-media-icons-wrapper {
   display: flex;
   position: absolute;
-  top: 44vw;
+  top: 31vw;
   right: 1vw;
 }
 
