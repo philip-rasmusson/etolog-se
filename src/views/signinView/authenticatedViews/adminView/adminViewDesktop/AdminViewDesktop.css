@@ -1,0 +1,32 @@
+.admin-desktop-wrapper {
+  margin: 0 auto 0 auto;
+  padding-top: 3rem;
+  width: 700px;
+}
+
+.admin-desktop-buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 1rem 5rem 1rem;
+}
+
+.admin-desktop-wrapper h1 {
+  text-transform: uppercase;
+  margin: 2rem auto;
+}
+
+.admin-desktop-wrapper h4 {
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.admin-desktop-etologer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1000px;
+  padding-top: 5rem 0 5rem 0;
+}

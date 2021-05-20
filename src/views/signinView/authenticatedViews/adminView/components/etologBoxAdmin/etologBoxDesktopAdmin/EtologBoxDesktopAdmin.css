@@ -1,0 +1,65 @@
+.etolog-desktop-admin-box {
+  align-items: center;
+  border-radius: 1rem;
+  border: rgba(128, 128, 128, 0.507) solid 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+  width: 13rem;
+}
+
+.etolog-desktop-admin-box-headline {
+  font-size: 1rem;
+  height: 5rem;
+  text-align: center;
+}
+
+.etolog-desktop-admin-box-img {
+  border-radius: 2rem;
+  max-width: 10rem;
+  width: 30vw;
+}
+
+.etolog-desktop-admin-box-star, .etolog-desktop-admin-box-nostar {
+  height: 2.5rem;
+}
+
+.etolog-desktop-admin-box-paragraph {
+  padding: 2rem 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  height: 6rem;
+}
+
+.etolog-desktop-admin-box-img-star-wrapper {
+  display: grid;
+}
+
+.etolog-desktop-admin-box-homepage, .etolog-desktop-admin-box-email, .etolog-desktop-admin-box-city {
+  display: flex;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.etolog-desktop-admin-box-homepage a {
+  text-decoration: none;
+}
+
+.etolog-desktop-admin-box-icon-homepage, .etolog-desktop-admin-box-icon-email, .etolog-desktop-admin-box-icon-city {
+  padding-right: 1rem;
+}
+
+.etolog-desktop-admin-box-email-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.etolog-desktop-admin-box-contact-wrapper {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

@@ -19,7 +19,7 @@ export const Routes = (props: { children?: React.ReactChild }) => {
 
   console.log(authenticatedUser.admin)
   const adminRequired = () => {
-    return authenticatedUser.admin ? AdminView : HomeView
+    return authenticatedUser.admin ? AdminView : SigninView
   }
 
   return (
@@ -34,8 +34,8 @@ export const Routes = (props: { children?: React.ReactChild }) => {
         <Route exact path={RoutingPath.radgivningView} component={RadgivningView} />
         <Route exact path={RoutingPath.varaEtologerView} component={VaraEtologerView} />
         <Route exact path={RoutingPath.signinView} component={SigninView} />
-        {/* <Route exact path={RoutingPath.adminView} component={AdminView} /> */}
-        <Route exact path={RoutingPath.adminView} component={adminRequired()} />
+        <Route exact path={RoutingPath.adminView} component={AdminView} />
+        {/* <Route exact path={RoutingPath.adminView} component={adminRequired()} /> */}
       </Switch>
       <Footer />
     </Router>

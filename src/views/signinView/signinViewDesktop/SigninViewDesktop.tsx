@@ -11,6 +11,7 @@ import dotenv from 'dotenv'
 
 export const SigninViewDesktop = () => {
 
+  // const env = dotenv.config().parsed
   dotenv.config()
 
   const [username, setUsername] = useState<string>('User')
@@ -19,13 +20,11 @@ export const SigninViewDesktop = () => {
   const history = useHistory()
 
 
-  const USER = process.env.USER
-  const PASSWORD = process.env.PASSWORD
+  const USER = process.env.REACT_APP_USER
+  const PASSWORD = process.env.REACT_APP_PASSWORD
 
   console.log(USER)
   console.log(PASSWORD)
-  console.log(process.env.REACT_APP_USER)
-  console.log(process.env.PASSWORD)
 
   const adminLogin = () => {
     if (password === PASSWORD && username === USER) {
