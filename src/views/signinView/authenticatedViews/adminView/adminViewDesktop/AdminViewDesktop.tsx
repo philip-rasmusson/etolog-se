@@ -1,23 +1,32 @@
-import { useState } from 'react'
-
+import { useState, useEffect } from 'react'
 import './AdminViewDesktop.css'
 import AdminViewData from '../data/AdminViewData'
 import { EtologBoxDesktopAdmin } from "../components/etologBoxAdmin/etologBoxDesktopAdmin/EtologBoxDesktopAdmin"
-import etologer from '../../../../../data/data-etologer.json'
 import { HeaderDesktop } from '../../../../../components/header/headerDesktop/HeaderDesktop'
 import headerImg from '../img/headerAdminHeight700.jpg'
+import Axios from 'axios'
+
 
 export const AdminViewDesktop = () => {
 
-  const [displayEtologer, setDisplayEtologer] = useState(false)
-  const [displayEtologerButtonText, setDisplayEtologerButtonText] = useState('visa alla etologer')
+  const [displayEtologer, setDisplayEtologer] = useState<boolean>(false)
+  const [displayAddNewEtolog, setDisplayAddNewEtolog] = useState<boolean>(false)
+  const [displayEtologerButtonText, setDisplayEtologerButtonText] = useState<string>('visa alla etologer')
+  const [apiData, setApiData] = useState<any>()
+
+  const fetchData = async () => {
+    const { data } = await Axios.get('http://localhost:3001/etolog')
+    setApiData(data)
+    console.log(data)
+  }
 
   const etologOuput = (etolog: any) => {
     return (<div className="admin-desktop-etolog-box">
+
       <EtologBoxDesktopAdmin
-        id={etolog.id}
+        _id={etolog._id}
         name={etolog.first_name + ' ' + etolog.last_name}
-        img={etolog.id}
+        imgId={etolog.imgId}
         description={etolog.desc}
         email={etolog.email}
         city={etolog.city}
@@ -29,7 +38,7 @@ export const AdminViewDesktop = () => {
 
   const showAllEtologer = () => {
     if (displayEtologer) {
-      return etologer.map(etologOuput)
+      return apiData.map(etologOuput)
     }
   }
 
@@ -43,7 +52,44 @@ export const AdminViewDesktop = () => {
     }
   }
 
+  const toggleAddNewEtolog = () => {
+    if (!displayAddNewEtolog) {
+      setDisplayEtologer(false)
+      setDisplayAddNewEtolog(true)
+    } else {
+      setDisplayAddNewEtolog(false)
+    }
+  }
 
+  const addNewEtolog = () => {
+    if (displayAddNewEtolog)
+      return (
+        <>
+          <h1>adding new etolog</h1>
+          <form className="add-new-etolog-form-wrapper">
+            <label>Förnamn<input id="first_name" type="text" /></label>
+            <label>Efternamn<input id="last_name" type="text" /></label>
+            <label>Beskrivnig<input id="desc" type="text" /></label>
+            <label>Email<input id="email" type="text" /></label>
+            <label>Stad<input id="city" type="text" /></label>
+            <label>Hemsida<input id="homepage" type="text" /></label>
+            <label>Föreläsningar<input id="lecture" type="text" /></label>
+            <label>Stjärnmärkt<input id="star" type="text" /></label>
+            <label>Län<input id="county" type="text" /></label>
+            <label>Kategori<input id="categoryFilter" type="text" /></label>
+
+          </form>
+        </>
+      )
+
+
+
+  }
+
+
+  useEffect(() => {
+    fetchData()
+  }, [])
 
   return (
     <>
@@ -53,12 +99,15 @@ export const AdminViewDesktop = () => {
         <h4>{AdminViewData.pageSubheading}</h4>
         <div className="admin-desktop-buttons-wrapper">
           <button className="admin-desktop-button-one" onClick={() => toggleShowEtologer()}>{displayEtologerButtonText}</button>
-          <button className="admin-desktop-button-two">Lägg till en etolog</button>
-          <button className="admin-desktop-button-three">Logga ut</button>
+          <button className="admin-desktop-button-two" onClick={() => toggleAddNewEtolog()}>{AdminViewData.buttonTwo}</button>
+          <button className="admin-desktop-button-three">{AdminViewData.buttonThree}</button>
         </div>
       </div>
       <div className="admin-desktop-etologer-wrapper">
         {showAllEtologer()}
+      </div>
+      <div className="admin-desktop-addNewEtolog-wrapper">
+        {addNewEtolog()}
       </div>
 
     </>

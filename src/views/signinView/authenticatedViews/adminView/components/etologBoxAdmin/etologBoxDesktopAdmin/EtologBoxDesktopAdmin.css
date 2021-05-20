@@ -63,3 +63,8 @@
   flex-direction: column;
   justify-content: flex-end;
 }
+
+.etolog-box-admin-button {
+  margin: 2rem 0 1rem 0;
+  font-size: 14px;
+}
