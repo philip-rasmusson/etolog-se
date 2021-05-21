@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom'
 import { EtologerImgAdmin } from "../data/EtologerImgAdmin"
 import Axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import RoutingPath from '../../../../../../../routes/RoutingPath'
 import {
   faDesktop,
   faEnvelope,

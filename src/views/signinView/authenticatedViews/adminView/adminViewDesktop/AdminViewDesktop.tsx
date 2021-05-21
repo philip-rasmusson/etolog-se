@@ -7,6 +7,8 @@ import { HeaderDesktop } from '../../../../../components/header/headerDesktop/He
 import headerImg from '../img/headerAdminHeight700.jpg'
 import Axios from 'axios'
 import RoutingPath from '../../../../../routes/RoutingPath'
+import categories from '../../../../../data/data-categories.json'
+import lectures from '../../../../../data/data-lectures.json'
 
 
 export const AdminViewDesktop = () => {
@@ -17,6 +19,8 @@ export const AdminViewDesktop = () => {
   const [displayAddNewEtolog, setDisplayAddNewEtolog] = useState<boolean>(false)
   const [displayEtologerButtonText, setDisplayEtologerButtonText] = useState<string>('göm alla etologer')
   const [apiData, setApiData] = useState<any>([])
+  const [newEtolog, setNewEtolog] = useState<any>()
+  const [categoryArray, setCategoryArray] = useState<any>([])
 
   const fetchData = async () => {
     const { data } = await Axios.get('http://localhost:3001/etolog')
@@ -63,24 +67,52 @@ export const AdminViewDesktop = () => {
     }
   }
 
+  const mapCategories = categories.map((x) => {
+    const id = `category-${x.category}`
+    return <label><input id={id} type="checkbox" onChange={event => setCategoryArray([{ ...categoryArray, categoryFilter: x.category }])} />{x.category}</label>
+  })
+
+  const mapLectures = lectures.map((x) => {
+    const id = `lecture-${x.lecture}`
+    return <label><input id={id} type="checkbox" />{x.lecture}</label>
+  })
+
   const addNewEtolog = () => {
     if (displayAddNewEtolog)
       return (
-        <>
+        <div className="add-new-etolog-wrapper">
           <h1>adding new etolog</h1>
-          <form className="add-new-etolog-form-wrapper">
-            <label>Förnamn<input id="first_name" type="text" /></label>
-            <label>Efternamn<input id="last_name" type="text" /></label>
-            <label>Beskrivnig<input id="desc" type="text" /></label>
-            <label>Email<input id="email" type="text" /></label>
-            <label>Stad<input id="city" type="text" /></label>
-            <label>Hemsida<input id="homepage" type="text" /></label>
-            <label>Föreläsningar<input id="lecture" type="text" /></label>
-            <label>Stjärnmärkt<input id="star" type="text" /></label>
-            <label>Län<input id="county" type="text" /></label>
-            <label>Kategori<input id="categoryFilter" type="text" /></label>
-          </form>
-        </>
+          <div className="add-new-etolog-form-wrapper">
+            <form className="add-new-etolog-form">
+              <div className="add-new-form-inner"><h4>Förnamn</h4><input id="first_name" type="text" onChange={event => setNewEtolog({ ...newEtolog, first_name: event.target.value })} /></div>
+              <div className="add-new-form-inner"><h4>Efternamn</h4><input id="last_name" type="text" onChange={event => setNewEtolog({ ...newEtolog, last_name: event.target.value })} /></div>
+              <div className="add-new-form-inner"><h4>Stad</h4><input id="city" type="text" onChange={event => setNewEtolog({ ...newEtolog, city: event.target.value })} /></div>
+              <div className="add-new-form-inner"><h4>Län</h4><input id="county" type="text" onChange={event => setNewEtolog({ ...newEtolog, county: event.target.value })} /></div>
+              <div className="add-new-form-inner"><h4>Email</h4><input id="email" type="text" onChange={event => setNewEtolog({ ...newEtolog, email: event.target.value })} /></div>
+              <div className="add-new-form-inner"><h4>Hemsida</h4><input id="homepage" type="text" onChange={event => setNewEtolog({ ...newEtolog, homepage: event.target.value })} /></div>
+              <div className="add-new-form-inner"><h4>Beskrivnig</h4><input id="desc" type="text" onChange={event => setNewEtolog({ ...newEtolog, desc: event.target.value })} /></div>
+
+              <div className="add-new-form-inner"><h4>Stjärnmärkt</h4><input id="star" type="checkbox" onChange={event => setNewEtolog({ ...newEtolog, star: event.target.value })} /></div>
+
+              <div className="div-array">
+                <h4>Kategorier</h4>
+                <div className="array-checkbox"> {mapCategories}</div>
+              </div>
+
+              <div className="div-array">
+                <h4>Föreläsningar</h4>
+                <div className="array-checkbox"> {mapLectures}</div>
+              </div>
+              <div className="add-new-etolog-form-buttons">
+                <button onClick={() => { console.log(newEtolog) }}>Registrera</button>
+                <button>Rensa</button>
+
+              </div>
+            </form>
+            <button onClick={() => { console.log(categoryArray) }}>Registrera</button>
+            <button onClick={() => { console.log(newEtolog) }}>Registrera</button>
+          </div>
+        </div>
       )
   }
 
