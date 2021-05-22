@@ -9,18 +9,20 @@ import Axios from 'axios'
 import RoutingPath from '../../../../../routes/RoutingPath'
 import categories from '../../../../../data/data-categories.json'
 import lectures from '../../../../../data/data-lectures.json'
+import counties from '../../../../../data/data-county.json'
 
 
 export const AdminViewDesktop = () => {
 
   const history = useHistory()
 
-  const [displayEtologer, setDisplayEtologer] = useState<boolean>(true)
+  const [displayEtologer, setDisplayEtologer] = useState<boolean>(false)
   const [displayAddNewEtolog, setDisplayAddNewEtolog] = useState<boolean>(false)
-  const [displayEtologerButtonText, setDisplayEtologerButtonText] = useState<string>('göm alla etologer')
+  const [displayEtologerButtonText, setDisplayEtologerButtonText] = useState<string>('visa alla etologer')
   const [apiData, setApiData] = useState<any>([])
   const [newEtolog, setNewEtolog] = useState<any>()
   const [categoryArray, setCategoryArray] = useState<any>([])
+  const [filterCounty, setFilterCounty] = useState('län')
 
   const fetchData = async () => {
     const { data } = await Axios.get('http://localhost:3001/etolog')
@@ -69,12 +71,24 @@ export const AdminViewDesktop = () => {
 
   const mapCategories = categories.map((x) => {
     const id = `category-${x.category}`
-    return <label><input id={id} type="checkbox" onChange={event => setCategoryArray([{ ...categoryArray, categoryFilter: x.category }])} />{x.category}</label>
+    return <label className="label-category"><input id={id} type="checkbox" onChange={event => setCategoryArray([{ ...categoryArray, categoryFilter: x.category }])} />{x.category}</label>
   })
 
   const mapLectures = lectures.map((x) => {
     const id = `lecture-${x.lecture}`
     return <label><input id={id} type="checkbox" />{x.lecture}</label>
+  })
+
+  const selectCounty = (county: any) => {
+    setNewEtolog({ ...newEtolog, county })
+  }
+
+  const showCounty = counties.map((county) => {
+    return (
+      <option value={county.county}>
+        {county.county}
+      </option>
+    )
   })
 
   const addNewEtolog = () => {
@@ -87,12 +101,19 @@ export const AdminViewDesktop = () => {
               <div className="add-new-form-inner"><h4>Förnamn</h4><input id="first_name" type="text" onChange={event => setNewEtolog({ ...newEtolog, first_name: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>Efternamn</h4><input id="last_name" type="text" onChange={event => setNewEtolog({ ...newEtolog, last_name: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>Stad</h4><input id="city" type="text" onChange={event => setNewEtolog({ ...newEtolog, city: event.target.value })} /></div>
-              <div className="add-new-form-inner"><h4>Län</h4><input id="county" type="text" onChange={event => setNewEtolog({ ...newEtolog, county: event.target.value })} /></div>
+              <div className="add-new-form-inner">
+                <h4>Län</h4>
+                <select onChange={(event) => selectCounty(event.target.value)}>
+                  <option value=''>Välj ett län</option>
+                  {showCounty}
+                </select>
+              </div>
+              {/* <div className="add-new-form-inner"><h4>Län</h4><input id="county" type="text" onChange={event => setNewEtolog({ ...newEtolog, county: event.target.value })} /></div> */}
               <div className="add-new-form-inner"><h4>Email</h4><input id="email" type="text" onChange={event => setNewEtolog({ ...newEtolog, email: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>Hemsida</h4><input id="homepage" type="text" onChange={event => setNewEtolog({ ...newEtolog, homepage: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>Beskrivnig</h4><input id="desc" type="text" onChange={event => setNewEtolog({ ...newEtolog, desc: event.target.value })} /></div>
 
-              <div className="add-new-form-inner"><h4>Stjärnmärkt</h4><input id="star" type="checkbox" onChange={event => setNewEtolog({ ...newEtolog, star: event.target.value })} /></div>
+              <div className="add-new-form-inner"><h4>Stjärnmärkt</h4><input id="star" type="checkbox" onChange={event => setNewEtolog({ ...newEtolog, star: event.target.checked })} /></div>
 
               <div className="div-array">
                 <h4>Kategorier</h4>
@@ -104,12 +125,11 @@ export const AdminViewDesktop = () => {
                 <div className="array-checkbox"> {mapLectures}</div>
               </div>
               <div className="add-new-etolog-form-buttons">
-                <button onClick={() => { console.log(newEtolog) }}>Registrera</button>
+                <button type="submit" value="sumbit">Registrera</button>
                 <button>Rensa</button>
-
               </div>
-            </form>
-            <button onClick={() => { console.log(categoryArray) }}>Registrera</button>
+            </form><br />
+            {/* {/* <button onClick={() => { console.log(categoryArray) }}>Registrera</button> */}
             <button onClick={() => { console.log(newEtolog) }}>Registrera</button>
           </div>
         </div>

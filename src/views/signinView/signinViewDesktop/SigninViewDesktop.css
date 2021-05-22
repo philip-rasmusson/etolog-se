@@ -2,10 +2,32 @@
 
 .signin-desktop-form-wrapper {
   display: flex;
+  flex-direction: column;
   padding: 10rem 2rem;
   width: 100%;
 }
 
 .signin-desktop-form {
   margin: auto;
+  display: flex;
+}
+
+.signin-desktop-form div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.signin-desktop-form div input, .signin-desktop-form div label {
+  margin: 0.5rem auto;
+}
+
+.signin-desktop-form div input {
+  border-radius: 1rem;
+  padding: 3px;
+}
+
+.signin-desktop-form-wrapper button {
+  width: fit-content;
+  margin: 3rem auto;
 }

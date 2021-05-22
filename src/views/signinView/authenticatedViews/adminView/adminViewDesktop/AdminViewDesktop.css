@@ -40,6 +40,7 @@
 
 .add-new-etolog-form-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   margin: 0;
@@ -81,7 +82,7 @@
 }
 
 .array-checkbox label {
-  width: 40%;
+  width: 50%;
   display: flex;
 }
 
@@ -100,4 +101,8 @@
 
 .add-new-etolog-form-buttons button {
   margin: 1rem;
+}
+
+.label-category {
+  display: none;
 }
