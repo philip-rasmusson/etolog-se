@@ -43,7 +43,7 @@ export const SigninViewDesktop = () => {
 
           <form className="signin-desktop-form">
             <label>Username: </label><input type="text" onChange={(event) => setUsername(event.target.value)} /><br />
-            <label>Password: </label><input type="text" onChange={(event) => setPassword(event.target.value)} /><br />
+            <label>Password: </label><input type="password" onChange={(event) => setPassword(event.target.value)} /><br />
             <input type="submit" value="Log in" onClick={() => adminLogin()} />
           </form>
         </div>
