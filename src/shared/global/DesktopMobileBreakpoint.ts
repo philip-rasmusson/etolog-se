@@ -1,5 +1,8 @@
 const width = 760
 
-export default {
+const DesktopMobileBreakpoint =  {
   width
 }
+  
+
+export default DesktopMobileBreakpoint

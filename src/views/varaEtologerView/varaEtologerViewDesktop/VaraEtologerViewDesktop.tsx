@@ -28,21 +28,21 @@ export const VaraEtologerViewDesktop = () => {
     }
     const showCategory = categories.map((category) => {
         return (
-            <option value={category.category}>
+            <option value={category.category} key={category.category}>
                 {category.category}
             </option>
         )
     })
     const showCounty = county.map((county) => {
         return (
-            <option value={county.county}>
+            <option value={county.county} key={county.county}>
                 {county.county}
             </option>
         )
     })
     const etologOuput = (etolog: any) => {
         if (etolog.categoryFilter.includes(filterCategory) && etolog.county.includes(filterCounty))
-            return (<div className="vara-etolog-etolog-box">
+            return (<div className="vara-etolog-etolog-box" key={etolog.id}>
                 <EtologBoxDesktop
                     id={etolog.id}
                     name={etolog.first_name + ' ' + etolog.last_name}
@@ -56,10 +56,10 @@ export const VaraEtologerViewDesktop = () => {
             </div>)
     }
     const EtologArrayStar = etologer.map((etolog) => {
-        if (etolog.star) return <>{etologOuput(etolog)}</>
+        return etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
     })
     const EtologArrayNoStar = etologer.map((etolog) => {
-        if (!etolog.star) return <>{etologOuput(etolog)}</>
+        return !etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
     })
     return (
         <div className="vara-etologer-desktop-wrapper">

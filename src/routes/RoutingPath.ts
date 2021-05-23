@@ -9,7 +9,7 @@ const root = '/etolog-se'
 const adminView = '/admin'
 const signinView = '/signin'
 
-export default {
+const RoutingPath = {
   forelasningView,
   homeView,
   konsultuppdragView,
@@ -20,3 +20,5 @@ export default {
   webkurser,
   root,
 }
+
+export default RoutingPath

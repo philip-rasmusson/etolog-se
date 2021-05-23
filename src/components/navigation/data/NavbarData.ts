@@ -7,8 +7,7 @@ const forelasningar = 'föreläsningar'
 const konsultuppdrag = 'konsultuppdrag'
 const varaEtologer = 'våra etologer'
 
-
-export default{
+const NavbarData = {
   logo,
   radgivning,
   webkurser,
@@ -16,3 +15,5 @@ export default{
   konsultuppdrag,
   varaEtologer
 }
+
+export default NavbarData

@@ -22,7 +22,7 @@ export const AdminViewDesktop = () => {
   const [apiData, setApiData] = useState<any>([])
   const [newEtolog, setNewEtolog] = useState<any>()
   const [categoryArray, setCategoryArray] = useState<any>([])
-  const [filterCounty, setFilterCounty] = useState('län')
+  // const [filterCounty, setFilterCounty] = useState('län')
 
   const fetchData = async () => {
     const { data } = await Axios.get('http://localhost:3001/etolog')
@@ -33,7 +33,7 @@ export const AdminViewDesktop = () => {
   const showAllEtologer = () => {
     if (displayEtologer) {
       return apiData.map((etolog: any) => {
-        return (<div className="admin-desktop-etolog-box">
+        return (<div className="admin-desktop-etolog-box" key={etolog._id}>
           <EtologBoxDesktopAdmin
             _id={etolog._id}
             fullName={etolog.first_name + ' ' + etolog.last_name}
@@ -79,6 +79,7 @@ export const AdminViewDesktop = () => {
     return <label><input id={id} type="checkbox" />{x.lecture}</label>
   })
 
+
   const selectCounty = (county: any) => {
     setNewEtolog({ ...newEtolog, county })
   }
@@ -117,7 +118,7 @@ export const AdminViewDesktop = () => {
 
               <div className="div-array">
                 <h4>Kategorier</h4>
-                <div className="array-checkbox"> {mapCategories}</div>
+                <form id="category-array-form" className="array-checkbox"> {mapCategories}</form>
               </div>
 
               <div className="div-array">

@@ -81,7 +81,7 @@
 .forelasningar-desktop-etolog-box-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: auto;
   max-width: 800px;
   padding-top: 5rem;

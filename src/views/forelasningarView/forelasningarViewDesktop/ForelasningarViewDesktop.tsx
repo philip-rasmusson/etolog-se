@@ -1,10 +1,8 @@
 import { useState } from "react"
 import { animateScroll as scroll } from 'react-scroll'
 
-
 import './ForelasningarViewDesktop.css'
 import ForelasningarViewData from '../data/ForelasningarViewData'
-
 
 import etologer from '../../../data/data-etologer.json'
 import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
@@ -76,8 +74,8 @@ export const ForelasningarViewDesktop = () => {
     )
   }
   const etologOuput = (etolog: any) => {
-    if (etolog.lecture?.includes(filterCategory))
-      return (<div className="vara-etolog-etolog-box">
+    if (etolog.lecture?.includes(filterCategory)) {
+      return (<div className="vara-etolog-etolog-box" key={etolog._id}>
         <EtologBoxDesktop
           id={etolog.id}
           name={etolog.first_name + ' ' + etolog.last_name}
@@ -89,13 +87,17 @@ export const ForelasningarViewDesktop = () => {
           homepage={etolog.homepage}
         />
       </div>)
+    } else {
+      return <></>
+    }
   }
   const EtologArrayStar = etologer.map((etolog) => {
-    if (etolog.star) return <>{etologOuput(etolog)}</>
+    return etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
   })
   const EtologArrayNoStar = etologer.map((etolog) => {
-    if (!etolog.star) return <>{etologOuput(etolog)}</>
+    return !etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
   })
+
   return (
     <>
       <DefaulPageLayoutDesktop

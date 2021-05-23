@@ -9,9 +9,9 @@ const  sectionTwoParagraph2 = 'Lorem ipsum dolor sit amet consectetur adipisicin
 //Samarbetspartners
 const sectionTitle = 'samarbetspartners'
 const linkOne = 'http://www.djurvardag.se'
-const altLinkOne = 'http://www.djurvardag.se'
+// const altLinkOne = 'http://www.djurvardag.se'
 
-export default {
+const KonsultuppdragViewData = {
   backgroundColor, 
   pageTitle, 
   pageSubheading, 
@@ -22,3 +22,5 @@ export default {
   sectionTitle,
   linkOne,
 }
+
+export default KonsultuppdragViewData

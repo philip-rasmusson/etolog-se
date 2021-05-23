@@ -11,7 +11,7 @@ const imgMobileAlt = 'Error'
 const sectionThreeParagraph = 'Hos våra etologer kan en rådgivning se lite olika ut beroende på vem du bokar hos, men alla kommer att titta på just ditt djurs specifika behov och anpassa träningen och upplägget därefter.'
 const sectionThreeButton = 'Till våra etologer'
 
-export default {
+const RadgivningViewData = {
   backgroundColor, 
   pageTitle, 
   pageSubheading, 
@@ -23,3 +23,5 @@ export default {
   sectionThreeParagraph,
   sectionThreeButton,
 }
+
+export default RadgivningViewData

@@ -25,7 +25,7 @@ const sectionTwoHeadline03 = 'föreläsningar'
 const sectionTwoParagraph03 = 'Vi skräddarsyr föreläsningen för dig! Alla våra föreläsare är utbildade etologer med god kompetens i sitt ämne. Vad vill du veta mer om? Hur lång föreläsning vill du ha? En serie på fler tillfällen? Workshop? Maila oss dina önskemål så tar vi fram ett koncept som fungerar för dig och din verksamhet. Vi erbjuder föreläsningar och kurser i djurhållning, djurhälsa, etologi, djurskydd och det mesta annat som rör djur'
 const sectionTwoBtn03 = 'till föreläsningar'
 
-export default {
+const HomeViewData = {
   //Header Slogan
   headerSlogan,
   //Intro text
@@ -51,3 +51,5 @@ export default {
   sectionTwoParagraph03,
   sectionTwoBtn03,
 }
+
+export default HomeViewData

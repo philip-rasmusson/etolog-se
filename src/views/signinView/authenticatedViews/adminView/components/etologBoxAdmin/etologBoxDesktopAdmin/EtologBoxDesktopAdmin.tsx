@@ -1,6 +1,5 @@
 import './EtologBoxDesktopAdmin.css'
 import EtologBoxDataAdmin from '../data/EtologBoxDataAdmin'
-import { useHistory } from 'react-router-dom'
 import { EtologerImgAdmin } from "../data/EtologerImgAdmin"
 import Axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,15 +13,10 @@ import {
 
 export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullName?: string, img?: any, description?: string, email?: string, homepage?: string, city?: string, star?: boolean, render?: any }) => {
 
-  const history = useHistory()
-
   const deleteEtolog = async (_id: string, fullName?: string) => {
     await Axios.delete(`http://localhost:3001/etolog/${_id}`)
     window.alert(`Etologen ${fullName} är raderad`)
-    { props.render() }
-  }
-  const confirmDeleteEtolog = () => {
-
+    props.render()
   }
 
   return props.star

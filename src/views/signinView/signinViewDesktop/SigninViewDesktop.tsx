@@ -16,15 +16,15 @@ export const SigninViewDesktop = () => {
 
   const [username, setUsername] = useState<string>('User')
   const [password, setPassword] = useState<string>('')
-  const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
+  const [setAuthenticatedUser] = useContext(UserContext)
   const history = useHistory()
 
 
   const USER = process.env.REACT_APP_USER
   const PASSWORD = process.env.REACT_APP_PASSWORD
 
-  console.log(USER)
-  console.log(PASSWORD)
+  // console.log(USER)
+  // console.log(PASSWORD)
 
   const adminLogin = () => {
     if (password === PASSWORD && username === USER) {

@@ -4,11 +4,12 @@ const paragraph02 = 'För både verksamheter och enskilda djurägare blir vår p
 const button = 'BOKA'
 const copyright = '©2021 All Rights Reserved - Yoma Consulting'
 
-
-export default{
+const FooterData ={
   headline, 
   paragraph01,
   paragraph02,
   button,
   copyright
 }
+
+export default FooterData

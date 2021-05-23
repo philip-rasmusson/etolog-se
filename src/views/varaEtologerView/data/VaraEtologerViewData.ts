@@ -10,7 +10,7 @@ const  sectionTwoParagraph2 = 'Lorem ipsum dolor sit amet consectetur adipisicin
 const selectCategory = 'visa alla kategorier'
 const selectCounty = 'visa alla län'
 
-export default {
+const VaraEtologerViewData = {
   backgroundColor, 
   pageTitle, 
   pageSubheading, 
@@ -22,3 +22,5 @@ export default {
   selectCounty
   // lectures,
 }
+
+export default VaraEtologerViewData

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { UserContext } from '../shared/provider/UserProvider'
 
 
@@ -15,9 +15,8 @@ import { Footer } from "../components/footer/Footer"
 import RoutingPath from './RoutingPath'
 
 export const Routes = (props: { children?: React.ReactChild }) => {
-  const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
+  const [authenticatedUser] = useContext(UserContext)
 
-  console.log(authenticatedUser.admin)
   const adminRequired = () => {
     return authenticatedUser.admin ? AdminView : SigninView
   }
@@ -34,8 +33,8 @@ export const Routes = (props: { children?: React.ReactChild }) => {
         <Route exact path={RoutingPath.radgivningView} component={RadgivningView} />
         <Route exact path={RoutingPath.varaEtologerView} component={VaraEtologerView} />
         <Route exact path={RoutingPath.signinView} component={SigninView} />
-        <Route exact path={RoutingPath.adminView} component={AdminView} />
-        {/* <Route exact path={RoutingPath.adminView} component={adminRequired()} /> */}
+        {/* <Route exact path={RoutingPath.adminView} component={AdminView} /> */}
+        <Route exact path={RoutingPath.adminView} component={adminRequired()} />
       </Switch>
       <Footer />
     </Router>

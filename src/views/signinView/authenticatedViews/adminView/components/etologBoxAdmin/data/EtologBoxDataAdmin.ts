@@ -4,11 +4,13 @@ const starDesclaimer = 'De stjärnmarkerade etologerna har varit med i Etolog.se
 const buttonOne =  'uppdatera info'
 const buttonTwo = 'ta bort etolog'
 
-export default {
+const EtologBoxDataAdmin = {
   emailLink,
   homepageLink,
   starDesclaimer,
   buttonTwo,
   buttonOne,
 }
+
+export default EtologBoxDataAdmin
 

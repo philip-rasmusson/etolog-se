@@ -70,7 +70,7 @@ export const ForelasningarViewMobile = () => {
   const ShowEtologer = etologer.map((etologer) => {
     if (etologer.lecture?.includes(filterCategory)) {
       return (
-        <div className="vara-etologer-etolog-box">
+        <div className="vara-etologer-etolog-box" key={etologer.id}>
           <EtologBoxMobile
             id={etologer.id}
             name={etologer.first_name + ' ' + etologer.last_name}
@@ -82,6 +82,8 @@ export const ForelasningarViewMobile = () => {
           />
         </div>
       )
+    } else {
+      return <div key={etologer.id}></div>
     }
   })
   return (

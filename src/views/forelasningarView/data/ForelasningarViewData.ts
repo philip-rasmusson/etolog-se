@@ -29,7 +29,7 @@ const category12 = 'djurskydd'
 const categoryIndexHeadline = 'Hitta den perfekta Etologen här'
 const categoryIndexHParagraph = 'Det här är våra vanligaste föreläsningskategorier. Klicka på en kategori för att få se vilka etologer som erbjuder föreläsningar inom detta ämne. Givetvis kan vi skräddarsy en föreläsning enligt önskemål, maila då till info@etolog.se'
 
-export default {
+const ForelasningarViewData = {
   backgroundColor, 
   pageTitle, 
   pageSubheading, 
@@ -52,3 +52,5 @@ export default {
   categoryIndexHeadline,
   categoryIndexHParagraph,
 }
+
+export default ForelasningarViewData

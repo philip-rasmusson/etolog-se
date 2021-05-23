@@ -33,7 +33,7 @@ export const VaraEtologerViewMobile = () => {
     }
     const showCategory = categories.map((category) => {
         return (
-            <option value={category.category}>
+            <option value={category.category} key={category.category}>
                 {category.category}
 
             </option>
@@ -41,7 +41,7 @@ export const VaraEtologerViewMobile = () => {
     })
     const showCounty = county.map((county) => {
         return (
-            <option value={county.county}>
+            <option value={county.county} key={county.county}>
                 {county.county}
             </option>
         )
@@ -61,24 +61,28 @@ export const VaraEtologerViewMobile = () => {
         </div>)
     }
     const etologArrayWithStar = etologer.map((etolog) => {
-        if (etolog.star)
+        if (etolog.star) {
             if (etolog.categoryFilter.includes(filterCategory) && etolog.county.includes(filterCounty)) {
                 return (
-                    <>
+                    <div key={etolog.id}>
+
                         {etologOuput(etolog)}
-                    </>
+                    </div>
+
                 )
-            }
+            } else { return <div key={etolog.id}></div> }
+        } else { return <div key={etolog.id}></div> }
     })
     const etologArrayNoStar = etologer.map((etolog) => {
-        if (!etolog.star)
+        if (!etolog.star) {
             if (etolog.categoryFilter.includes(filterCategory) && etolog.county.includes(filterCounty)) {
                 return (
-                    <>
+                    <div key={etolog.id}>
                         {etologOuput(etolog)}
-                    </>
+                    </div>
                 )
-            }
+            } else { return <div key={etolog.id}></div> }
+        } else { return <div key={etolog.id}></div> }
     })
     return (
         <div className="vara-etologer-mobile-wrapper" id="vara-etologer-mobile-id">

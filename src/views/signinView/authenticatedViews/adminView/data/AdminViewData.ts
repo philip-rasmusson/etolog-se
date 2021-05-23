@@ -3,9 +3,11 @@ const pageSubheading = 'Här kan du visa alla sparade etologer samt lägga till,
 const buttonTwo = 'lägg till en etolog'
 const buttonThree = 'logga ut'
 
-export default {
+const AdminViewData = {
   pageTitle,
   pageSubheading,
   buttonTwo,
   buttonThree
 }
+
+export default AdminViewData
