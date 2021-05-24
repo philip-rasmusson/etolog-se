@@ -11,7 +11,7 @@ import {
   faDesktop,
 } from '@fortawesome/free-solid-svg-icons'
 
-export const EtologBoxMobileAdmin = (props: { id?: number, name?: string, img?: any, description?: string, email?: string, homepage?: string, city?: string, star?: boolean }) => {
+export const EtologBoxMobileAdmin = (props: { id?: number, img_id: number, name?: string, img?: any, description?: string, email?: string, homepage?: string, city?: string, star?: boolean }) => {
   return props.star
     ? (
       <div className="etolog-mobile-admin-box font-grey">
@@ -19,7 +19,7 @@ export const EtologBoxMobileAdmin = (props: { id?: number, name?: string, img?: 
           <FontAwesomeIcon icon={faStar} />
         </div>
         <div className="etolog-mobile-admin-box-headline">{props.name}</div>
-        <img src={imgEtologer[props.img].img} alt="" className="box-shadow etolog-mobile-admin-box-img"></img>
+        <img src={imgEtologer[props.img_id].img} alt="" className="box-shadow etolog-mobile-admin-box-img"></img>
         <div className="etolog-mobile-admin-box-paragraph">{props.description}</div>
 
         <div className="etolog-mobile-admin-box-contact-wrapper">
@@ -51,7 +51,7 @@ export const EtologBoxMobileAdmin = (props: { id?: number, name?: string, img?: 
     ) : (
       <div className="etolog-mobile-admin-box font-grey">
         <div className="etolog-mobile-admin-box-headline">{props.name}</div>
-        <img src={imgEtologer[props.img].img} alt="" className="box-shadow etolog-mobile-admin-box-img"></img>
+        <img src={imgEtologer[props.img_id].img} alt="" className="box-shadow etolog-mobile-admin-box-img"></img>
         <div className="etolog-mobile-admin-box-paragraph">{props.description}</div>
         <div className="etolog-mobile-admin-box-contact-wrapper">
           <div className="etolog-mobile-admin-box-phone">

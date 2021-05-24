@@ -27,104 +27,104 @@ import ElkeHartmann from "../img/etologer/unknown.jpg";
 
 export const EtologerImgAdmin = [
   {
-    imgId: 0,
+    img_id: 0,
     img: IreneWesterholm
   },
   {
-    imgId: 1,
+    img_id: 1,
     img: LindaStrohmaier
   },
   {
-  imgId: 2,
+  img_id: 2,
   img: PaulinaLundberg
 },
 
   {
-  imgId: 3,
+  img_id: 3,
   img: JanniceKindsjo
 },
   {
-  imgId: 4,
+  img_id: 4,
   img: AnnaMariaSvedberg
 },
   {
-  imgId: 5,
+  img_id: 5,
   img: AnnSofieSandell
 },
   {
-  imgId: 6,
+  img_id: 6,
   img: CharlotteFriis
 },
   {
-  imgId: 7,
+  img_id: 7,
   img: EmelieDeBoussard
 },
   {
-  imgId: 8,
+  img_id: 8,
   img: NathalieNilsson
 },
   {
-  imgId: 9,
+  img_id: 9,
   img: EvaWennman
 },
   {
-  imgId: 10,
+  img_id: 10,
   img: AnnaHarenius
 },
   {
-  imgId: 11,
+  img_id: 11,
   img: LinnLarsson
 },
   {
-  imgId: 12,
+  img_id: 12,
   img: RenateLarssen
 },
   {
-  imgId: 13,
+  img_id: 13,
   img: EmilieWassGrunander
 },
   {
-  imgId: 14,
+  img_id: 14,
   img: AnnaRoos
 },
   {
-  imgId: 15,
+  img_id: 15,
   img: MoaNygren
 },
   {
-  imgId: 16,
+  img_id: 16,
   img: UlricaAhlrot
 },
   {
-  imgId: 17,
+  img_id: 17,
   img: EmmaAlmquist
 },
   {
-  imgId: 18,
+  img_id: 18,
   img: JohannaStrandner
 },
   {
-  imgId: 19,
+  img_id: 19,
   img: AstridSoderqvist
 },
   {
-  imgId: 20,
+  img_id: 20,
   img: VictoriaKallstrom
 },
   {
-  imgId: 21,
+  img_id: 21,
   img: EllenKilander
 },
   {
-  imgId: 22,
+  img_id: 22,
   img: DesireeSjostrom
 },
   {
-  imgId: 23,
+  img_id: 23,
   img: LisaLundin
 },
   {
-  imgId: 24,
+  img_id: 24,
   img: ElkeHartmann
 },
 ]

@@ -16,8 +16,9 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
   const deleteEtolog = async (_id: string, fullName?: string) => {
     await Axios.delete(`http://localhost:3001/etolog/${_id}`)
     window.alert(`Etologen ${fullName} är raderad`)
-    props.render()
+    { props.render() }
   }
+
 
   return props.star
     ? ( //Stjärnetolog, har varit med sedan starten

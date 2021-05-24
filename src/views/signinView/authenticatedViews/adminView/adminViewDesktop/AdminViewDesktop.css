@@ -99,6 +99,10 @@
   padding: 1rem;
 }
 
+.add-new-etolog-title {
+  font-weight: 500;
+}
+
 .add-new-etolog-form-buttons button {
   margin: 1rem;
 }

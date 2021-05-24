@@ -10,6 +10,7 @@ import RoutingPath from '../../../../../routes/RoutingPath'
 import categories from '../../../../../data/data-categories.json'
 import lectures from '../../../../../data/data-lectures.json'
 import counties from '../../../../../data/data-county.json'
+import EtologBoxDataAdmin from '../components/etologBoxAdmin/data/EtologBoxDataAdmin'
 
 
 export const AdminViewDesktop = () => {
@@ -69,9 +70,14 @@ export const AdminViewDesktop = () => {
     }
   }
 
-  const mapCategories = categories.map((x) => {
+  const mapCategories = categories.map((x, i) => {
     const id = `category-${x.category}`
-    return <label className="label-category"><input id={id} type="checkbox" onChange={event => setCategoryArray([{ ...categoryArray, categoryFilter: x.category }])} />{x.category}</label>
+    return <label className="label-category"><input id={id} type="checkbox"
+      onChange={event => {
+        (event.target.checked)
+          ? setCategoryArray([...categoryArray, x.category])
+          : setCategoryArray(categoryArray.filter((y: any) => y !== x.category))
+      }} />{x.category}</label>
   })
 
   const mapLectures = lectures.map((x) => {
@@ -96,7 +102,7 @@ export const AdminViewDesktop = () => {
     if (displayAddNewEtolog)
       return (
         <div className="add-new-etolog-wrapper">
-          <h1>adding new etolog</h1>
+          <h1 className="add-new-etolog-title">{EtologBoxDataAdmin.addNewEtologTitle}</h1>
           <div className="add-new-etolog-form-wrapper">
             <form className="add-new-etolog-form">
               <div className="add-new-form-inner"><h4>Förnamn</h4><input id="first_name" type="text" onChange={event => setNewEtolog({ ...newEtolog, first_name: event.target.value })} /></div>
@@ -109,7 +115,6 @@ export const AdminViewDesktop = () => {
                   {showCounty}
                 </select>
               </div>
-              {/* <div className="add-new-form-inner"><h4>Län</h4><input id="county" type="text" onChange={event => setNewEtolog({ ...newEtolog, county: event.target.value })} /></div> */}
               <div className="add-new-form-inner"><h4>Email</h4><input id="email" type="text" onChange={event => setNewEtolog({ ...newEtolog, email: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>Hemsida</h4><input id="homepage" type="text" onChange={event => setNewEtolog({ ...newEtolog, homepage: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>Beskrivnig</h4><input id="desc" type="text" onChange={event => setNewEtolog({ ...newEtolog, desc: event.target.value })} /></div>
@@ -130,7 +135,7 @@ export const AdminViewDesktop = () => {
                 <button>Rensa</button>
               </div>
             </form><br />
-            {/* {/* <button onClick={() => { console.log(categoryArray) }}>Registrera</button> */}
+            <button onClick={() => { console.log(categoryArray) }}>Registrera</button>
             <button onClick={() => { console.log(newEtolog) }}>Registrera</button>
           </div>
         </div>
