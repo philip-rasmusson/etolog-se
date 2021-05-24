@@ -12,18 +12,34 @@ import lectures from '../../../../../data/data-lectures.json'
 import counties from '../../../../../data/data-county.json'
 import EtologBoxDataAdmin from '../components/etologBoxAdmin/data/EtologBoxDataAdmin'
 
-
 export const AdminViewDesktop = () => {
-
-  const history = useHistory()
-
   const [displayEtologer, setDisplayEtologer] = useState<boolean>(false)
   const [displayAddNewEtolog, setDisplayAddNewEtolog] = useState<boolean>(false)
   const [displayEtologerButtonText, setDisplayEtologerButtonText] = useState<string>('visa alla etologer')
   const [apiData, setApiData] = useState<any>([])
   const [newEtolog, setNewEtolog] = useState<any>()
-  const [categoryArray, setCategoryArray] = useState<any>([])
-  // const [filterCounty, setFilterCounty] = useState('län')
+  const [categoryArray, setCategoryArray] = useState<any>(['show all'])
+  const [lectureArray, setLectureArray] = useState<any>([])
+
+  const history = useHistory()
+
+  const createEtolog = async () => {
+    const createdEtolog = {
+      first_name: newEtolog.first_name,
+      last_name: newEtolog.last_name,
+      desc: newEtolog.desc,
+      email: newEtolog.email,
+      city: newEtolog.city,
+      homepage: newEtolog.homepage,
+      lecture: lectureArray,
+      star: newEtolog.star,
+      county: newEtolog.county,
+      categoryFilter: categoryArray,
+      imgId: 0
+    }
+    const { data } = await Axios.post('http://localhost:3001/etolog/', createdEtolog)
+    console.log(data)
+  }
 
   const fetchData = async () => {
     const { data } = await Axios.get('http://localhost:3001/etolog')
@@ -50,7 +66,6 @@ export const AdminViewDesktop = () => {
       })
     }
   }
-
   const toggleShowEtologer = () => {
     if (displayEtologer) {
       setDisplayEtologer(false)
@@ -60,7 +75,6 @@ export const AdminViewDesktop = () => {
       setDisplayEtologerButtonText('göm alla etologer')
     }
   }
-
   const toggleAddNewEtolog = () => {
     if (!displayAddNewEtolog) {
       setDisplayEtologer(false)
@@ -70,29 +84,29 @@ export const AdminViewDesktop = () => {
     }
   }
 
-  const mapCategories = categories.map((x, i) => {
-    const id = `category-${x.category}`
-    return <label className="label-category"><input id={id} type="checkbox"
+  const mapCategories = categories.map((item) => {
+    const id = `category-${item.category}`
+    return <label className="label-category"><input id={id} type="checkbox" key={item.category}
       onChange={event => {
         (event.target.checked)
-          ? setCategoryArray([...categoryArray, x.category])
-          : setCategoryArray(categoryArray.filter((y: any) => y !== x.category))
-      }} />{x.category}</label>
+          ? setCategoryArray([...categoryArray, item.category])
+          : setCategoryArray(categoryArray.filter((y: any) => y !== item.category))
+      }} />{item.category}</label>
   })
 
-  const mapLectures = lectures.map((x) => {
-    const id = `lecture-${x.lecture}`
-    return <label><input id={id} type="checkbox" />{x.lecture}</label>
+  const mapLectures = lectures.map((item) => {
+    const id = `lecture-${item.lecture}`
+    return <label className="label-lecture"><input id={id} type="checkbox" key={item.lecture}
+      onChange={event => {
+        (event.target.checked)
+          ? setLectureArray([...lectureArray, item.lecture])
+          : setLectureArray(lectureArray.filter((y: any) => y !== item.lecture))
+      }} />{item.lecture}</label>
   })
 
-
-  const selectCounty = (county: any) => {
-    setNewEtolog({ ...newEtolog, county })
-  }
-
-  const showCounty = counties.map((county) => {
+  const mapCounty = counties.map((county) => {
     return (
-      <option value={county.county}>
+      <option value={county.county} key={county.county}>
         {county.county}
       </option>
     )
@@ -104,15 +118,15 @@ export const AdminViewDesktop = () => {
         <div className="add-new-etolog-wrapper">
           <h1 className="add-new-etolog-title">{EtologBoxDataAdmin.addNewEtologTitle}</h1>
           <div className="add-new-etolog-form-wrapper">
-            <form className="add-new-etolog-form">
+            <div className="add-new-etolog-form">
               <div className="add-new-form-inner"><h4>Förnamn</h4><input id="first_name" type="text" onChange={event => setNewEtolog({ ...newEtolog, first_name: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>Efternamn</h4><input id="last_name" type="text" onChange={event => setNewEtolog({ ...newEtolog, last_name: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>Stad</h4><input id="city" type="text" onChange={event => setNewEtolog({ ...newEtolog, city: event.target.value })} /></div>
               <div className="add-new-form-inner">
                 <h4>Län</h4>
-                <select onChange={(event) => selectCounty(event.target.value)}>
+                <select onChange={(event) => setNewEtolog({ ...newEtolog, county: event.target.value })}>
                   <option value=''>Välj ett län</option>
-                  {showCounty}
+                  {mapCounty}
                 </select>
               </div>
               <div className="add-new-form-inner"><h4>Email</h4><input id="email" type="text" onChange={event => setNewEtolog({ ...newEtolog, email: event.target.value })} /></div>
@@ -123,7 +137,7 @@ export const AdminViewDesktop = () => {
 
               <div className="div-array">
                 <h4>Kategorier</h4>
-                <form id="category-array-form" className="array-checkbox"> {mapCategories}</form>
+                <div className="array-checkbox"> {mapCategories}</div>
               </div>
 
               <div className="div-array">
@@ -131,12 +145,10 @@ export const AdminViewDesktop = () => {
                 <div className="array-checkbox"> {mapLectures}</div>
               </div>
               <div className="add-new-etolog-form-buttons">
-                <button type="submit" value="sumbit">Registrera</button>
+                <button type="submit" value="sumbit" onClick={() => createEtolog()}>Registrera</button>
                 <button>Rensa</button>
               </div>
-            </form><br />
-            <button onClick={() => { console.log(categoryArray) }}>Registrera</button>
-            <button onClick={() => { console.log(newEtolog) }}>Registrera</button>
+            </div>
           </div>
         </div>
       )
@@ -164,7 +176,6 @@ export const AdminViewDesktop = () => {
       <div className="admin-desktop-addNewEtolog-wrapper">
         {addNewEtolog()}
       </div>
-
     </>
   )
 }
