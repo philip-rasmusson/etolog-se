@@ -50,16 +50,21 @@ export const AdminViewDesktop = () => {
   const showAllEtologer = () => {
     if (displayEtologer) {
       return apiData.map((etolog: any) => {
+        // console.log(etolog.categoryFilter)
         return (<div className="admin-desktop-etolog-box" key={etolog._id}>
           <EtologBoxDesktopAdmin
             _id={etolog._id}
             fullName={etolog.first_name + ' ' + etolog.last_name}
+            first_name={etolog.first_name}
+            last_name={etolog.last_name}
             imgId={etolog.imgId}
             description={etolog.desc}
             email={etolog.email}
             city={etolog.city}
             star={etolog.star}
+            county={etolog.county}
             homepage={etolog.homepage}
+            categoryFilter={etolog.categoryFilter}
             render={() => fetchData()}
           />
         </div>)
@@ -111,6 +116,8 @@ export const AdminViewDesktop = () => {
       </option>
     )
   })
+
+
 
   const addNewEtolog = () => {
     if (displayAddNewEtolog)
@@ -175,6 +182,9 @@ export const AdminViewDesktop = () => {
       </div>
       <div className="admin-desktop-addNewEtolog-wrapper">
         {addNewEtolog()}
+      </div>
+      <div className="admin-desktop-updateEtolog-wrapper">
+        {/* {updateEtolog()} */}
       </div>
     </>
   )

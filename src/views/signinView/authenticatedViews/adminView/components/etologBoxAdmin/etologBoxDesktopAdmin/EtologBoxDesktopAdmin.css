@@ -7,7 +7,15 @@
   flex-direction: column;
   margin: 1rem;
   padding: 1rem 1rem 2rem 1rem;
-  width: 13rem;
+  width: 18rem;
+}
+
+.etolog-desktop-admin-box input {
+  width: 15rem;
+}
+
+.etolog-desktop-admin-box h4 {
+  font-weight: 500;
 }
 
 .etolog-desktop-admin-box-headline {
