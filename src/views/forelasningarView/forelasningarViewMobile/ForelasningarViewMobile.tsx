@@ -106,8 +106,6 @@ export const ForelasningarViewMobile = () => {
           {ShowEtologer}
         </div>
         <p className="star-disclaimer-mobile">{EtologBoxData.starDesclaimer}</p>
-
-        {/* <button onClick={() => setFilterCategory('')} >Visa alla etologer</button> */}
       </div>
     </>
   )

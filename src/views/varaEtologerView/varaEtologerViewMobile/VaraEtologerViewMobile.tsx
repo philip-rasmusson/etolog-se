@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
+import Axios from 'axios'
 
 import './VaraEtologerViewMobile.css'
 
 import etologerMobile from '../img/etologerMobile.png'
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
-import etologer from '../../../data/data-etologer.json'
 import county from '../../../data/data-county.json'
 import categories from '../../../data/data-categories.json'
 
@@ -24,6 +24,12 @@ export const VaraEtologerViewMobile = () => {
     }
     const [filterCategory, setFilterCategory] = useState('showAll')
     const [filterCounty, setFilterCounty] = useState('län')
+    const [etologer, setEtologer] = useState<any>([])
+
+    const fetchData = async () => {
+        const { data } = await Axios.get('http://localhost:3001/etolog')
+        setEtologer(data)
+    }
 
     const selectCategory = (event: any) => {
         setFilterCategory(event)
@@ -49,9 +55,9 @@ export const VaraEtologerViewMobile = () => {
     const etologOuput = (etolog: any) => {
         return (<div className="vara-etolog-etolog-box">
             <EtologBoxMobile
-                id={etolog.id}
+                id={etolog.imgId}
                 name={etolog.first_name + ' ' + etolog.last_name}
-                img={etolog.id}
+                img={etolog.imgId}
                 description={etolog.desc}
                 email={etolog.email}
                 city={etolog.city}
@@ -60,7 +66,7 @@ export const VaraEtologerViewMobile = () => {
             />
         </div>)
     }
-    const etologArrayWithStar = etologer.map((etolog) => {
+    const etologArrayWithStar = etologer.map((etolog: any) => {
         if (etolog.star) {
             if (etolog.categoryFilter.includes(filterCategory) && etolog.county.includes(filterCounty)) {
                 return (
@@ -73,7 +79,7 @@ export const VaraEtologerViewMobile = () => {
             } else { return <div key={etolog.id}></div> }
         } else { return <div key={etolog.id}></div> }
     })
-    const etologArrayNoStar = etologer.map((etolog) => {
+    const etologArrayNoStar = etologer.map((etolog: any) => {
         if (!etolog.star) {
             if (etolog.categoryFilter.includes(filterCategory) && etolog.county.includes(filterCounty)) {
                 return (
@@ -86,6 +92,7 @@ export const VaraEtologerViewMobile = () => {
     })
 
     useEffect(() => {
+        fetchData()
         window.scrollTo({
             top: 0,
             behavior: 'auto'

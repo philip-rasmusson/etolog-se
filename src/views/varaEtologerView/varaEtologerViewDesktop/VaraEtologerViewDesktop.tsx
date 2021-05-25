@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import Axios from 'axios'
 
 import './VaraEtologerViewDesktop.css'
 
@@ -7,7 +8,7 @@ import headerImg from "../img/headerVaraEtologerHeight700.jpg"
 
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
-import etologer from '../../../data/data-etologer.json'
+// import etologer from '../../../data/data-etologer.json'
 import county from '../../../data/data-county.json'
 import categories from '../../../data/data-categories.json'
 
@@ -19,6 +20,12 @@ import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 export const VaraEtologerViewDesktop = () => {
     const [filterCategory, setFilterCategory] = useState('showAll')
     const [filterCounty, setFilterCounty] = useState('län')
+    const [etologer, setEtologer] = useState<any>([])
+
+    const fetchData = async () => {
+        const { data } = await Axios.get('http://localhost:3001/etolog')
+        setEtologer(data)
+    }
 
     const selectCategory = (event: any) => {
         setFilterCategory(event)
@@ -46,7 +53,7 @@ export const VaraEtologerViewDesktop = () => {
                 <EtologBoxDesktop
                     id={etolog.id}
                     name={etolog.first_name + ' ' + etolog.last_name}
-                    img={etolog.id}
+                    img={etolog.imgId}
                     description={etolog.desc}
                     email={etolog.email}
                     city={etolog.city}
@@ -55,14 +62,15 @@ export const VaraEtologerViewDesktop = () => {
                 />
             </div>)
     }
-    const EtologArrayStar = etologer.map((etolog) => {
+    const EtologArrayStar = etologer.map((etolog: any) => {
         return etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
     })
-    const EtologArrayNoStar = etologer.map((etolog) => {
+    const EtologArrayNoStar = etologer.map((etolog: any) => {
         return !etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
     })
 
     useEffect(() => {
+        fetchData()
         window.scrollTo({
             top: 0,
             behavior: 'auto'

@@ -16,7 +16,7 @@ export const SigninViewDesktop = () => {
 
   const [username, setUsername] = useState<string>('User')
   const [password, setPassword] = useState<string>('')
-  const [setAuthenticatedUser] = useContext(UserContext)
+  const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
   const history = useHistory()
 
 
@@ -29,6 +29,7 @@ export const SigninViewDesktop = () => {
   const adminLogin = () => {
     if (password === PASSWORD && username === USER) {
       setAuthenticatedUser({ username, admin: true })
+      console.log(authenticatedUser)
       history.push(RoutingPath.adminView)
     } else {
       alert('Access denied')

@@ -29,10 +29,9 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
   const [lectureArray, setLectureArray] = useState(props.lectureArray)
   const [countySelect, setCountySelect] = useState(props.county)
 
-  console.log(lectureArray)
 
   const mapCategories = categories.map((item) => {
-    return <label style={{ width: '15rem', textAlign: 'left' }}><input type="checkbox"
+    return <label style={{ width: '15rem', textAlign: 'left' }}><input className="etolog-desktop-admin-box-input" type="checkbox"
       onChange={event => {
         (event.target.checked)
           ? setCategoryArray([...categoryArray, item.category])
@@ -40,13 +39,12 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
       }} />{item.category}</label>
   })
   const mapLectures = lectures.map((item) => {
-    if (lectureArray !== null)
-      return <label style={{ width: '15rem', textAlign: 'left' }}><input type="checkbox"
-        onChange={event => {
-          (event.target.checked)
-            ? setLectureArray([...lectureArray, item.lecture])
-            : setLectureArray(lectureArray.filter((y: any) => y !== item.lecture))
-        }} />{item.lecture}</label>
+    return lectureArray !== null ? (<label style={{ width: '15rem', textAlign: 'left' }}><input className="etolog-desktop-admin-box-input" type="checkbox"
+      onChange={event => {
+        (event.target.checked)
+          ? setLectureArray([...lectureArray, item.lecture])
+          : setLectureArray(lectureArray.filter((y: any) => y !== item.lecture))
+      }} />{item.lecture}</label>) : (<div></div>)
   })
 
   const mapCounty = counties.map((county) => {
@@ -121,12 +119,12 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
     </div>
   ) : (
     <div className="etolog-desktop-admin-box font-grey box-shadow" >
-      <div><h4>Förnamn</h4><input type="text" value={firstName} onChange={event => setFirstName(event.target.value)} /></div>
-      <div><h4>Efternamn</h4><input type="text" value={lastName} onChange={event => setLastName(event.target.value)} /></div>
-      <div><h4>Stad</h4><input type="text" value={city} onChange={event => setCity(event.target.value)} /></div>
-      <div><h4>E-mail</h4><input type="text" value={email} onChange={event => setEmail(event.target.value)} /></div>
-      <div><h4>Hemsida</h4><input type="text" value={homepage} onChange={event => setHompage(event.target.value)} /></div>
-      <div><h4>Beskrivning</h4><input type="text" value={description} onChange={event => setDescription(event.target.value)} /></div>
+      <div><h4>Förnamn</h4><input className="etolog-desktop-admin-box-input" type="text" value={firstName} onChange={event => setFirstName(event.target.value)} /></div>
+      <div><h4>Efternamn</h4><input className="etolog-desktop-admin-box-input" type="text" value={lastName} onChange={event => setLastName(event.target.value)} /></div>
+      <div><h4>Stad</h4><input className="etolog-desktop-admin-box-input" type="text" value={city} onChange={event => setCity(event.target.value)} /></div>
+      <div><h4>E-mail</h4><input className="etolog-desktop-admin-box-input" type="text" value={email} onChange={event => setEmail(event.target.value)} /></div>
+      <div><h4>Hemsida</h4><input className="etolog-desktop-admin-box-input" type="text" value={homepage} onChange={event => setHompage(event.target.value)} /></div>
+      <div><h4>Beskrivning</h4><input className="etolog-desktop-admin-box-input" type="text" value={description} onChange={event => setDescription(event.target.value)} /></div>
 
       <div>
         <select onChange={(event) => setCountySelect(event.target.value)} style={{ borderRadius: '0.3rem', background: 'none', color: 'black', padding: '2px', margin: '1rem auto' }}>
@@ -135,13 +133,13 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
         </select>
       </div>
 
-      <div><h4>Stjärnmärkt</h4><input type="checkbox" checked={star} onChange={event => setStar(event.target.checked)} /></div>
+      <div><h4>Stjärnmärkt</h4><input className="etolog-desktop-admin-box-input" type="checkbox" checked={star} onChange={event => setStar(event.target.checked)} /></div>
 
-      <div style={{ width: '15rem' }}>
+      <div style={{ width: '15rem', margin: '1rem auto' }}>
         <h4>Kategorier</h4>
         <div className="array-checkbox"> {mapCategories}</div>
       </div>
-      <div style={{ width: '15rem' }}>
+      <div style={{ width: '15rem', margin: '1rem auto' }}>
         <h4>Föreläsningar</h4>
         <div className="array-checkbox"> {mapLectures}</div>
       </div>

@@ -77,8 +77,9 @@
 }
 
 .array-checkbox input {
-  margin: auto 0.4rem auto 1rem;
+  margin: auto 0.4rem auto 0;
   padding: 0;
+  width: fit-content;
 }
 
 .array-checkbox label {
