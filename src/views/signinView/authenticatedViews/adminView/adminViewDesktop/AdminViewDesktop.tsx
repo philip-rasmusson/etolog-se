@@ -11,6 +11,7 @@ import categories from '../../../../../data/data-categories.json'
 import lectures from '../../../../../data/data-lectures.json'
 import counties from '../../../../../data/data-county.json'
 import EtologBoxDataAdmin from '../components/etologBoxAdmin/data/EtologBoxDataAdmin'
+import { render } from '@testing-library/react'
 
 export const AdminViewDesktop = () => {
   const [displayEtologer, setDisplayEtologer] = useState<boolean>(false)
@@ -39,6 +40,9 @@ export const AdminViewDesktop = () => {
     }
     const { data } = await Axios.post('http://localhost:3001/etolog/', createdEtolog)
     console.log(data)
+    setDisplayEtologer(true)
+    setDisplayAddNewEtolog(false)
+    fetchData()
   }
 
   const fetchData = async () => {
@@ -65,6 +69,7 @@ export const AdminViewDesktop = () => {
             county={etolog.county}
             homepage={etolog.homepage}
             categoryFilter={etolog.categoryFilter}
+            lectureArray={etolog.lecture}
             render={() => fetchData()}
           />
         </div>)
@@ -78,11 +83,13 @@ export const AdminViewDesktop = () => {
     } else {
       setDisplayEtologer(true)
       setDisplayEtologerButtonText('göm alla etologer')
+      setDisplayAddNewEtolog(false)
     }
   }
   const toggleAddNewEtolog = () => {
     if (!displayAddNewEtolog) {
       setDisplayEtologer(false)
+      setDisplayEtologerButtonText('visa alla etologer')
       setDisplayAddNewEtolog(true)
     } else {
       setDisplayAddNewEtolog(false)

@@ -11,16 +11,13 @@ import counties from '../../../../../../../data/data-county.json'
 import {
   faDesktop,
   faEnvelope,
-  faHome,
-  faStar
+  faHome
 } from '../../../../../../../../node_modules/@fortawesome/free-solid-svg-icons'
 
 
-export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullName?: string, first_name?: string, last_name?: string, img?: any, description?: string, email?: string, homepage?: string, city?: string, county?: any, star?: boolean, categoryFilter?: any, lecture?: any, render?: any }) => {
+export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullName?: string, first_name?: string, last_name?: string, img?: any, description?: string, email?: string, homepage?: string, city?: string, county?: any, star?: boolean, categoryFilter?: any, lectureArray?: any, render?: any }) => {
+
   const [displayUpdateEtolog, setDisplayUpdateEtolog] = useState<boolean>(false)
-
-  // const [updateEtolog, setUpdateEtolog] = useState<any>()
-
   const [firstName, setFirstName] = useState(props.first_name)
   const [lastName, setLastName] = useState(props.last_name)
   const [city, setCity] = useState(props.city)
@@ -29,12 +26,13 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
   const [email, setEmail] = useState(props.email)
   const [star, setStar] = useState(props.star)
   const [categoryArray, setCategoryArray] = useState(props.categoryFilter)
-  const [lecture, setLecture] = useState(props.lecture)
+  const [lectureArray, setLectureArray] = useState(props.lectureArray)
   const [countySelect, setCountySelect] = useState(props.county)
 
+  console.log(lectureArray)
 
   const mapCategories = categories.map((item) => {
-    return <label style={{ width: '15rem', textAlign: 'left' }}><input type="checkbox" key={item.category}
+    return <label style={{ width: '15rem', textAlign: 'left' }}><input type="checkbox"
       onChange={event => {
         (event.target.checked)
           ? setCategoryArray([...categoryArray, item.category])
@@ -42,12 +40,13 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
       }} />{item.category}</label>
   })
   const mapLectures = lectures.map((item) => {
-    return <label style={{ width: '15rem', textAlign: 'left' }}><input type="checkbox" key={item.lecture}
-      onChange={event => {
-        (event.target.checked)
-          ? setCategoryArray([...categoryArray, item.lecture])
-          : setCategoryArray(categoryArray.filter((y: any) => y !== item.lecture))
-      }} />{item.lecture}</label>
+    if (lectureArray !== null)
+      return <label style={{ width: '15rem', textAlign: 'left' }}><input type="checkbox"
+        onChange={event => {
+          (event.target.checked)
+            ? setLectureArray([...lectureArray, item.lecture])
+            : setLectureArray(lectureArray.filter((y: any) => y !== item.lecture))
+        }} />{item.lecture}</label>
   })
 
   const mapCounty = counties.map((county) => {
@@ -72,18 +71,21 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
       email: email,
       city: city,
       homepage: homepage,
-      lecture: lecture,
+      lecture: lectureArray,
       star: star,
       county: countySelect,
       categoryFilter: categoryArray,
-      imgId: 0
+      imgId: props.imgId
     }
     await Axios.put(`http://localhost:3001/etolog/${_id}`, updatedEtolog)
     window.alert(`Etologen ${fullName} är uppdaterad`)
+    setDisplayUpdateEtolog(false)
     props.render()
   }
 
-  return !displayUpdateEtolog ? ( //Stjärnetolog, har varit med sedan starten
+
+
+  return !displayUpdateEtolog ? (
     <div className="etolog-desktop-admin-box font-grey box-shadow" >
       <div className="etolog-desktop-admin-box-headline">{props.fullName}</div>
       <div className="etolog-desktop-admin-box-img-star-wrapper">
@@ -127,7 +129,6 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
       <div><h4>Beskrivning</h4><input type="text" value={description} onChange={event => setDescription(event.target.value)} /></div>
 
       <div>
-        {/* <h4>Län</h4> */}
         <select onChange={(event) => setCountySelect(event.target.value)} style={{ borderRadius: '0.3rem', background: 'none', color: 'black', padding: '2px', margin: '1rem auto' }}>
           <option value={countySelect}>{countySelect}</option>
           {mapCounty}
