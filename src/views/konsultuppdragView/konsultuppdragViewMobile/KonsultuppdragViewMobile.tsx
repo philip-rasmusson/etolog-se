@@ -1,4 +1,5 @@
 
+import { useEffect } from "react"
 import './KonsultuppdragViewMobile.css'
 import konsultuppdragMobile from '../img/konsultuppdragMobile.jpg'
 import djurvardag from "../img/samarbetspartners/djurvardag.jpg"
@@ -9,6 +10,14 @@ import { DefaulPageLayoutMobile } from "../../../components/defaultPageLayout/de
 
 
 export const KonsultuppdragViewMobile = () => {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        })
+    }, [])
+
     return (
         <div className="forelasning-mobile-wrapper">
             <DefaulPageLayoutMobile

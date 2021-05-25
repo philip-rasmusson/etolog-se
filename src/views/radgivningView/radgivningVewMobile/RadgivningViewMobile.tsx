@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { useHistory } from "react-router-dom"
 
 import './RadgivningViewMobile.css'
@@ -11,6 +12,13 @@ import { DefaulPageLayoutMobile } from "../../../components/defaultPageLayout/de
 
 export const RadgivningViewMobile = () => {
   const history = useHistory()
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto'
+    })
+  }, [])
 
   return (
     <div className="radgivning-mobile-wrapper">

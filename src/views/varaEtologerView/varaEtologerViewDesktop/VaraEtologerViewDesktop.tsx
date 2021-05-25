@@ -1,4 +1,4 @@
-import { useState, } from "react"
+import { useState, useEffect } from "react"
 
 import './VaraEtologerViewDesktop.css'
 
@@ -61,6 +61,14 @@ export const VaraEtologerViewDesktop = () => {
     const EtologArrayNoStar = etologer.map((etolog) => {
         return !etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
     })
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        })
+    }, [])
+
     return (
         <div className="vara-etologer-desktop-wrapper">
             <DefaulPageLayoutDesktop

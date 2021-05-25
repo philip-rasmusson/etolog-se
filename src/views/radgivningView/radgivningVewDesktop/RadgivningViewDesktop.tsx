@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { useHistory } from "react-router-dom"
 import RoutingPath from '../../../routes/RoutingPath'
 
@@ -7,11 +8,17 @@ import cat from '../img/cat4.jpg'
 import radgivning from '../img/radgivning.png'
 import headerImg from "../img/headerRadgivningHeight700b.jpg"
 
-
 import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
 export const RadgivningViewDesktop = () => {
   const history = useHistory()
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto'
+    })
+  }, [])
   return (
     <div className="radgivning-dekstop-wrapper background-white">
       <DefaulPageLayoutDesktop

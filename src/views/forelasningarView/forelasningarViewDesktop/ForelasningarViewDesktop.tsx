@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { animateScroll as scroll } from 'react-scroll'
 
 import './ForelasningarViewDesktop.css'
@@ -85,6 +85,13 @@ export const ForelasningarViewDesktop = () => {
   const EtologArrayNoStar = etologer.map((etolog) => {
     return !etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
   })
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto'
+    })
+  }, [])
 
   return (
     <>

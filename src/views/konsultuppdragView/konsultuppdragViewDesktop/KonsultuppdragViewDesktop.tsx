@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import './KonsultuppdragViewDesktop.css'
 import headerImg from "../img/headerKonsultuppdragHeight700b.jpg"
 import djurvardag from "../img/samarbetspartners/djurvardag.jpg"
@@ -10,6 +11,12 @@ import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/d
 
 export const KonsultuppdragViewDesktop = () => {
 
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        })
+    }, [])
     return (
         <div>
             <DefaulPageLayoutDesktop

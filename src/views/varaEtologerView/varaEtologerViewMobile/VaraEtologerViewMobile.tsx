@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import './VaraEtologerViewMobile.css'
 
@@ -84,6 +84,14 @@ export const VaraEtologerViewMobile = () => {
             } else { return <div key={etolog.id}></div> }
         } else { return <div key={etolog.id}></div> }
     })
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        })
+    }, [])
+
     return (
         <div className="vara-etologer-mobile-wrapper" id="vara-etologer-mobile-id">
             <DefaulPageLayoutMobile

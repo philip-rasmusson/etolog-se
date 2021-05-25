@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { useHistory } from "react-router-dom"
 
 import './HomeViewMobile.css'
@@ -30,11 +31,20 @@ export const HomeViewMobile = () => {
             </div>
         )
     }
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        })
+    }, [])
+
     return (
         <>
             <HeaderMobile slogan={HomeViewData.headerSlogan} headerImg={HeaderMobileImg} />
             <div className="homeview-mobile-wrapper font-grey">
                 <div className="homeview-mobile-intro-text">
+                    <h1>{HomeViewData.headline}</h1>
                     <p>{HomeViewData.introText}</p>
                 </div>
                 <img

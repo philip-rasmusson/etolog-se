@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { animateScroll as scroll } from 'react-scroll'
 
 import './ForelasningarViewMobile.css'
@@ -81,6 +81,14 @@ export const ForelasningarViewMobile = () => {
       return <div key={etologer.id}></div>
     }
   })
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto'
+    })
+  }, [])
+
   return (
     <>
       <DefaulPageLayoutMobile

@@ -41,6 +41,7 @@ export const HomeViewDesktop = () => {
         )
     }
     const HomeViewSection = (props: { mirror?: string, headline?: string, paragraph?: string, btn?: string, img?: string, path?: any, hasExternalLink: boolean }) => {
+
         const externalOrLocalLink = () => {
             return props.hasExternalLink
                 ? <button onClick={() => window.open(props.path)}>{props.btn}</button>
@@ -82,6 +83,7 @@ export const HomeViewDesktop = () => {
             <HeaderDesktop slogan={HomeViewData.headerSlogan} headerImg={HeaderImg} />
             <div className="homeview-desktop-wrapper">
                 <div className="homeview-desktop-intro-text">
+                    <h1>{HomeViewData.headline}</h1>
                     <h4>{HomeViewData.introText}</h4>
                 </div>
                 <div className="homeview-desktop-section-one">
