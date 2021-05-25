@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 import { animateScroll as scroll } from 'react-scroll'
+import Axios from 'axios'
 
 import './ForelasningarViewDesktop.css'
 import ForelasningarViewData from '../data/ForelasningarViewData'
 
-import etologer from '../../../data/data-etologer.json'
 import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 
 import headerImg from "../img/headerForelasningarHeight700.jpg"
@@ -17,6 +17,12 @@ import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/d
 export const ForelasningarViewDesktop = () => {
 
   const [filterCategory, setFilterCategory] = useState('star')
+  const [etologer, setEtologer] = useState<any>([])
+
+  const fetchData = async () => {
+    const { data } = await Axios.get('http://localhost:3001/etolog')
+    setEtologer(data)
+  }
 
   const selectCategory = (event: any) => {
     setFilterCategory(event)
@@ -67,7 +73,7 @@ export const ForelasningarViewDesktop = () => {
         <EtologBoxDesktop
           id={etolog.id}
           name={etolog.first_name + ' ' + etolog.last_name}
-          img={etolog.id}
+          img={etolog.imgId}
           description={etolog.desc}
           email={etolog.email}
           city={etolog.city}
@@ -79,14 +85,15 @@ export const ForelasningarViewDesktop = () => {
       return <></>
     }
   }
-  const EtologArrayStar = etologer.map((etolog) => {
+  const EtologArrayStar = etologer.map((etolog: any) => {
     return etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
   })
-  const EtologArrayNoStar = etologer.map((etolog) => {
+  const EtologArrayNoStar = etologer.map((etolog: any) => {
     return !etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
   })
 
   useEffect(() => {
+    fetchData()
     window.scrollTo({
       top: 0,
       behavior: 'auto'
