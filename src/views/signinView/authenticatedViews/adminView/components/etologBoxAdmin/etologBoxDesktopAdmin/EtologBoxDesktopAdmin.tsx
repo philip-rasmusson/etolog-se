@@ -28,6 +28,7 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
   const [categoryArray, setCategoryArray] = useState(props.categoryFilter)
   const [lectureArray, setLectureArray] = useState(props.lectureArray)
   const [countySelect, setCountySelect] = useState(props.county)
+  const [removeEtologCheck, setRemoveEtologCheck] = useState(false)
 
 
   const mapCategories = categories.map((item) => {
@@ -75,12 +76,23 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
       categoryFilter: categoryArray,
       imgId: props.imgId
     }
+
     await Axios.put(`http://localhost:3001/etolog/${_id}`, updatedEtolog)
     window.alert(`Etologen ${fullName} är uppdaterad`)
     setDisplayUpdateEtolog(false)
     props.render()
   }
 
+  const displayRemoveEtologCheck = () => {
+    return removeEtologCheck ? (
+      <div className='remove-etolog-check'>
+        <button className="etolog-box-admin-button check-warning" onClick={() => { deleteEtolog(props._id.toString(), props.fullName) }}>{EtologBoxDataAdmin.buttonTwo}</button>
+        <button className="etolog-box-admin-button" onClick={() => setRemoveEtologCheck(false)}>ångra</button>
+      </div>
+    ) : (
+      <button className="etolog-box-admin-button" onClick={() => setRemoveEtologCheck(true)}>{EtologBoxDataAdmin.buttonTwo}</button>
+    )
+  }
 
 
   return !displayUpdateEtolog ? (
@@ -115,7 +127,7 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
         </div>
       </div>
       <button className="etolog-box-admin-button" onClick={() => setDisplayUpdateEtolog(true)}>{EtologBoxDataAdmin.buttonOne}</button>
-      <button className="etolog-box-admin-button" onClick={() => { deleteEtolog(props._id.toString(), props.fullName) }}>{EtologBoxDataAdmin.buttonTwo}</button>
+      {displayRemoveEtologCheck()}
     </div>
   ) : (
     <div className="etolog-desktop-admin-box font-grey box-shadow" >
@@ -143,8 +155,7 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
         <h4>Föreläsningar</h4>
         <div className="array-checkbox"> {mapLectures}</div>
       </div>
-
-      <button className="etolog-box-admin-button" onClick={() => updateEtolog(props._id.toString(), props.fullName)}>{EtologBoxDataAdmin.buttonOne}</button>
+      <button className="etolog-box-admin-button check-warning" onClick={() => updateEtolog(props._id.toString(), props.fullName)}>{EtologBoxDataAdmin.buttonOne}</button>
       <button className="etolog-box-admin-button" onClick={() => setDisplayUpdateEtolog(false)}>avbryt</button>
     </div>
   )

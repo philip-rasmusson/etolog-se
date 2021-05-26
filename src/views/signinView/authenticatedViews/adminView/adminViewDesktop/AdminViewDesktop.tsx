@@ -20,27 +20,58 @@ export const AdminViewDesktop = () => {
   const [newEtolog, setNewEtolog] = useState<any>()
   const [categoryArray, setCategoryArray] = useState<any>(['showAll'])
   const [lectureArray, setLectureArray] = useState<any>([])
+  const [acceptNewEtolog, setAcceptNewEtolog] = useState<number>(0)
+
 
   const history = useHistory()
 
-  const createEtolog = async () => {
-    const createdEtolog = {
-      first_name: newEtolog.first_name,
-      last_name: newEtolog.last_name,
-      desc: newEtolog.desc,
-      email: newEtolog.email,
-      city: newEtolog.city,
-      homepage: newEtolog.homepage,
-      lecture: lectureArray,
-      star: newEtolog.star,
-      county: newEtolog.county,
-      categoryFilter: categoryArray,
-      imgId: 0
-    }
-    await Axios.post('http://localhost:3001/etolog/', createdEtolog)
-    setDisplayEtologer(true)
+  const resetNewEtolog = () => {
+    setNewEtolog([])
     setDisplayAddNewEtolog(false)
-    fetchData()
+    setDisplayEtologer(false)
+  }
+
+  const newEtologNoEmptyInputs = (input: any) => {
+    console.log(input.length)
+    if (input.length > 0) {
+      return input
+    } else {
+      setAcceptNewEtolog(acceptNewEtolog + 1)
+      console.log(acceptNewEtolog)
+      alert('error')
+    }
+  }
+
+  const createEtolog = async () => {
+    try {
+      const createdEtolog = {
+        first_name: newEtologNoEmptyInputs(newEtolog.first_name),
+        last_name: newEtologNoEmptyInputs(newEtolog.last_name),
+        desc: newEtologNoEmptyInputs(newEtolog.desc),
+        email: newEtologNoEmptyInputs(newEtolog.email),
+        city: newEtologNoEmptyInputs(newEtolog.city),
+        homepage: newEtologNoEmptyInputs(newEtolog.homepage),
+        lecture: lectureArray,
+        star: newEtolog.star,
+        county: newEtologNoEmptyInputs(newEtolog.county),
+        categoryFilter: categoryArray,
+        imgId: 0
+      }
+
+      if (acceptNewEtolog === 0) {
+        await Axios.post('http://localhost:3001/etolog/', createdEtolog)
+        setDisplayEtologer(true)
+        setDisplayAddNewEtolog(false)
+        setNewEtolog([])
+        fetchData()
+      } else {
+        alert('Inga fält få lämnas')
+      }
+    } catch (error) {
+      alert('Inga fält få lämnas tomma')
+      fetchData()
+
+    }
   }
 
   const fetchData = async () => {
@@ -157,7 +188,7 @@ export const AdminViewDesktop = () => {
               </div>
               <div className="add-new-etolog-form-buttons">
                 <button type="submit" value="sumbit" onClick={() => createEtolog()}>{AdminViewData.register}</button>
-                <button>{AdminViewData.reset}</button>
+                <button onClick={() => resetNewEtolog()}>{AdminViewData.reset}</button>
               </div>
             </div>
           </div>

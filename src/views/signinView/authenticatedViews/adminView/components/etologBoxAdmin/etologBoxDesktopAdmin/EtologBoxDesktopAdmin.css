@@ -76,3 +76,18 @@
   margin: 2rem 0 1rem 0;
   font-size: 14px;
 }
+
+.remove-etolog-check {
+  display: flex;
+  width: 100%;
+}
+
+.remove-etolog-check button {
+  margin: 1.6rem auto;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.check-warning {
+  background-color: red;
+}

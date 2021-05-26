@@ -15,7 +15,7 @@ const star = 'Stjärnmärkt'
 const categories = 'Kategorier'
 const lectures = 'Föreläsningar'
 const register = 'Registrera'
-const reset = 'Rensa'
+const reset = 'avbryt'
 
 const mobileViewDisclaimer = 'Adminpanelen fungerar inte i mobilt läge. Välnligen använd en dator eller tablet med större skärm'
 
