@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import categories from '../../../../../../../data/data-categories.json'
 import lectures from '../../../../../../../data/data-lectures.json'
 import counties from '../../../../../../../data/data-county.json'
+import { UploadContainer } from '../../../../../../../containers/uploadContainer/UploadContainer'
 
 import {
   faDesktop,
@@ -30,17 +31,24 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
   const [countySelect, setCountySelect] = useState(props.county)
   const [removeEtologCheck, setRemoveEtologCheck] = useState(false)
 
+  const checkChecboxes = (item: string, array: any) => {
+
+    return array.includes(item)
+  }
+
 
   const mapCategories = categories.map((item) => {
-    return <label style={{ width: '15rem', textAlign: 'left' }}><input className="etolog-desktop-admin-box-input" type="checkbox"
+    return <label style={{ width: '15rem', textAlign: 'left' }}><input className="etolog-desktop-admin-box-input" type="checkbox" checked={checkChecboxes(item.category, categoryArray)}
       onChange={event => {
         (event.target.checked)
           ? setCategoryArray([...categoryArray, item.category])
           : setCategoryArray(categoryArray.filter((y: any) => y !== item.category))
       }} />{item.category}</label>
   })
+
+
   const mapLectures = lectures.map((item) => {
-    return lectureArray !== null ? (<label style={{ width: '15rem', textAlign: 'left' }}><input className="etolog-desktop-admin-box-input" type="checkbox"
+    return lectureArray !== null ? (<label style={{ width: '15rem', textAlign: 'left' }}><input className="etolog-desktop-admin-box-input" type="checkbox" checked={checkChecboxes(item.lecture, lectureArray)}
       onChange={event => {
         (event.target.checked)
           ? setLectureArray([...lectureArray, item.lecture])
@@ -155,6 +163,11 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
         <h4>Föreläsningar</h4>
         <div className="array-checkbox"> {mapLectures}</div>
       </div>
+      <div style={{ width: '15rem', margin: '1rem auto' }}>
+        <h4>Bild</h4>
+        <div className="array-checkbox"><UploadContainer /> </div>
+      </div>
+
       <button className="etolog-box-admin-button check-warning" onClick={() => updateEtolog(props._id.toString(), props.fullName)}>{EtologBoxDataAdmin.buttonOne}</button>
       <button className="etolog-box-admin-button" onClick={() => setDisplayUpdateEtolog(false)}>avbryt</button>
     </div>

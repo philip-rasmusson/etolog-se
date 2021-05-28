@@ -11,6 +11,8 @@ import categories from '../../../../../data/data-categories.json'
 import lectures from '../../../../../data/data-lectures.json'
 import counties from '../../../../../data/data-county.json'
 import EtologBoxDataAdmin from '../components/etologBoxAdmin/data/EtologBoxDataAdmin'
+import { UploadContainer } from '../../../../../containers/uploadContainer/UploadContainer'
+
 
 export const AdminViewDesktop = () => {
   const [displayEtologer, setDisplayEtologer] = useState<boolean>(false)
@@ -185,6 +187,20 @@ export const AdminViewDesktop = () => {
               <div className="div-array">
                 <h4>{AdminViewData.lectures}</h4>
                 <div className="array-checkbox"> {mapLectures}</div>
+              </div>
+              <div className="div-array">
+                <h4>Bild</h4>
+                {/* <form action="/" method="POST" >
+                  <div>
+                    <label >Upload Image</label>
+                    <input type="file" id="image"
+                      name="image" required />
+                  </div>
+                  <div>
+                    <button type="submit">Submit</button>
+                  </div>
+                </form> */}
+                <UploadContainer />
               </div>
               <div className="add-new-etolog-form-buttons">
                 <button type="submit" value="sumbit" onClick={() => createEtolog()}>{AdminViewData.register}</button>
