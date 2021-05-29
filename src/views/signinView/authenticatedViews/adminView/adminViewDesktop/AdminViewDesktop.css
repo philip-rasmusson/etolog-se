@@ -57,6 +57,16 @@
   font-weight: 400;
 }
 
+.add-new-etolog-img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.add-new-etolog-img img {
+  margin: auto;
+}
+
 .add-new-form-inner {
   display: flex;
   justify-content: space-between;

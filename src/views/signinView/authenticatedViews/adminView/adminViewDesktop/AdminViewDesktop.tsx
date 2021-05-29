@@ -190,16 +190,6 @@ export const AdminViewDesktop = () => {
               </div>
               <div className="div-array">
                 <h4>Bild</h4>
-                {/* <form action="/" method="POST" >
-                  <div>
-                    <label >Upload Image</label>
-                    <input type="file" id="image"
-                      name="image" required />
-                  </div>
-                  <div>
-                    <button type="submit">Submit</button>
-                  </div>
-                </form> */}
                 <UploadContainer />
               </div>
               <div className="add-new-etolog-form-buttons">

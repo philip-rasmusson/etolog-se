@@ -165,7 +165,7 @@ export const EtologBoxDesktopAdmin = (props: { _id: number, imgId: number, fullN
       </div>
       <div style={{ width: '15rem', margin: '1rem auto' }}>
         <h4>Bild</h4>
-        <div className="array-checkbox"><UploadContainer /> </div>
+        <div className="array-checkbox"><UploadContainer _id={props._id} /> </div>
       </div>
 
       <button className="etolog-box-admin-button check-warning" onClick={() => updateEtolog(props._id.toString(), props.fullName)}>{EtologBoxDataAdmin.buttonOne}</button>

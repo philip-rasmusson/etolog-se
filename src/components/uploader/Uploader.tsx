@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Upload, message } from 'antd'
+import unknown from '../../components/etologBox/img/etologer/unknown.jpg'
 
 const { Dragger } = Upload
 
@@ -7,11 +8,12 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
 `
-export const Uploader = () => {
+export const Uploader = (props: { _id: any }) => {
 
-  const props = {
+  const props2 = {
     name: 'photo',
     multiple: false,
+    _id: props._id,
     action: 'http://localhost:3001/photo',
     onChange(info: any) {
       const { status } = info.file
@@ -25,13 +27,16 @@ export const Uploader = () => {
       }
     },
   }
+
+  const showImage = () => {
+    return unknown
+  }
   return (
     <Container>
-      <Dragger {...props}>
-        <div style={{ width: '100%' }}>
-          <p className="ant-upload-drag-icon">
-            INBOX
-                </p>
+      <Dragger {...props2}>
+        <div style={{ width: '100%' }} className="add-new-etolog-img">
+
+          <img className="ant-upload-drag-icon" src={showImage()} alt="upload_image" />
           <p className="ant-upload-text">Click or drag file to this area to upload</p>
         </div>
       </Dragger>
