@@ -12,10 +12,10 @@ const Container = styled.div`
     margin: 0 auto;
 `
 
-export const UploadContainer = (props: { _id?: any }) => {
+export const UploadContainer = () => {
   return (
     <Container>
-      <Uploader _id={props._id} />
+      <Uploader />
     </Container>
   )
 }

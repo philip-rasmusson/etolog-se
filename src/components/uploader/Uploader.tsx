@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import { Upload, message } from 'antd'
-import unknown from '../../components/etologBox/img/etologer/unknown.jpg'
+import unknownRed from './img/unknownRed.jpg'
+import unknownGreen from './img/unknownGreen.jpg'
+import { useState } from 'react'
+import UploaderData from './data/UploaderData'
 
 const { Dragger } = Upload
 
@@ -8,13 +11,21 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
 `
-export const Uploader = (props: { _id: any }) => {
+export const Uploader = () => {
 
-  const props2 = {
-    name: 'photo',
+  const [displayImg, setDisplayImg] = useState(unknownRed)
+  const [displayText, setDisplayText] = useState(UploaderData.UploadNotDoneText)
+
+  const toggleImgUploadOK = () => {
+    setDisplayImg(unknownGreen)
+    setDisplayText(UploaderData.UploadDoneText)
+  }
+
+  const props = {
+    name: 'image',
+    accept: 'image/png, image/jpeg',
     multiple: false,
-    _id: props._id,
-    action: 'http://localhost:3001/photo',
+    action: 'http://localhost:3001/images',
     onChange(info: any) {
       const { status } = info.file
       if (status !== 'uploading') {
@@ -22,22 +33,20 @@ export const Uploader = (props: { _id: any }) => {
       }
       if (status === 'done') {
         message.success(`${info.file.name} file uploaded successfully.`)
+        toggleImgUploadOK()
       } else if (status === 'error') {
         message.error(`${info.file.name} file upload failed.`)
       }
     },
   }
 
-  const showImage = () => {
-    return unknown
-  }
   return (
     <Container>
-      <Dragger {...props2}>
+      <Dragger {...props}>
         <div style={{ width: '100%' }} className="add-new-etolog-img">
-
-          <img className="ant-upload-drag-icon" src={showImage()} alt="upload_image" />
-          <p className="ant-upload-text">Click or drag file to this area to upload</p>
+          <img className="ant-upload-drag-icon" src={displayImg} alt="upload_image" />
+          <p className="ant-upload-text">({displayText})</p><br />
+          <p className="ant-upload-text">{UploaderData.infoText}</p>
         </div>
       </Dragger>
     </Container>
