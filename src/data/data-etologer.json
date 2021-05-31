@@ -2,7 +2,7 @@
 [
   {
   "id": 0,
-  "img_id": 0,
+  "imgId": 0,
   "first_name": "Irene",
   "last_name": "Westerholm",
   "desc": "Kamphundar",
@@ -18,7 +18,7 @@
   
   {
   "id": 1,
-  "img_id": 1,
+  "imgId": 1,
   "first_name": "Linda",
   "last_name": "Strohmaier",
   "desc": "Katt, hund, kanin, marsvin och fjäderfä",
@@ -34,7 +34,7 @@
   
   {
   "id": 2,
-  "img_id": 2,
+  "imgId": 2,
   "first_name": "Paulina",
   "last_name": "Lundberg",
   "desc": "Häst, hund och katt",
@@ -50,7 +50,7 @@
   
   {
   "id": 3,
-  "img_id": 3,
+  "imgId": 3,
   "first_name": "Jannice",
   "last_name": "Kindsjö",
   "desc": "Hund och djursjukvård",
@@ -67,7 +67,7 @@
   
   {
   "id": 4,
-  "img_id": 4,
+  "imgId": 4,
   "first_name": "Anna-Maria",
   "last_name": "Svedberg",
   "desc": "Hund, katt och vattensköldpaddor",
@@ -84,7 +84,7 @@
   
   {
   "id": 5,
-  "img_id": 5,
+  "imgId": 5,
   "first_name": "Ann-Sofie",
   "last_name": "Sandell",
   "desc": "Häst, hund, katt och sällskapsdjur",
@@ -101,7 +101,7 @@
   
   {
   "id": 6,
-  "img_id": 6,
+  "imgId": 6,
   "first_name": "Charlotte",
   "last_name": "Friis",
   "desc": "Hund",
@@ -118,7 +118,7 @@
   
   {
   "id": 7,
-  "img_id": 7,
+  "imgId": 7,
   "first_name": "Emelie",
   "last_name": "De Boussard",
   "desc": "Häst, hund och smådjur",
@@ -135,7 +135,7 @@
   
   {
   "id": 8,
-  "img_id": 8,
+  "imgId": 8,
   "first_name": "Nathalie",
   "last_name": "Nilsson",
   "desc": "Hund",
@@ -152,7 +152,7 @@
   
   {
   "id": 9,
-  "img_id": 9,
+  "imgId": 9,
   "first_name": "Eva",
   "last_name": "Wennman",
   "desc": "Katt",
@@ -169,7 +169,7 @@
   
   {
   "id": 10,
-  "img_id": 10,
+  "imgId": 10,
   "first_name": "Anna",
   "last_name": "Harenius",
   "desc": "Kanin och djurvälfärd",
@@ -186,7 +186,7 @@
   
   {
   "id": 11,
-  "img_id": 11,
+  "imgId": 11,
   "first_name": "Linn",
   "last_name": "Larsson",
   "desc": "Hund, rovdjur och djurpark",
@@ -203,7 +203,7 @@
   
   {
   "id": 12,
-  "img_id": 12,
+  "imgId": 12,
   "first_name": "Renate",
   "last_name": " Larssen",
   "desc": "Häst",
@@ -211,7 +211,7 @@
   "email": " renate.larssen@hotmail.com",
   "city": " Linköping",
   "homepage": " https://hippologiskt.com/",
-  "lecture": ["hästar", "etologi", "djurträning"],
+  "lecture": ["häst", "etologi", "djurträning"],
   "star": false,
   "county": "Östergötlands län",
   "categoryFilter": ["showAll", "häst"]
@@ -220,7 +220,7 @@
   
   {
   "id": 13,
-  "img_id": 13,
+  "imgId": 13,
   "first_name": "Emilie",
   "last_name": "Wass Grunander",
   "desc": "Häst och katt",
@@ -237,7 +237,7 @@
   
   {
   "id": 14,
-  "img_id": 14,
+  "imgId": 14,
   "first_name": "Anna",
   "last_name": "Roos",
   "desc": "Hund",
@@ -254,7 +254,7 @@
   
   {
   "id": 15,
-  "img_id": 15,
+  "imgId": 15,
   "first_name": "Moa",
   "last_name": "Nygren",
   "desc": "Katt",
@@ -269,7 +269,7 @@
   },
   {
   "id": 16,
-  "img_id": 16,
+  "imgId": 16,
   "first_name": "Ulrica",
   "last_name": "Ahlrot",
   "desc": "Katt och djurparksdjur",
@@ -285,7 +285,7 @@
   
   {
   "id": 17,
-  "img_id": 17,
+  "imgId": 17,
   "first_name": "Emma",
   "last_name": "Almquist",
   "desc": "Hund, kanin och smågnagare",
@@ -301,7 +301,7 @@
   
   {
   "id": 18,
-  "img_id": 18,
+  "imgId": 18,
   "first_name": "Johanna",
   "last_name": "Strander",
   "desc": "Hund och nöt",
@@ -317,7 +317,7 @@
   
   {
   "id": 19,
-  "img_id": 19,
+  "imgId": 19,
   "first_name": "Astrid",
   "last_name": "Söderqvist",
   "desc": "Hund, katt och gris",
@@ -334,7 +334,7 @@
   
   {
   "id": 20,
-  "img_id": 20,
+  "imgId": 20,
   "first_name": "Victoria",
   "last_name": "Källström",
   "desc": "Hund, kanin och gnagare",
@@ -351,7 +351,7 @@
   
   {
   "id": 21,
-  "img_id": 21,
+  "imgId": 21,
   "first_name": "Ellen",
   "last_name": "Kilander",
   "desc": "Häst",
@@ -368,7 +368,7 @@
   
   {
   "id": 22,
-  "img_id": 22,
+  "imgId": 22,
   "first_name": "Desirée",
   "last_name": "Sjöström",
   "desc": "Klövvilt, lantbrukets djur och zoolog",
@@ -385,7 +385,7 @@
   
   {
   "id": 23,
-  "img_id": 23,
+  "imgId": 23,
   "first_name": "Lisa",
   "last_name": "Lundin",
   "desc": "Djurpark, utbildning och undervisning",
@@ -400,7 +400,7 @@
   },
   {
     "id": 24,
-    "img_id": 24,
+    "imgId": 24,
     "first_name": "Elke",
     "last_name": "Hartmann",
     "desc": "Häst",

@@ -15,7 +15,7 @@ const Container = styled.div`
 export const UploadContainer = () => {
   return (
     <Container>
-      <Uploader />
+      <Uploader name='testing' />
     </Container>
   )
 }

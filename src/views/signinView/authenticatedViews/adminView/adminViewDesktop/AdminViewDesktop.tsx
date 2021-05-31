@@ -60,17 +60,13 @@ export const AdminViewDesktop = () => {
         imgId: 0
       }
 
-      if (acceptNewEtolog === 0) {
-        await Axios.post('http://localhost:3001/etolog/', createdEtolog)
-        setDisplayEtologer(true)
-        setDisplayAddNewEtolog(false)
-        setNewEtolog([])
-        fetchData()
-      } else {
-        alert('Inga fält få lämnas')
-      }
+      await Axios.post('http://localhost:3001/etolog/', createdEtolog)
+      setDisplayEtologer(true)
+      setDisplayAddNewEtolog(false)
+      setNewEtolog([])
+      fetchData()
+
     } catch (error) {
-      alert('Inga fält få lämnas tomma')
       fetchData()
 
     }
@@ -157,26 +153,26 @@ export const AdminViewDesktop = () => {
         <div className="add-new-etolog-wrapper">
           <h1 className="add-new-etolog-title">{EtologBoxDataAdmin.addNewEtologTitle}</h1>
           <div className="add-new-etolog-form-wrapper">
-            <div className="add-new-etolog-form">
-              <div className="add-new-form-inner"><h4>{AdminViewData.firstName}</h4><input id="first_name" type="text"
+            <form className="add-new-etolog-form">
+              <div className="add-new-form-inner"><h4>{AdminViewData.firstName}</h4><input id="first_name" type="text" required
                 onChange={event => setNewEtolog({ ...newEtolog, first_name: event.target.value })} /></div>
-              <div className="add-new-form-inner"><h4>{AdminViewData.lastName}</h4><input id="last_name" type="text"
+              <div className="add-new-form-inner"><h4>{AdminViewData.lastName}</h4><input id="last_name" type="text" required
                 onChange={event => setNewEtolog({ ...newEtolog, last_name: event.target.value })} /></div>
-              <div className="add-new-form-inner"><h4>{AdminViewData.city}</h4><input id="city" type="text"
+              <div className="add-new-form-inner"><h4>{AdminViewData.city}</h4><input id="city" type="text" required
                 onChange={event => setNewEtolog({ ...newEtolog, city: event.target.value })} /></div>
               <div className="add-new-form-inner">
                 <h4>{AdminViewData.county}</h4>
-                <select
+                <select required
                   onChange={(event) => setNewEtolog({ ...newEtolog, county: event.target.value })}>
                   <option value=''>{AdminViewData.selectCounty}</option>
                   {mapCounty}
                 </select>
               </div>
-              <div className="add-new-form-inner"><h4>{AdminViewData.email}</h4><input id="email" type="text"
+              <div className="add-new-form-inner"><h4>{AdminViewData.email}</h4><input id="email" type="text" required
                 onChange={event => setNewEtolog({ ...newEtolog, email: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>{AdminViewData.homepage}</h4><input id="homepage" type="text"
                 onChange={event => setNewEtolog({ ...newEtolog, homepage: event.target.value })} /></div>
-              <div className="add-new-form-inner"><h4>{AdminViewData.description}</h4><input id="desc" type="text"
+              <div className="add-new-form-inner"><h4>{AdminViewData.description}</h4><input id="desc" type="text" required
                 onChange={event => setNewEtolog({ ...newEtolog, desc: event.target.value })} /></div>
               <div className="add-new-form-inner"><h4>{AdminViewData.star}</h4><input id="star" type="checkbox"
                 onChange={event => setNewEtolog({ ...newEtolog, star: event.target.checked })} /></div>
@@ -196,7 +192,7 @@ export const AdminViewDesktop = () => {
                 <button type="submit" value="sumbit" onClick={() => createEtolog()}>{AdminViewData.register}</button>
                 <button onClick={() => resetNewEtolog()}>{AdminViewData.reset}</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       )

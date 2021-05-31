@@ -23,7 +23,8 @@ export const VaraEtologerViewDesktop = () => {
     const [etologer, setEtologer] = useState<any>([])
 
     const fetchData = async () => {
-        const { data } = await Axios.get('http://localhost:3001/etolog')
+        const { data } = await Axios.get('https://etologse-server.herokuapp.com//etolog')
+        // const { data } = await Axios.get('http://localhost:3001/etolog')
         setEtologer(data)
     }
 

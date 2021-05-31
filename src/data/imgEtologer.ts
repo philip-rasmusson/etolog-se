@@ -12,7 +12,7 @@ import EmelieDeBoussard from "../components/etologBox/img/etologer/EmelieDeBouss
 import NathalieNilsson from "../components/etologBox/img/etologer/NathalieNilsson.jpg";
 import EvaWennman from "../components/etologBox/img/etologer/EvaWennman.jpg";
 import LinnLarsson from "../components/etologBox/img/etologer/unknown.jpg";
-import RenateLarssen from "../components/etologBox/img/etologer/unknown.jpg";
+import RenateLarssen from "../components/etologBox/img/etologer/RenateLarssen.jpg";
 import EmilieWassGrunander from "../components/etologBox/img/etologer/EmilieWassGrunander.jpg";
 import MoaNygren from "../components/etologBox/img/etologer/unknown.jpg";
 import UlricaAhlrot from "../components/etologBox/img/etologer/UlricaAhlrot.jpg";
