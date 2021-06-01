@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import './KonsultuppdragViewMobile.css'
 import konsultuppdragMobile from '../img/konsultuppdragMobile.jpg'
 import djurvardag from "../img/samarbetspartners/djurvardag.jpg"
+import bottomImg from "../img/bottomImg.png"
 
 
 import KonsultuppdragViewData from "../data/KonsultuppdragViewData"
@@ -33,6 +34,7 @@ export const KonsultuppdragViewMobile = () => {
                     <a href={KonsultuppdragViewData.linkOne} target="blank"><img src={djurvardag} alt={KonsultuppdragViewData.linkOne} className="konsultuppdrag-mobile-samarbetspartners-img" /></a>
                 </div>
             </div>
+            <img className="kontulsuppdrag-mobile-bottom-img" src={bottomImg} alt="error" />
         </div>
     )
 }

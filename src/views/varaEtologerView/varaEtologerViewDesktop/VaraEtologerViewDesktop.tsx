@@ -8,7 +8,7 @@ import headerImg from "../img/headerVaraEtologerHeight700.jpg"
 
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
 
-// import etologer from '../../../data/data-etologer.json'
+import etologerX from '../../../data/data-etologer.json'
 import county from '../../../data/data-county.json'
 import categories from '../../../data/data-categories.json'
 
@@ -20,11 +20,12 @@ import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
 export const VaraEtologerViewDesktop = () => {
     const [filterCategory, setFilterCategory] = useState('showAll')
     const [filterCounty, setFilterCounty] = useState('län')
-    const [etologer, setEtologer] = useState<any>([])
+    const [etologer, setEtologer] = useState<any>(etologerX)
+    // const [etologer, setEtologer] = useState<any>([])
 
     const fetchData = async () => {
-        const { data } = await Axios.get('https://etologse-server.herokuapp.com//etolog')
-        // const { data } = await Axios.get('http://localhost:3001/etolog')
+        // const { data } = await Axios.get('https://etologse-server.herokuapp.com/')
+        const { data } = await Axios.get('http://localhost:3001/etolog')
         setEtologer(data)
     }
 
@@ -71,7 +72,7 @@ export const VaraEtologerViewDesktop = () => {
     })
 
     useEffect(() => {
-        fetchData()
+        // fetchData()
         window.scrollTo({
             top: 0,
             behavior: 'auto'

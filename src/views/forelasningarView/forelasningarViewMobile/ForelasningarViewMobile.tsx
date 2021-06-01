@@ -62,24 +62,62 @@ export const ForelasningarViewMobile = () => {
       </div>
     )
   }
-  const ShowEtologer = etologer.map((etologer) => {
-    if (etologer.lecture?.includes(filterCategory)) {
-      return (
-        <div className="vara-etologer-etolog-box" key={etologer.id}>
-          <EtologBoxMobile
-            id={etologer.id}
-            name={etologer.first_name + ' ' + etologer.last_name}
-            img={etologer.id}
-            description={etologer.desc}
-            email={etologer.email}
-            city={etologer.city}
-            homepage={etologer.homepage}
-          />
-        </div>
-      )
-    } else {
-      return <div key={etologer.id}></div>
-    }
+  // const ShowEtologer = etologer.map((etologer) => {
+  //   if (etologer.lecture?.includes(filterCategory)) {
+  //     return (
+  //       <div className="vara-etologer-etolog-box" key={etologer.id}>
+  //         <EtologBoxMobile
+  //           id={etologer.id}
+  //           name={etologer.first_name + ' ' + etologer.last_name}
+  //           img={etologer.id}
+  //           description={etologer.desc}
+  //           email={etologer.email}
+  //           city={etologer.city}
+  //           homepage={etologer.homepage}
+  //         />
+  //       </div>
+  //     )
+  //   } else {
+  //     return <div key={etologer.id}></div>
+  //   }
+  // })
+  const etologOuput = (etolog: any) => {
+    return (<div className="vara-etolog-etolog-box">
+      <EtologBoxMobile
+        id={etolog.imgId}
+        name={etolog.first_name + ' ' + etolog.last_name}
+        img={etolog.imgId}
+        description={etolog.desc}
+        email={etolog.email}
+        city={etolog.city}
+        star={etolog.star}
+        homepage={etolog.homepage}
+      />
+    </div>)
+  }
+  const etologArrayWithStar = etologer.map((etolog: any) => {
+    if (etolog.star) {
+      if (etolog.lecture?.includes(filterCategory)) {
+        return (
+          <div key={etolog.id}>
+
+            {etologOuput(etolog)}
+          </div>
+
+        )
+      } else { return <div key={etolog.id}></div> }
+    } else { return <div key={etolog.id}></div> }
+  })
+  const etologArrayNoStar = etologer.map((etolog: any) => {
+    if (!etolog.star) {
+      if (etolog.lecture?.includes(filterCategory)) {
+        return (
+          <div key={etolog.id}>
+            {etologOuput(etolog)}
+          </div>
+        )
+      } else { return <div key={etolog.id}></div> }
+    } else { return <div key={etolog.id}></div> }
   })
 
   useEffect(() => {
@@ -103,7 +141,9 @@ export const ForelasningarViewMobile = () => {
           paragraph={ForelasningarViewData.categoryIndexHParagraph}
         />
         <div className="forelasningar-mobile-etolog-box-wrapper background-white">
-          {ShowEtologer}
+          {/* {ShowEtologer} */}
+          {etologArrayWithStar}
+          {etologArrayNoStar}
         </div>
         <p className="star-disclaimer-mobile">{EtologBoxData.starDesclaimer}</p>
       </div>

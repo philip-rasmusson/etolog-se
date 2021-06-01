@@ -21,3 +21,8 @@
   margin: auto;
   padding: 3rem 0;
 }
+
+.kontulsuppdrag-desktop-bottom-img {
+  margin: 5rem 0 0 auto;
+  display: flex;
+}

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react"
 import Axios from 'axios'
 
 import './VaraEtologerViewMobile.css'
+import etologerX from '../../../data/data-etologer.json'
+
 
 import etologerMobile from '../img/etologerMobile.png'
 import VaraEtologerViewData from '../data/VaraEtologerViewData'
@@ -24,7 +26,8 @@ export const VaraEtologerViewMobile = () => {
     }
     const [filterCategory, setFilterCategory] = useState('showAll')
     const [filterCounty, setFilterCounty] = useState('län')
-    const [etologer, setEtologer] = useState<any>([])
+    // const [etologer, setEtologer] = useState<any>([])
+    const [etologer, setEtologer] = useState<any>(etologerX)
 
     const fetchData = async () => {
         const { data } = await Axios.get('http://localhost:3001/etolog')
@@ -92,7 +95,7 @@ export const VaraEtologerViewMobile = () => {
     })
 
     useEffect(() => {
-        fetchData()
+        // fetchData()
         window.scrollTo({
             top: 0,
             behavior: 'auto'

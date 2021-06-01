@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import './KonsultuppdragViewDesktop.css'
 import headerImg from "../img/headerKonsultuppdragHeight700b.jpg"
 import djurvardag from "../img/samarbetspartners/djurvardag.jpg"
+import bottomImg from "../img/bottomImg.png"
 
 import konsultuppdrag from '../img/konsultuppdrag.jpg'
 
@@ -35,6 +36,7 @@ export const KonsultuppdragViewDesktop = () => {
                     <a href={KonsultuppdragViewData.linkOne} target="blank"><img src={djurvardag} alt={KonsultuppdragViewData.linkOne} className="konsultuppdrag-desktop-samarbetspartners-img" /></a>
                 </div>
             </div>
+            <img className="kontulsuppdrag-desktop-bottom-img" src={bottomImg} alt="error" />
         </div>
     )
 }
