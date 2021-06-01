@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/etolog-se/static/css/main.93e4e841.chunk.css",
-    "main.js": "/etolog-se/static/js/main.a1f6f2e6.chunk.js",
-    "main.js.map": "/etolog-se/static/js/main.a1f6f2e6.chunk.js.map",
+    "main.js": "/etolog-se/static/js/main.21985a34.chunk.js",
+    "main.js.map": "/etolog-se/static/js/main.21985a34.chunk.js.map",
     "runtime-main.js": "/etolog-se/static/js/runtime-main.75382f45.js",
     "runtime-main.js.map": "/etolog-se/static/js/runtime-main.75382f45.js.map",
-    "static/js/2.ae29529e.chunk.js": "/etolog-se/static/js/2.ae29529e.chunk.js",
-    "static/js/2.ae29529e.chunk.js.map": "/etolog-se/static/js/2.ae29529e.chunk.js.map",
+    "static/js/2.f678b52a.chunk.js": "/etolog-se/static/js/2.f678b52a.chunk.js",
+    "static/js/2.f678b52a.chunk.js.map": "/etolog-se/static/js/2.f678b52a.chunk.js.map",
     "static/js/3.b4d54a54.chunk.js": "/etolog-se/static/js/3.b4d54a54.chunk.js",
     "static/js/3.b4d54a54.chunk.js.map": "/etolog-se/static/js/3.b4d54a54.chunk.js.map",
     "index.html": "/etolog-se/index.html",
     "static/css/main.93e4e841.chunk.css.map": "/etolog-se/static/css/main.93e4e841.chunk.css.map",
-    "static/js/2.ae29529e.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.ae29529e.chunk.js.LICENSE.txt",
+    "static/js/2.f678b52a.chunk.js.LICENSE.txt": "/etolog-se/static/js/2.f678b52a.chunk.js.LICENSE.txt",
     "static/media/AnnSofieSandell.fbb69992.jpg": "/etolog-se/static/media/AnnSofieSandell.fbb69992.jpg",
     "static/media/AnnaHarenius.74d3c788.jpg": "/etolog-se/static/media/AnnaHarenius.74d3c788.jpg",
     "static/media/AnnaMariaSvedberg.b0369d57.jpg": "/etolog-se/static/media/AnnaMariaSvedberg.b0369d57.jpg",
@@ -77,8 +77,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.75382f45.js",
-    "static/js/2.ae29529e.chunk.js",
+    "static/js/2.f678b52a.chunk.js",
     "static/css/main.93e4e841.chunk.css",
-    "static/js/main.a1f6f2e6.chunk.js"
+    "static/js/main.21985a34.chunk.js"
   ]
 }
