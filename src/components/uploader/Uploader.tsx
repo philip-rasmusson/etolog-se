@@ -26,7 +26,7 @@ export const Uploader = () => {
     name: 'image',
     accept: 'image/png, image/jpeg',
     multiple: false,
-    action: 'http://localhost:3001/images',
+    action: 'http://localhost:3001/images/',
     onChange(info: any) {
       const { status } = info.file
       if (status !== 'uploading') {

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { animateScroll as scroll } from 'react-scroll'
 import Axios from 'axios'
 
-import etologerX from '../../../data/data-etologer.json'
+// import etologerX from '../../../data/data-etologer.json'
 
 
 import './ForelasningarViewDesktop.css'
@@ -20,8 +20,8 @@ import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/d
 export const ForelasningarViewDesktop = () => {
 
   const [filterCategory, setFilterCategory] = useState('star')
-  const [etologer, setEtologer] = useState<any>(etologerX)
-  // const [etologer, setEtologer] = useState<any>([])
+  // const [etologer, setEtologer] = useState<any>(etologerX)
+  const [etologer, setEtologer] = useState<any>([])
 
   const fetchData = async () => {
     const { data } = await Axios.get('http://localhost:3001/etolog')
@@ -97,7 +97,7 @@ export const ForelasningarViewDesktop = () => {
   })
 
   useEffect(() => {
-    // fetchData()
+    fetchData()
     window.scrollTo({
       top: 0,
       behavior: 'auto'
