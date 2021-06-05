@@ -15,7 +15,6 @@ export const Uploader = () => {
 
   const [displayImg, setDisplayImg] = useState(unknownRed)
   const [displayText, setDisplayText] = useState(UploaderData.UploadNotDoneText)
-  const [imgName, setImgName] = useState<string>('default')
 
   const toggleImgUploadOK = () => {
     setDisplayImg(unknownGreen)

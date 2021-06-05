@@ -12,6 +12,7 @@ import lectures from '../../../../../data/data-lectures.json'
 import counties from '../../../../../data/data-county.json'
 import EtologBoxDataAdmin from '../components/etologBoxAdmin/data/EtologBoxDataAdmin'
 import { UploadContainer } from '../../../../../containers/uploadContainer/UploadContainer'
+import { ImgUploader } from "../../../../../components/uploader/ImgUploader"
 
 
 export const AdminViewDesktop = () => {

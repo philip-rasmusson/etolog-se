@@ -17,7 +17,7 @@ export const UploadContainer = () => {
   return (
     <Container>
       <Uploader />
-      <ImgUploader />
+      {/* <ImgUploader /> */}
     </Container>
   )
 }
