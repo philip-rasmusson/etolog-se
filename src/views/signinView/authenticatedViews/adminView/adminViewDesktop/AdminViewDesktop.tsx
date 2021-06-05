@@ -199,7 +199,7 @@ export const AdminViewDesktop = () => {
   }
 
   useEffect(() => {
-    // fetchData()
+    fetchData()
   }, [])
 
   return (

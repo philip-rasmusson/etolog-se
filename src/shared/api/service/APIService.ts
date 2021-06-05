@@ -1,4 +1,3 @@
-
 import http from '../API'
 //USER
 const authenticatedRouteExample = () => {
@@ -52,5 +51,5 @@ export default {
 	updateValuesOfExistingUser,
 	deleteUserWithID,
 	forgotPassword,
-	resetPassword,
+	resetPassword
 }
