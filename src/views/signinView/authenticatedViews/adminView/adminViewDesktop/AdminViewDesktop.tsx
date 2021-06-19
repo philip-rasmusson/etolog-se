@@ -212,7 +212,7 @@ export const AdminViewDesktop = () => {
         <div className="admin-desktop-buttons-wrapper">
           <button className="admin-desktop-button-one" onClick={() => toggleShowEtologer()}>{displayEtologerButtonText}</button>
           <button className="admin-desktop-button-two" onClick={() => toggleAddNewEtolog()}>{AdminViewData.buttonTwo}</button>
-          <button className="admin-desktop-button-three" onClick={() => history.push(RoutingPath.signinView)}>{AdminViewData.buttonThree}</button>
+          {/* <button className="admin-desktop-button-three" onClick={() => history.push(RoutingPath.signinView)}>{AdminViewData.buttonThree}</button> */}
         </div>
       </div>
       <div className="admin-desktop-etologer-wrapper">

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import React, { useContext } from 'react'
-import { UserContext } from '../shared/provider/UserProvider'
+import React from 'react'
+// import { UserContext } from '../shared/provider/UserProvider'
 
 
 import { ForelasningarView } from "../views/forelasningarView/ForelasningarView"
@@ -8,18 +8,18 @@ import { HomeView } from "../views/homeView/HomeView"
 import { KonsultuppdragView } from "../views/konsultuppdragView/KonsultuppdragView"
 import { RadgivningView } from "../views/radgivningView/RadgivningView"
 import { VaraEtologerView } from "../views/varaEtologerView/VaraEtologerView"
-import { SigninView } from "../views/signinView/SigninView"
-import { AdminView } from "../views/signinView/authenticatedViews/adminView/AdminView"
+// import { SigninView } from "../views/signinView/SigninView"
+// import { AdminView } from "../views/signinView/authenticatedViews/adminView/AdminView"
 import { Footer } from "../components/footer/Footer"
 
 import RoutingPath from './RoutingPath'
 
 export const Routes = (props: { children?: React.ReactChild }) => {
-  const [authenticatedUser] = useContext(UserContext)
+  // const [authenticatedUser] = useContext(UserContext)
 
-  const adminRequired = () => {
-    return authenticatedUser.admin ? AdminView : SigninView
-  }
+  // const adminRequired = () => {
+  //   return authenticatedUser.admin ? AdminView : SigninView
+  // }
 
   return (
     <Router>
@@ -32,9 +32,6 @@ export const Routes = (props: { children?: React.ReactChild }) => {
         <Route exact path={RoutingPath.konsultuppdragView} component={KonsultuppdragView} />
         <Route exact path={RoutingPath.radgivningView} component={RadgivningView} />
         <Route exact path={RoutingPath.varaEtologerView} component={VaraEtologerView} />
-        <Route exact path={RoutingPath.signinView} component={SigninView} />
-        <Route exact path={RoutingPath.adminView} component={AdminView} />
-        {/* <Route exact path={RoutingPath.adminView} component={adminRequired()} /> */}
       </Switch>
       <Footer />
     </Router>

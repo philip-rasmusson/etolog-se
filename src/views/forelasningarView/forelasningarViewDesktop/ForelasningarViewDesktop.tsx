@@ -1,32 +1,29 @@
 import { useState, useEffect } from "react"
 import { animateScroll as scroll } from 'react-scroll'
 import Axios from 'axios'
-
-// import etologerX from '../../../data/data-etologer.json'
-
+import { HeaderDesktop } from "../../../components/header/headerDesktop/HeaderDesktop"
 
 import './ForelasningarViewDesktop.css'
 import ForelasningarViewData from '../data/ForelasningarViewData'
 
 import EtologBoxData from '../../../components/etologBox/data/EtologBoxData'
+import etologerJson from '../../../data/data-etologer.json'
 
 import headerImg from "../img/headerForelasningarHeight700.jpg"
-import forelasningar from '../img/forelasningar.jpg'
 import ForelasningarCategoriesImg from '../data/ForelasningarCategoriesImg'
 
 import { EtologBoxDesktop } from "../../../components/etologBox/etologBoxDesktop/EtologBoxDesktop"
-import { DefaulPageLayoutDesktop } from "../../../components/defaultPageLayout/defaultPageLayoutDesktop/DefaultPageLayoutDesktop"
 
 export const ForelasningarViewDesktop = () => {
 
   const [filterCategory, setFilterCategory] = useState('star')
-  // const [etologer, setEtologer] = useState<any>(etologerX)
-  const [etologer, setEtologer] = useState<any>([])
+  // const [etologer, setEtologer] = useState<any>(etologerJson)
+  // const [etologer, setEtologer] = useState<any>([])
 
-  const fetchData = async () => {
-    const { data } = await Axios.get('http://localhost:3001/etolog')
-    setEtologer(data)
-  }
+  // const fetchData = async () => {
+  //   const { data } = await Axios.get('http://localhost:3001/etolog')
+  //   setEtologer(data)
+  // }
 
   const selectCategory = (event: any) => {
     setFilterCategory(event)
@@ -89,15 +86,15 @@ export const ForelasningarViewDesktop = () => {
       return <></>
     }
   }
-  const EtologArrayStar = etologer.map((etolog: any) => {
+  const EtologArrayStar = etologerJson.map((etolog: any) => {
     return etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
   })
-  const EtologArrayNoStar = etologer.map((etolog: any) => {
+  const EtologArrayNoStar = etologerJson.map((etolog: any) => {
     return !etolog.star ? <div key={etolog.id}>{etologOuput(etolog)}</div> : <div key={etolog.id}></div>
   })
 
   useEffect(() => {
-    fetchData()
+    // fetchData()
     window.scrollTo({
       top: 0,
       behavior: 'auto'
@@ -106,7 +103,7 @@ export const ForelasningarViewDesktop = () => {
 
   return (
     <>
-      <DefaulPageLayoutDesktop
+      {/* <DefaulPageLayoutDesktop
         backgroundColor={ForelasningarViewData.backgroundColor}
         pageTitle={ForelasningarViewData.pageTitle}
         pageSubheading={ForelasningarViewData.pageSubheading}
@@ -115,7 +112,16 @@ export const ForelasningarViewDesktop = () => {
         img={forelasningar}
         headerImg={headerImg}
         sectionTwoParagraph1={ForelasningarViewData.sectionTwoParagraph1}
-      />
+      /> */}
+      <HeaderDesktop headerImg={headerImg} />
+      <div className="default-page-desktop-section-one-wrapper font-grey">
+        <h1>{ForelasningarViewData.pageTitle}</h1>
+        <h4>{ForelasningarViewData.pageSubheading}</h4>
+        <div>
+          <p>{ForelasningarViewData.pageParagraph1}</p>
+        </div>
+      </div>
+      <div className="forelasningar-desktop-border"></div>
       <div className="forelasningar-desktop-wrapper background-white">
         <CategoryIndex
           paragraph={ForelasningarViewData.categoryIndexHParagraph}

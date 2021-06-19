@@ -2,9 +2,14 @@
   margin: 0 auto;
 }
 
+.forelasningar-desktop-border {
+  margin: 7vw auto;
+  border-top: grey solid 1px;
+  max-width: 1000px;
+}
+
 .forelasningar-desktop-section-two {
   margin: 0 auto;
-  padding-top: 5rem;
   text-align: center;
 }
 
@@ -28,7 +33,7 @@
   margin: auto;
   max-width: 60rem;
   padding-bottom: 5rem;
-  border-bottom: black solid 1px;
+  border-bottom: grey solid 1px;
 }
 
 .forelasningar-desktop-category-inner-box {

@@ -30,7 +30,7 @@ export const SigninViewDesktop = () => {
     if (password === PASSWORD && username === USER) {
       setAuthenticatedUser({ username, admin: true })
       console.log(authenticatedUser)
-      history.push(RoutingPath.adminView)
+      // history.push(RoutingPath.adminView)
     } else {
       alert('Access denied')
     }

@@ -6,8 +6,6 @@ const varaEtologerView = '/vara-etologer'
 const webkurser = 'https://etologse.teachable.com/'
 const root = '/etolog-se'
 
-const adminView = '/admin'
-const signinView = '/signin'
 
 const RoutingPath = {
   forelasningView,
@@ -15,8 +13,6 @@ const RoutingPath = {
   konsultuppdragView,
   radgivningView,
   varaEtologerView,
-  signinView,
-  adminView,
   webkurser,
   root,
 }
