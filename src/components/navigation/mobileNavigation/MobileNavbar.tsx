@@ -7,7 +7,7 @@ import { useHistory } from 'react-router-dom'
 import { useState } from "react"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faPaw } from '@fortawesome/free-solid-svg-icons'
+import { faShare, faBars, faPaw } from '@fortawesome/free-solid-svg-icons'
 
 export const MobileNavbar = () => {
     const history = useHistory()
@@ -50,7 +50,7 @@ export const MobileNavbar = () => {
                 <p
                 ><a href={GlobalData.webkurserLink} target="_blank" rel="noopener noreferrer" className="link-nav">
 
-                        {NavbarData.webkurser}
+                        {NavbarData.webkurser} <FontAwesomeIcon icon={faShare} />
                     </a>
                 </p>
                 <p

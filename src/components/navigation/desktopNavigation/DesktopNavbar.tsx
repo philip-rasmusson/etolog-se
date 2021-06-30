@@ -5,6 +5,9 @@ import RoutingPath from '../../../routes/RoutingPath'
 
 import { useHistory } from "react-router-dom"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShare } from '@fortawesome/free-solid-svg-icons'
+
 export const DesktopNavbar = () => {
   const history = useHistory()
 
@@ -23,7 +26,7 @@ export const DesktopNavbar = () => {
         </p>
         <p onClick={() => window.open(RoutingPath.webkurser)}
         >
-          {NavbarData.webkurser}
+          {NavbarData.webkurser} <FontAwesomeIcon icon={faShare} />
         </p>
         <p
           onClick={() => history.push(RoutingPath.forelasningView)}
