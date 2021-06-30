@@ -33,7 +33,7 @@ export const MobileNavbar = () => {
         ToggleNavbar()
     }
     return (
-        <div className="navbar-mobile-wrapper">
+        <div className="navbar-mobile-wrapper font-grey">
             <h3 className="navbar-mobile-logo" onClick={() => history.push(RoutingPath.homeView)}>
                 {NavbarData.logo}
             </h3>

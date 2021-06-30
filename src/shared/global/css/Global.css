@@ -5,9 +5,10 @@
   padding: 0;
 }
 
+/* 
 .links {
   color: rgb(218, 211, 127);
-}
+} */
 
 .link-nav {
   color: #f1f1f1;
@@ -40,7 +41,7 @@ select {
 }
 
 .font-grey {
-  color: #4d4d4d
+  color: #4d4d4de3
 }
 
 .star-disclaimer-desktop {

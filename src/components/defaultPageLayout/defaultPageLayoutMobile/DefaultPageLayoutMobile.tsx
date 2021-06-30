@@ -28,7 +28,7 @@ export const DefaulPageLayoutMobile = (props: { pageTitle?: string, pageSubheadi
   }
 
   return (
-    <div className="default-page-layout-mobile-wrapper">
+    <div className="default-page-layout-mobile-wrapper font-grey">
       <SectionOne
         pageTitle={props.pageTitle}
         pageSubheading={props.pageSubheading}
